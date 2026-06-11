@@ -179,12 +179,6 @@
             margin-left: 8px;
         }
 
-        .info-text {
-            font-size: 0.7rem;
-            color: #718096;
-            margin-top: 4px;
-        }
-
         footer {
             text-align: center;
             color: white;
@@ -256,86 +250,30 @@
             <div class="card-title">
                 <span>🏪</span> BIAYA SHOPEE
             </div>
+            <div class="row-2">
+                <div class="form-group">
+                    <label>Tipe Toko</label>
+                    <select id="tipeToko">
+                        <option value="nonMall">Non-Star / Star / Star+</option>
+                        <option value="mall">Shopee Mall</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Kategori Produk</label>
+                    <select id="kategori">
+                        <option value="fashion">Fashion</option>
+                        <option value="elektronik">Elektronik</option>
+                        <option value="kecantikan">Kecantikan</option>
+                        <option value="makanan">Makanan & Minuman</option>
+                        <option value="rumahTangga">Rumah Tangga</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Rata-rata Basket Size <span class="badge">pcs/order</span></label>
+                <input type="number" id="basketSize" value="1" step="0.5" min="0.5">
+            </div>
             
-            <!-- TIPE TOKO (mempengaruhi biaya admin & pembayaran) -->
-            <div class="form-group">
-                <label>Tipe Toko</label>
-                <select id="tipeToko">
-                    <option value="nonStar">Non-Star / Star / Star+</option>
-                    <option value="mall">Shopee Mall</option>
-                </select>
-                <div class="info-text">Memilih Shopee Mall akan mengaktifkan biaya pembayaran 1,8%</div>
-            </div>
-
-            <!-- KATEGORI (hanya 5 besar) -->
-            <div class="form-group">
-                <label>Kategori Produk</label>
-                <select id="kategori">
-                    <option value="fashion">Fashion</option>
-                    <option value="fmcg">FMCG (Ibu & Bayi, Kesehatan, Makanan)</option>
-                    <option value="elektronik">Elektronik</option>
-                    <option value="lifestyle">Lifestyle</option>
-                    <option value="lainnya">Lainnya (Tiket, Voucher, Layanan)</option>
-                </select>
-            </div>
-
-            <!-- SUB KATEGORI (otomatis berubah sesuai kategori) -->
-            <div class="form-group">
-                <label>Sub Kategori</label>
-                <select id="subKategori">
-                    <option value="">Pilih kategori terlebih dahulu</option>
-                </select>
-                <div class="info-text">Pilih sub kategori untuk menentukan biaya administrasi</div>
-            </div>
-
-            <!-- TAMPILAN BIAYA ADMIN OTOMATIS -->
-            <div class="result-box" style="background: #fef3c7;">
-                <span class="result-label">📋 Biaya Administrasi</span>
-                <span class="result-value" id="biayaAdminText">0% → Rp 0</span>
-            </div>
-
-            <div class="separator"></div>
-
-            <!-- BIAYA YANG DIINPUT MANUAL -->
-            <div class="form-group">
-                <label>Biaya Pembayaran</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="biayaPembayaranManual" value="0" step="500">
-                </div>
-                <div class="info-text">Untuk Shopee Mall biasanya 1,8% dari harga nett (max Rp 50.000)</div>
-            </div>
-
-            <div class="form-group">
-                <label>Biaya Proses Pesanan</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="biayaProsesManual" value="1250" step="500">
-                </div>
-                <div class="info-text">Rumus Excel: 1250 / basket size (isi langsung nominalnya)</div>
-            </div>
-
-            <div class="form-group">
-                <label>Gratis Ongkir XTRA (ukuran biasa)</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="gratisOngkirBiasaManual" value="0" step="1000">
-                </div>
-                <div class="info-text">Cek persentase per kategori di Shopee, lalu hitung manual</div>
-            </div>
-
-            <div class="form-group">
-                <label>Gratis Ongkir XTRA (ukuran khusus)</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="gratisOngkirKhususManual" value="0" step="1000">
-                </div>
-                <div class="info-text">Cek persentase per kategori di Shopee, lalu hitung manual</div>
-            </div>
-
-            <div class="separator"></div>
-
-            <!-- TOGGLE PROGRAM (sama seperti sebelumnya) -->
             <div class="toggle-group">
                 <div class="toggle-item">
                     <label>Promo XTRA</label>
@@ -373,14 +311,14 @@
                     <label>Hemat Biaya Kirim</label>
                     <select id="hematKirim">
                         <option value="No">Tidak</option>
-                        <option value="Yes">Ya (Rp 350)</option>
+                        <option value="Yes">Ya</option>
                     </select>
                 </div>
                 <div class="toggle-item">
                     <label>Asuransi Pengiriman</label>
                     <select id="asuransi">
                         <option value="No">Tidak</option>
-                        <option value="Yes">Ya (0,5%)</option>
+                        <option value="Yes">Ya</option>
                     </select>
                 </div>
                 <div class="toggle-item">
@@ -541,135 +479,49 @@
     </div>
 
     <script>
-        // ============================================================
-        // DATA SUB KATEGORI & BIAYA ADMINISTRASI
-        // ============================================================
-        // ⚠️ ANDA BISA EDIT DATA DI BAWAH INI ⚠️
-        // Format: [nama_sub_kategori, persen_untuk_nonStar, persen_untuk_mall]
-        
-        const dataSubKategori = {
-            fashion: [
-                ["Aksesoris Fashion (Kacamata, Anting, Cincin)", 10.20, 10.20],
-                ["Aksesoris Fashion (Masker)", 8.25, 10.45],
-                ["Aksesoris Fashion (Logam Mulia - Emas/Perak)", 4.25, 3.20],
-                ["Fashion Bayi & Anak", 9.00, 10.20],
-                ["Fashion Muslim (Mukena, Sajadah)", 8.25, 9.95],
-                ["Fashion Muslim (Pakaian Wanita)", 10.00, 11.70],
-                ["Jam Tangan", 9.00, 10.20],
-                ["Koper & Tas Travel (Tas Duffel)", 10.00, 11.70],
-                ["Koper & Tas Travel (Aksesoris Travel)", 9.00, 10.20],
-                ["Pakaian Pria (Kaos Kaki)", 10.00, 10.20],
-                ["Pakaian Pria (Atasan - Kemeja/Kaos)", 8.25, 9.95],
-                ["Pakaian Wanita (Kaos Kaki)", 10.00, 10.20],
-                ["Pakaian Wanita (Atasan)", 8.25, 9.95],
-                ["Sepatu Pria & Wanita", 9.00, 10.20],
-                ["Tas Pria & Wanita", 9.00, 10.20]
-            ],
-            fmcg: [
-                ["Ibu & Bayi (Mainan Inflatable, Perosotan)", 10.00, 11.70],
-                ["Ibu & Bayi (Perlengkapan Bayi Umum)", 9.00, 10.20],
-                ["Ibu & Bayi (Susu Formula)", 6.75, 7.20],
-                ["Kesehatan (Hand Sanitizer)", 10.00, 10.20],
-                ["Kesehatan (Obat-obatan Umum)", 9.50, 7.20],
-                ["Kesehatan (Kondom & Kesehatan Seksual)", 9.00, 7.70],
-                ["Makanan & Minuman (Makanan Ringan)", 10.00, 10.20],
-                ["Makanan & Minuman (Minuman)", 10.00, 10.20],
-                ["Makanan & Minuman (Makanan Instan)", 9.00, 7.20],
-                ["Perawatan & Kecantikan (Alat Kecantikan)", 8.25, 9.95],
-                ["Perawatan & Kecantikan (Kosmetik)", 8.25, 9.95]
-            ],
-            elektronik: [
-                ["Audio (Earphone, Headphone, Headset)", 6.75, 7.20],
-                ["Audio (Speaker, Home Theater)", 9.00, 7.20],
-                ["Elektronik (Peralatan Rumah Tangga Besar)", 6.50, 7.20],
-                ["Handphone & Aksesoris (Aksesoris HP)", 10.00, 10.20],
-                ["Handphone (Handphone)", 5.25, 4.70],
-                ["Tablet", 5.25, 4.70],
-                ["Kamera & Drone", 9.50, 10.20],
-                ["Komputer & Aksesoris", 6.75, 10.20],
-                ["Gaming & Konsol", 9.50, 7.70]
-            ],
-            lifestyle: [
-                ["Buku & Alat Tulis", 9.00, 10.20],
-                ["Hewan Peliharaan", 9.50, 10.20],
-                ["Hobi & Koleksi", 9.50, 10.20],
-                ["Mobil & Sepeda Motor", 8.25, 10.20],
-                ["Olahraga & Outdoor", 10.00, 10.20],
-                ["Perlengkapan Rumah", 10.00, 10.20]
-            ],
-            lainnya: [
-                ["Tiket & Voucher", 9.50, 10.20],
-                ["Layanan (Listrik, Air, Pulsa)", 9.50, 10.20],
-                ["E-Money", 8.25, 9.95]
-            ]
+        // ==================== DATA KATEGORI SHOPEE ====================
+        const kategoriData = {
+            fashion: {
+                adminFee: 0.102,
+                gratisOngkirBiasa: 0.08,
+                gratisOngkirKhusus: 0
+            },
+            elektronik: {
+                adminFee: 0.08,
+                gratisOngkirBiasa: 0.06,
+                gratisOngkirKhusus: 0
+            },
+            kecantikan: {
+                adminFee: 0.12,
+                gratisOngkirBiasa: 0.08,
+                gratisOngkirKhusus: 0
+            },
+            makanan: {
+                adminFee: 0.07,
+                gratisOngkirBiasa: 0.10,
+                gratisOngkirKhusus: 0
+            },
+            rumahTangga: {
+                adminFee: 0.09,
+                gratisOngkirBiasa: 0.08,
+                gratisOngkirKhusus: 0
+            }
         };
 
-        // Batas maksimal biaya
+        const adminFeeMall = 0.10;
+        
         const MAX_GRATIS_ONGKIR_BIASA = 40000;
         const MAX_GRATIS_ONGKIR_KHUSUS = 60000;
         const MAX_PROMO_XTRA = 60000;
         const MAX_PROMO_XTRA_PLUS = 80000;
         const MAX_LIVE_XTRA = 20000;
 
-        // DOM Elements
-        const kategoriSelect = document.getElementById('kategori');
-        const subKategoriSelect = document.getElementById('subKategori');
-        const tipeTokoSelect = document.getElementById('tipeToko');
-        const biayaAdminText = document.getElementById('biayaAdminText');
-
-        // ============================================================
-        // FUNGSI UPDATE SUB KATEGORI (otomatis berubah sesuai kategori)
-        // ============================================================
-        function updateSubKategori() {
-            const kategori = kategoriSelect.value;
-            const subKategoriList = dataSubKategori[kategori] || [];
-            
-            // Kosongkan dropdown
-            subKategoriSelect.innerHTML = '<option value="">-- Pilih Sub Kategori --</option>';
-            
-            // Isi dengan data baru
-            subKategoriList.forEach(sub => {
-                const option = document.createElement('option');
-                option.value = sub[0];  // nama sub kategori sebagai value
-                option.textContent = `${sub[0]} (${sub[1]}% untuk Non-Star, ${sub[2]}% untuk Mall)`;
-                option.setAttribute('data-persen-nonstar', sub[1]);
-                option.setAttribute('data-persen-mall', sub[2]);
-                subKategoriSelect.appendChild(option);
-            });
-            
-            // Hitung ulang biaya admin
-            hitungBiayaAdmin();
+        function formatRupiah(angka) {
+            if (isNaN(angka) || angka === null) return 'Rp 0';
+            const bilangan = Math.round(angka);
+            return 'Rp ' + bilangan.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
         }
 
-        // ============================================================
-        // FUNGSI HITUNG BIAYA ADMIN (otomatis)
-        // ============================================================
-        function hitungBiayaAdmin() {
-            const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
-            const tipeToko = tipeTokoSelect.value;
-            const selectedOption = subKategoriSelect.options[subKategoriSelect.selectedIndex];
-            
-            if (!selectedOption || !selectedOption.value || hargaNett <= 0) {
-                biayaAdminText.innerText = `0% → Rp 0`;
-                return 0;
-            }
-            
-            let persen = 0;
-            if (tipeToko === 'mall') {
-                persen = parseFloat(selectedOption.getAttribute('data-persen-mall')) || 0;
-            } else {
-                persen = parseFloat(selectedOption.getAttribute('data-persen-nonstar')) || 0;
-            }
-            
-            const biayaAdminRp = (persen / 100) * hargaNett;
-            biayaAdminText.innerText = `${persen}% → ${formatRupiah(biayaAdminRp)}`;
-            
-            return biayaAdminRp;
-        }
-
-        // ============================================================
-        // FUNGSI GET NUMBER & FORMAT RUPIAH
-        // ============================================================
         function getNumber(id) {
             const val = document.getElementById(id).value;
             return parseFloat(val) || 0;
@@ -679,21 +531,13 @@
             return document.getElementById(id).value;
         }
 
-        function formatRupiah(angka) {
-            if (isNaN(angka) || angka === null) return 'Rp 0';
-            const bilangan = Math.round(angka);
-            return 'Rp ' + bilangan.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-        }
-
-        // ============================================================
-        // FUNGSI UTAMA PERHITUNGAN
-        // ============================================================
         function hitungSemua() {
-            // Ambil semua input user
             const hargaJual = getNumber('hargaJual');
             const diskon = getNumber('diskon');
             const voucher = getNumber('voucher');
             const tipeToko = getSelect('tipeToko');
+            const kategori = getSelect('kategori');
+            const basketSize = getNumber('basketSize');
             const promoXTRA = getSelect('promoXTRA');
             const promoXTRAplus = getSelect('promoXTRAplus');
             const liveXTRA = getSelect('liveXTRA');
@@ -711,46 +555,45 @@
             const biayaOperasional = getNumber('biayaOperasional');
             const biayaLain = getNumber('biayaLain');
             const pajakRate = getNumber('pajakRate') / 100;
-            
-            // INPUT MANUAL untuk biaya yang belum otomatis
-            const biayaPembayaranManual = getNumber('biayaPembayaranManual');
-            const biayaProsesManual = getNumber('biayaProsesManual');
-            const gratisOngkirBiasaManual = getNumber('gratisOngkirBiasaManual');
-            const gratisOngkirKhususManual = getNumber('gratisOngkirKhususManual');
-            
-            // 1. Harga Jual Nett
+
             const hargaNett = hargaJual - diskon - voucher;
             document.getElementById('hargaNett').innerText = formatRupiah(hargaNett);
+
+            const katData = kategoriData[kategori];
             
-            // 2. Biaya Administrasi (otomatis dari pilihan sub kategori)
-            let biayaAdmin = hitungBiayaAdmin();
-            if (isNaN(biayaAdmin)) biayaAdmin = 0;
+            let biayaAdmin = 0;
+            if (tipeToko === 'mall') {
+                biayaAdmin = adminFeeMall * hargaNett;
+            } else {
+                biayaAdmin = katData.adminFee * hargaNett;
+            }
             
-            // 3. Biaya Pembayaran (input manual)
-            let biayaPembayaran = biayaPembayaranManual;
+            let biayaPembayaran = 0;
+            if (tipeToko === 'mall') {
+                biayaPembayaran = 0.018 * hargaNett;
+                if (biayaPembayaran > 50000) biayaPembayaran = 50000;
+            }
             
-            // 4. Biaya Proses Pesanan (input manual)
-            let biayaProses = biayaProsesManual;
+            let biayaProses = 1250 / basketSize;
             
-            // 5. Gratis Ongkir (input manual)
-            let gratisOngkirBiasa = gratisOngkirBiasaManual;
-            let gratisOngkirKhusus = gratisOngkirKhususManual;
+            let gratisOngkirBiasa = katData.gratisOngkirBiasa * hargaNett;
+            if (gratisOngkirBiasa > MAX_GRATIS_ONGKIR_BIASA) gratisOngkirBiasa = MAX_GRATIS_ONGKIR_BIASA;
             
-            // 6. Promo XTRA
+            let gratisOngkirKhusus = katData.gratisOngkirKhusus * hargaNett;
+            if (gratisOngkirKhusus > MAX_GRATIS_ONGKIR_KHUSUS) gratisOngkirKhusus = MAX_GRATIS_ONGKIR_KHUSUS;
+            
             let biayaPromoXTRA = 0;
             if (promoXTRA === 'Yes') {
                 biayaPromoXTRA = 0.045 * hargaNett;
                 if (biayaPromoXTRA > MAX_PROMO_XTRA) biayaPromoXTRA = MAX_PROMO_XTRA;
             }
             
-            // 7. Promo XTRA+
             let biayaPromoXTRAplus = 0;
             if (promoXTRAplus === 'Yes') {
                 biayaPromoXTRAplus = 0.065 * hargaNett;
                 if (biayaPromoXTRAplus > MAX_PROMO_XTRA_PLUS) biayaPromoXTRAplus = MAX_PROMO_XTRA_PLUS;
             }
             
-            // 8. Live XTRA
             let biayaLiveXTRA = 0;
             if (liveXTRA === 'Yes') {
                 biayaLiveXTRA = 0.03 * hargaNett;
@@ -760,7 +603,6 @@
                 if (biayaLiveXTRA > MAX_LIVE_XTRA) biayaLiveXTRA = MAX_LIVE_XTRA;
             }
             
-            // 9. SPayLater
             let biayaSPayLater = 0;
             if (spayLater === 'Tenor3') {
                 biayaSPayLater = 0.025 * hargaNett;
@@ -768,57 +610,41 @@
                 biayaSPayLater = 0.04 * hargaNett;
             }
             
-            // 10. Hemat Biaya Kirim
             let biayaHematKirim = (hematKirim === 'Yes') ? 350 : 0;
-            
-            // 11. Asuransi Pengiriman
             let biayaAsuransi = (asuransi === 'Yes') ? 0.005 * hargaNett : 0;
-            
-            // 12. Produk PO
             let biayaPO = (produkPO === 'Yes3') ? 0.03 * hargaNett : 0;
             
-            // 13. Total Biaya Shopee (SUM SEMUA)
-            const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses + 
-                                     gratisOngkirBiasa + gratisOngkirKhusus + 
-                                     biayaPromoXTRA + biayaPromoXTRAplus + biayaLiveXTRA + 
-                                     biayaSPayLater + biayaHematKirim + biayaAsuransi + biayaPO;
+            const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses + gratisOngkirBiasa + 
+                                     gratisOngkirKhusus + biayaPromoXTRA + biayaPromoXTRAplus + 
+                                     biayaLiveXTRA + biayaSPayLater + biayaHematKirim + biayaAsuransi + biayaPO;
             document.getElementById('totalBiayaShopee').innerText = formatRupiah(totalBiayaShopee);
             
-            // 14. Dana Dicairkan
             const danaDicairkan = hargaNett - totalBiayaShopee;
             document.getElementById('danaDicairkan').innerText = formatRupiah(danaDicairkan);
             
-            // 15. COGS
             const totalCOGS = hpp + biayaPenanganan;
             document.getElementById('totalCOGS').innerText = formatRupiah(totalCOGS);
             
-            // 16. Profit Kotor
             const profitKotor = danaDicairkan - totalCOGS;
             document.getElementById('profitKotor').innerText = formatRupiah(profitKotor);
             
-            // 17. Biaya Iklan dari ROAS
             let biayaIklan = 0;
             if (roas > 0) {
                 biayaIklan = (1 / roas) * hargaNett;
             }
             
-            // 18. Komisi Afiliasi
             const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
             
-            // 19. Total Pengeluaran
             const totalPengeluaran = biayaIklan + biayaIklanLain + biayaKomisiAfiliasi + promosiLuar + 
                                      biayaPacking + biayaOperasional + biayaLain;
             document.getElementById('totalBiaya').innerText = formatRupiah(totalPengeluaran);
             
-            // 20. Profit Sebelum Pajak
             const profitSebelumPajak = profitKotor - totalPengeluaran;
             document.getElementById('profitSebelumPajak').innerText = formatRupiah(profitSebelumPajak);
             
-            // 21. Pajak
             const pajak = pajakRate * hargaNett;
             document.getElementById('pajak').innerText = formatRupiah(pajak);
             
-            // 22. Profit Bersih
             const profitBersih = profitSebelumPajak - pajak;
             const profitBersihEl = document.getElementById('profitBersih');
             const profitBersihBox = document.getElementById('profitBersihBox');
@@ -827,50 +653,37 @@
             
             if (profitBersih >= 0) {
                 profitBersihEl.className = 'result-value profit-positive';
+                profitBersihEl.style.fontSize = '1.3rem';
                 profitBersihBox.style.background = '#d1fae5';
             } else {
                 profitBersihEl.className = 'result-value profit-negative';
+                profitBersihEl.style.fontSize = '1.3rem';
                 profitBersihBox.style.background = '#fee2e2';
             }
         }
 
-        // ============================================================
-        // EVENT LISTENERS
-        // ============================================================
-        kategoriSelect.addEventListener('change', updateSubKategori);
-        tipeTokoSelect.addEventListener('change', () => {
-            hitungBiayaAdmin();
-            hitungSemua();
-        });
-        subKategoriSelect.addEventListener('change', () => {
-            hitungBiayaAdmin();
-            hitungSemua();
-        });
+        const inputs = ['hargaJual', 'diskon', 'voucher', 'basketSize', 'hpp', 'biayaPenanganan', 
+                        'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 
+                        'biayaOperasional', 'biayaLain', 'pajakRate'];
         
-        // Daftar semua input yang perlu trigger hitungSemua
-        const allInputs = ['hargaJual', 'diskon', 'voucher', 'biayaPembayaranManual', 'biayaProsesManual', 
-                           'gratisOngkirBiasaManual', 'gratisOngkirKhususManual', 'hpp', 'biayaPenanganan', 
-                           'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 
-                           'biayaOperasional', 'biayaLain', 'pajakRate'];
-        
-        allInputs.forEach(id => {
+        inputs.forEach(id => {
             const el = document.getElementById(id);
             if (el) {
                 el.addEventListener('input', hitungSemua);
                 el.addEventListener('change', hitungSemua);
             }
         });
+
+        const selects = ['tipeToko', 'kategori', 'promoXTRA', 'promoXTRAplus', 'liveXTRA', 
+                         'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
         
-        const toggleSelects = ['promoXTRA', 'promoXTRAplus', 'liveXTRA', 'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
-        toggleSelects.forEach(id => {
+        selects.forEach(id => {
             const el = document.getElementById(id);
             if (el) {
                 el.addEventListener('change', hitungSemua);
             }
         });
-        
-        // Inisialisasi
-        updateSubKategori();
+
         hitungSemua();
     </script>
 </body>

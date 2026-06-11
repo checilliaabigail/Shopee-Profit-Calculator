@@ -1,690 +1,1008 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Kalkulator Cuan Shopee | Cuan Berkah Digital</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Profit Shopee</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
+    :root {
+      --brand: #EE4D2D;
+      --brand-light: #fff4f0;
+      --bg: #f5f5f5;
+      --surface: #ffffff;
+      --border: #e8e8e8;
+      --text: #222222;
+      --muted: #666666;
+      --hint: #999999;
+      --green-bg: #f0fdf4;
+      --green-border: #86efac;
+      --green-text: #166534;
+      --red-bg: #fff1f2;
+      --red-border: #fca5a5;
+      --red-text: #991b1b;
+      --yellow-bg: #fffbeb;
+      --yellow-border: #fcd34d;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 24px 16px 48px;
+    }
 
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-            color: white;
-        }
+    .page-header {
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
 
-        .header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-        }
+    .page-header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-        .header p {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
+    .page-header p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
 
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
 
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+    .card-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fafafa;
+    }
 
-        .form-group label {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #4a5568;
-            margin-bottom: 5px;
-        }
+    .card-header h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: all 0.2s;
-        }
+    .card-body {
+      padding: 16px 20px;
+    }
 
-        .form-group input:focus, .form-group select:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
-        }
+    /* ROWS */
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-        .input-group {
-            display: flex;
-            align-items: center;
-        }
+    .row:last-child { border-bottom: none; }
 
-        .input-group span {
-            background: #f7fafc;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-right: none;
-            border-radius: 10px 0 0 10px;
-            font-weight: 600;
-            color: #4a5568;
-        }
+    .row-label {
+      font-size: 13px;
+      color: var(--text);
+      flex: 1;
+      line-height: 1.4;
+    }
 
-        .input-group input {
-            border-radius: 0 10px 10px 0;
-        }
+    .row-hint {
+      font-size: 11px;
+      color: var(--hint);
+      margin-top: 2px;
+    }
 
-        .row-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
+    .row-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
 
-        .result-box {
-            background: #f7fafc;
-            border-radius: 12px;
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .row-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      min-width: 100px;
+      text-align: right;
+    }
 
-        .result-label {
-            font-size: 0.9rem;
-            color: #4a5568;
-        }
+    /* INPUTS */
+    input[type="number"], input[type="text"], select {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 6px 10px;
+      font-size: 13px;
+      color: var(--text);
+      background: #fafafa;
+      outline: none;
+      transition: border-color 0.15s;
+    }
 
-        .result-value {
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
+    input[type="number"]:focus, input[type="text"]:focus, select:focus {
+      border-color: var(--brand);
+      background: #fff;
+    }
 
-        .profit-positive {
-            color: #10b981;
-        }
+    input[type="number"] { width: 120px; text-align: right; }
+    input[type="number"].w-sm { width: 72px; }
+    select { min-width: 80px; }
+    select.wide { min-width: 180px; }
 
-        .profit-negative {
-            color: #ef4444;
-        }
+    .prefix {
+      font-size: 12px;
+      color: var(--muted);
+    }
 
-        .separator {
-            height: 1px;
-            background: #e2e8f0;
-            margin: 15px 0;
-        }
+    /* BADGES */
+    .badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 20px;
+      background: #f0f0f0;
+      color: var(--muted);
+    }
 
-        .toggle-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
+    .badge-blue {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
 
-        .toggle-item {
-            flex: 1;
-            min-width: 100px;
-        }
+    /* TOTALS */
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: #fafafa;
+      border-radius: var(--radius-sm);
+      margin-top: 10px;
+      border: 1px solid var(--border);
+    }
 
-        .toggle-item label {
-            display: block;
-            font-size: 0.75rem;
-            margin-bottom: 3px;
-            color: #718096;
-        }
+    .total-row + .total-row { margin-top: 6px; }
 
-        .toggle-item select {
-            width: 100%;
-            padding: 8px;
-            font-size: 0.85rem;
-            border-radius: 8px;
-        }
+    .total-row .tl { font-size: 13px; font-weight: 600; color: var(--text); }
+    .total-row .tv { font-size: 14px; font-weight: 700; color: var(--text); }
 
-        .badge {
-            display: inline-block;
-            background: #e2e8f0;
-            padding: 2px 8px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            margin-left: 8px;
-        }
+    /* RESULTS */
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 12px;
+    }
 
-        footer {
-            text-align: center;
-            color: white;
-            font-size: 0.75rem;
-            margin-top: 20px;
-            opacity: 0.8;
-        }
+    .result-item {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
 
-        @media (max-width: 600px) {
-            .row-2 {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            .toggle-group {
-                flex-direction: column;
-            }
-            .card {
-                padding: 15px;
-            }
-        }
-    </style>
+    .result-item .ri-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .result-item .ri-value {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .profit-final {
+      margin-top: 8px;
+      padding: 18px 20px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profit-final .pf-label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .profit-final .pf-value {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .profit-final.positive {
+      background: var(--green-bg);
+      border-color: var(--green-border);
+    }
+
+    .profit-final.positive .pf-label,
+    .profit-final.positive .pf-value {
+      color: var(--green-text);
+    }
+
+    .profit-final.negative {
+      background: var(--red-bg);
+      border-color: var(--red-border);
+    }
+
+    .profit-final.negative .pf-label,
+    .profit-final.negative .pf-value {
+      color: var(--red-text);
+    }
+
+    .profit-final.neutral {
+      background: #fafafa;
+    }
+
+    /* SECTION DIVIDER */
+    .section-div {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--hint);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 10px 0 4px;
+    }
+
+    /* LINKS */
+    a.doc-link {
+      font-size: 11px;
+      color: var(--brand);
+      text-decoration: none;
+      margin-left: 4px;
+    }
+    a.doc-link:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      max-width: 680px;
+      margin: 32px auto 0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--hint);
+    }
+
+    @media (max-width: 480px) {
+      .result-grid { grid-template-columns: 1fr; }
+      input[type="number"] { width: 100px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🛍️ KALKULATOR CUAN SHOPEE</h1>
-            <p>Cuan Berkah Digital | Private Coaching • Ads Management • Affiliator Agency</p>
-        </div>
 
-        <div class="card">
-            <div class="card-title">
-                <span>📦</span> HARGA JUAL
-            </div>
-            <div class="form-group">
-                <label>Nama Produk</label>
-                <input type="text" id="productName" placeholder="Contoh: Kacamata Hitam" value="Kacamata Hitam">
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Harga Jual Produk</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="hargaJual" value="80000" step="1000">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Diskon</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="diskon" value="0" step="1000">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Voucher (dari pembeli)</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="voucher" value="500" step="500">
-                </div>
-            </div>
-            <div class="separator"></div>
-            <div class="result-box" style="background: #e0e7ff;">
-                <span class="result-label">💰 Harga Jual Nett</span>
-                <span class="result-value" id="hargaNett">Rp 0</span>
-            </div>
-        </div>
+<div class="page-header">
+  <h1>🛍️ Kalkulator Profit Shopee</h1>
+  <p>Isi field input, semua hasil dihitung otomatis secara real-time.</p>
+</div>
 
-        <div class="card">
-            <div class="card-title">
-                <span>🏪</span> BIAYA SHOPEE
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Tipe Toko</label>
-                    <select id="tipeToko">
-                        <option value="nonMall">Non-Star / Star / Star+</option>
-                        <option value="mall">Shopee Mall</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Kategori Produk</label>
-                    <select id="kategori">
-                        <option value="fashion">Fashion</option>
-                        <option value="elektronik">Elektronik</option>
-                        <option value="kecantikan">Kecantikan</option>
-                        <option value="makanan">Makanan & Minuman</option>
-                        <option value="rumahTangga">Rumah Tangga</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Rata-rata Basket Size <span class="badge">pcs/order</span></label>
-                <input type="number" id="basketSize" value="1" step="0.5" min="0.5">
-            </div>
-            
-            <div class="toggle-group">
-                <div class="toggle-item">
-                    <label>Promo XTRA</label>
-                    <select id="promoXTRA">
-                        <option value="No">Tidak</option>
-                        <option value="Yes">Ya</option>
-                    </select>
-                </div>
-                <div class="toggle-item">
-                    <label>Promo XTRA+</label>
-                    <select id="promoXTRAplus">
-                        <option value="No">Tidak</option>
-                        <option value="Yes">Ya</option>
-                    </select>
-                </div>
-                <div class="toggle-item">
-                    <label>Live XTRA</label>
-                    <select id="liveXTRA">
-                        <option value="No">Tidak</option>
-                        <option value="Yes">Ya</option>
-                        <option value="YesPromo">Ya (+ Promo Xtra/+)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="toggle-group">
-                <div class="toggle-item">
-                    <label>SPayLater XTRA 0%</label>
-                    <select id="spayLater">
-                        <option value="No">Tidak</option>
-                        <option value="Tenor3">Tenor 3 bulan</option>
-                        <option value="Tenor6">Tenor 6 bulan</option>
-                    </select>
-                </div>
-                <div class="toggle-item">
-                    <label>Hemat Biaya Kirim</label>
-                    <select id="hematKirim">
-                        <option value="No">Tidak</option>
-                        <option value="Yes">Ya</option>
-                    </select>
-                </div>
-                <div class="toggle-item">
-                    <label>Asuransi Pengiriman</label>
-                    <select id="asuransi">
-                        <option value="No">Tidak</option>
-                        <option value="Yes">Ya</option>
-                    </select>
-                </div>
-                <div class="toggle-item">
-                    <label>Produk PO</label>
-                    <select id="produkPO">
-                        <option value="No">Tidak</option>
-                        <option value="Yes3">Ya (3%)</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="separator"></div>
-            <div class="result-box" style="background: #fef3c7;">
-                <span class="result-label">📊 Total Biaya Shopee</span>
-                <span class="result-value" id="totalBiayaShopee">Rp 0</span>
-            </div>
-        </div>
+<div class="container">
 
-        <div class="card">
-            <div class="card-title">
-                <span>💰</span> DANA YANG DICAIRKAN
-            </div>
-            <div class="result-box" style="background: #d1fae5;">
-                <span class="result-label">💵 Dana Dicairkan</span>
-                <span class="result-value" id="danaDicairkan">Rp 0</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-title">
-                <span>📦</span> COGS (Modal)
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Harga Pokok Produk (HPP)</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="hpp" value="60000" step="5000">
-                    </div>
-                    <small style="color: #718096;">Modal beli barang</small>
-                </div>
-                <div class="form-group">
-                    <label>Biaya Penanganan Khusus</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="biayaPenanganan" value="0" step="1000">
-                    </div>
-                    <small style="color: #718096;">Kemasan khusus, dll.</small>
-                </div>
-            </div>
-            <div class="separator"></div>
-            <div class="result-box" style="background: #fed7aa;">
-                <span class="result-label">📦 Total COGS</span>
-                <span class="result-value" id="totalCOGS">Rp 0</span>
-            </div>
-            <div class="result-box" style="background: #c7d2fe;">
-                <span class="result-label">📈 PROFIT KOTOR</span>
-                <span class="result-value" id="profitKotor">Rp 0</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-title">
-                <span>💸</span> PENGELUARAN
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>ROAS (Target)</label>
-                    <input type="number" id="roas" value="10" step="1">
-                    <small>Contoh: 10 berarti 10x</small>
-                </div>
-                <div class="form-group">
-                    <label>Biaya Iklan Shopee Lain</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="biayaIklanLain" value="0" step="5000">
-                    </div>
-                </div>
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Komisi Afiliasi</label>
-                    <div class="input-group">
-                        <input type="number" id="komisiAfiliasi" value="0" step="1" style="border-radius: 10px 0 0 10px;">
-                        <span style="border-radius: 0 10px 10px 0;">%</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Promosi di Luar Shopee</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="promosiLuar" value="0" step="5000">
-                    </div>
-                </div>
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Biaya Packing</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="biayaPacking" value="3000" step="500">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Biaya Operasional</label>
-                    <div class="input-group">
-                        <span>Rp</span>
-                        <input type="number" id="biayaOperasional" value="3000" step="500">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Biaya Lain-lain</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="biayaLain" value="0" step="1000">
-                </div>
-            </div>
-            <div class="separator"></div>
-            <div class="result-box" style="background: #fecaca;">
-                <span class="result-label">💸 Total Biaya</span>
-                <span class="result-value" id="totalBiaya">Rp 0</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-title">
-                <span>📊</span> HASIL AKHIR
-            </div>
-            <div class="result-box" style="background: #e0e7ff;">
-                <span class="result-label">📉 Profit Bersih Sebelum Pajak</span>
-                <span class="result-value" id="profitSebelumPajak">Rp 0</span>
-            </div>
-            <div class="row-2">
-                <div class="form-group">
-                    <label>Rate Pajak UMKM</label>
-                    <div class="input-group">
-                        <input type="number" id="pajakRate" value="0.5" step="0.1" style="border-radius: 10px 0 0 10px;">
-                        <span style="border-radius: 0 10px 10px 0;">%</span>
-                    </div>
-                    <small>0.5% dari omset (harga jual nett)</small>
-                </div>
-            </div>
-            <div class="result-box" style="background: #fee2e2;">
-                <span class="result-label">🧾 Pajak (0.5% x Omset)</span>
-                <span class="result-value" id="pajak">Rp 0</span>
-            </div>
-            <div class="separator"></div>
-            <div class="result-box" id="profitBersihBox" style="background: #d1fae5; font-size: 1.2rem;">
-                <span class="result-label" style="font-weight: bold;">✅ PROFIT BERSIH</span>
-                <span class="result-value" id="profitBersih" style="font-size: 1.3rem;">Rp 0</span>
-            </div>
-        </div>
-
-        <footer>
-            Hak Cipta © Cuan Berkah Digital • Kalkulator ini untuk keperluan simulasi • Data estimasi dapat berbeda dengan kondisi aktual
-        </footer>
+  <!-- INFO PRODUK -->
+  <div class="card">
+    <div class="card-header">
+      <span>📦</span>
+      <h2>Info Produk</h2>
     </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="row-label">Nama produk</div>
+        <div class="row-right">
+          <input type="text" id="nama_produk" placeholder="Contoh: Kacamata Hitam" style="width:180px;text-align:left">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Tipe toko</div>
+        <div class="row-right">
+          <select id="tipe_toko" onchange="hitung()">
+            <option value="reguler">Non-Star / Star / Star+</option>
+            <option value="mall">Shopee Mall</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">
+          Kategori produk
+          <a class="doc-link" href="https://seller.shopee.co.id/edu/article/15965" target="_blank">📄 Lihat biaya</a>
+        </div>
+        <div class="row-right">
+          <select id="kategori_utama" class="wide" onchange="updateSubKategori()">
+            <option value="fashion">Fashion</option>
+            <option value="fmcg">FMCG (Ibu & Bayi, Kesehatan, Makanan)</option>
+            <option value="elektronik">Elektronik</option>
+            <option value="lifestyle">Lifestyle</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sub kategori</div>
+        <div class="row-right">
+          <select id="sub_kategori" class="wide" onchange="hitung()">
+            <option value="">-- Pilih sub kategori --</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        // ==================== DATA KATEGORI SHOPEE ====================
-        const kategoriData = {
-            fashion: {
-                adminFee: 0.102,
-                gratisOngkirBiasa: 0.08,
-                gratisOngkirKhusus: 0
-            },
-            elektronik: {
-                adminFee: 0.08,
-                gratisOngkirBiasa: 0.06,
-                gratisOngkirKhusus: 0
-            },
-            kecantikan: {
-                adminFee: 0.12,
-                gratisOngkirBiasa: 0.08,
-                gratisOngkirKhusus: 0
-            },
-            makanan: {
-                adminFee: 0.07,
-                gratisOngkirBiasa: 0.10,
-                gratisOngkirKhusus: 0
-            },
-            rumahTangga: {
-                adminFee: 0.09,
-                gratisOngkirBiasa: 0.08,
-                gratisOngkirKhusus: 0
-            }
-        };
+  <!-- HARGA JUAL -->
+  <div class="card">
+    <div class="card-header">
+      <span>💰</span>
+      <h2>Harga Jual</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="row-label">Harga jual produk</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="harga_jual" value="80000" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Diskon</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="diskon" value="0" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Voucher (dari pembeli)</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="voucher" value="500" oninput="hitung()">
+        </div>
+      </div>
+      <div class="total-row">
+        <span class="tl">Harga Jual Nett</span>
+        <span class="tv" id="out_harga_nett">Rp 79.500</span>
+      </div>
+    </div>
+  </div>
 
-        const adminFeeMall = 0.10;
-        
-        const MAX_GRATIS_ONGKIR_BIASA = 40000;
-        const MAX_GRATIS_ONGKIR_KHUSUS = 60000;
-        const MAX_PROMO_XTRA = 60000;
-        const MAX_PROMO_XTRA_PLUS = 80000;
-        const MAX_LIVE_XTRA = 20000;
+  <!-- BIAYA SHOPEE -->
+  <div class="card">
+    <div class="card-header">
+      <span>🏪</span>
+      <h2>Biaya Shopee</h2>
+    </div>
+    <div class="card-body">
 
-        function formatRupiah(angka) {
-            if (isNaN(angka) || angka === null) return 'Rp 0';
-            const bilangan = Math.round(angka);
-            return 'Rp ' + bilangan.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-        }
+      <div class="row">
+        <div class="row-label">
+          Biaya administrasi
+          <span id="badge_admin" class="badge">–%</span>
+        </div>
+        <div class="row-right">
+          <span class="row-value" id="out_admin">Rp –</span>
+        </div>
+      </div>
 
-        function getNumber(id) {
-            const val = document.getElementById(id).value;
-            return parseFloat(val) || 0;
-        }
+      <div class="row">
+        <div class="row-label">
+          Biaya pembayaran
+          <span class="badge-blue badge">otomatis</span>
+        </div>
+        <div class="row-right">
+          <span class="row-value" id="out_pembayaran">Rp 1.431</span>
+        </div>
+      </div>
 
-        function getSelect(id) {
-            return document.getElementById(id).value;
-        }
+      <div class="row">
+        <div class="row-label">
+          Biaya proses pesanan
+          <div class="row-hint">Rp 1.250 × rata-rata pcs/order</div>
+        </div>
+        <div class="row-right">
+          <input type="number" id="basket" value="1" min="1" class="w-sm" oninput="hitung()">
+          <span class="prefix">pcs</span>
+          <span class="row-value" id="out_proses">Rp 1.250</span>
+        </div>
+      </div>
 
-        function hitungSemua() {
-            const hargaJual = getNumber('hargaJual');
-            const diskon = getNumber('diskon');
-            const voucher = getNumber('voucher');
-            const tipeToko = getSelect('tipeToko');
-            const kategori = getSelect('kategori');
-            const basketSize = getNumber('basketSize');
-            const promoXTRA = getSelect('promoXTRA');
-            const promoXTRAplus = getSelect('promoXTRAplus');
-            const liveXTRA = getSelect('liveXTRA');
-            const spayLater = getSelect('spayLater');
-            const hematKirim = getSelect('hematKirim');
-            const asuransi = getSelect('asuransi');
-            const produkPO = getSelect('produkPO');
-            const hpp = getNumber('hpp');
-            const biayaPenanganan = getNumber('biayaPenanganan');
-            const roas = getNumber('roas');
-            const biayaIklanLain = getNumber('biayaIklanLain');
-            const komisiAfiliasiPersen = getNumber('komisiAfiliasi');
-            const promosiLuar = getNumber('promosiLuar');
-            const biayaPacking = getNumber('biayaPacking');
-            const biayaOperasional = getNumber('biayaOperasional');
-            const biayaLain = getNumber('biayaLain');
-            const pajakRate = getNumber('pajakRate') / 100;
+      <div class="section-div">Gratis Ongkir XTRA
+        <a class="doc-link" href="https://seller.shopee.co.id/edu/article/24877" target="_blank">📄 Lihat biaya</a>
+      </div>
 
-            const hargaNett = hargaJual - diskon - voucher;
-            document.getElementById('hargaNett').innerText = formatRupiah(hargaNett);
+      <div class="row">
+        <div class="row-label">
+          Gratis Ongkir XTRA (ukuran biasa)
+          <span id="badge_ongkir_biasa" class="badge">–%</span>
+        </div>
+        <div class="row-right">
+          <select id="ongkir_biasa_aktif" onchange="hitung()">
+            <option value="1">Ya</option>
+            <option value="0">Tidak</option>
+          </select>
+          <span class="row-value" id="out_ongkir_biasa">Rp –</span>
+        </div>
+      </div>
 
-            const katData = kategoriData[kategori];
-            
-            let biayaAdmin = 0;
-            if (tipeToko === 'mall') {
-                biayaAdmin = adminFeeMall * hargaNett;
-            } else {
-                biayaAdmin = katData.adminFee * hargaNett;
-            }
-            
-            let biayaPembayaran = 0;
-            if (tipeToko === 'mall') {
-                biayaPembayaran = 0.018 * hargaNett;
-                if (biayaPembayaran > 50000) biayaPembayaran = 50000;
-            }
-            
-            let biayaProses = 1250 / basketSize;
-            
-            let gratisOngkirBiasa = katData.gratisOngkirBiasa * hargaNett;
-            if (gratisOngkirBiasa > MAX_GRATIS_ONGKIR_BIASA) gratisOngkirBiasa = MAX_GRATIS_ONGKIR_BIASA;
-            
-            let gratisOngkirKhusus = katData.gratisOngkirKhusus * hargaNett;
-            if (gratisOngkirKhusus > MAX_GRATIS_ONGKIR_KHUSUS) gratisOngkirKhusus = MAX_GRATIS_ONGKIR_KHUSUS;
-            
-            let biayaPromoXTRA = 0;
-            if (promoXTRA === 'Yes') {
-                biayaPromoXTRA = 0.045 * hargaNett;
-                if (biayaPromoXTRA > MAX_PROMO_XTRA) biayaPromoXTRA = MAX_PROMO_XTRA;
-            }
-            
-            let biayaPromoXTRAplus = 0;
-            if (promoXTRAplus === 'Yes') {
-                biayaPromoXTRAplus = 0.065 * hargaNett;
-                if (biayaPromoXTRAplus > MAX_PROMO_XTRA_PLUS) biayaPromoXTRAplus = MAX_PROMO_XTRA_PLUS;
-            }
-            
-            let biayaLiveXTRA = 0;
-            if (liveXTRA === 'Yes') {
-                biayaLiveXTRA = 0.03 * hargaNett;
-                if (biayaLiveXTRA > MAX_LIVE_XTRA) biayaLiveXTRA = MAX_LIVE_XTRA;
-            } else if (liveXTRA === 'YesPromo') {
-                biayaLiveXTRA = 0.02 * hargaNett;
-                if (biayaLiveXTRA > MAX_LIVE_XTRA) biayaLiveXTRA = MAX_LIVE_XTRA;
-            }
-            
-            let biayaSPayLater = 0;
-            if (spayLater === 'Tenor3') {
-                biayaSPayLater = 0.025 * hargaNett;
-            } else if (spayLater === 'Tenor6') {
-                biayaSPayLater = 0.04 * hargaNett;
-            }
-            
-            let biayaHematKirim = (hematKirim === 'Yes') ? 350 : 0;
-            let biayaAsuransi = (asuransi === 'Yes') ? 0.005 * hargaNett : 0;
-            let biayaPO = (produkPO === 'Yes3') ? 0.03 * hargaNett : 0;
-            
-            const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses + gratisOngkirBiasa + 
-                                     gratisOngkirKhusus + biayaPromoXTRA + biayaPromoXTRAplus + 
-                                     biayaLiveXTRA + biayaSPayLater + biayaHematKirim + biayaAsuransi + biayaPO;
-            document.getElementById('totalBiayaShopee').innerText = formatRupiah(totalBiayaShopee);
-            
-            const danaDicairkan = hargaNett - totalBiayaShopee;
-            document.getElementById('danaDicairkan').innerText = formatRupiah(danaDicairkan);
-            
-            const totalCOGS = hpp + biayaPenanganan;
-            document.getElementById('totalCOGS').innerText = formatRupiah(totalCOGS);
-            
-            const profitKotor = danaDicairkan - totalCOGS;
-            document.getElementById('profitKotor').innerText = formatRupiah(profitKotor);
-            
-            let biayaIklan = 0;
-            if (roas > 0) {
-                biayaIklan = (1 / roas) * hargaNett;
-            }
-            
-            const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
-            
-            const totalPengeluaran = biayaIklan + biayaIklanLain + biayaKomisiAfiliasi + promosiLuar + 
-                                     biayaPacking + biayaOperasional + biayaLain;
-            document.getElementById('totalBiaya').innerText = formatRupiah(totalPengeluaran);
-            
-            const profitSebelumPajak = profitKotor - totalPengeluaran;
-            document.getElementById('profitSebelumPajak').innerText = formatRupiah(profitSebelumPajak);
-            
-            const pajak = pajakRate * hargaNett;
-            document.getElementById('pajak').innerText = formatRupiah(pajak);
-            
-            const profitBersih = profitSebelumPajak - pajak;
-            const profitBersihEl = document.getElementById('profitBersih');
-            const profitBersihBox = document.getElementById('profitBersihBox');
-            
-            profitBersihEl.innerText = formatRupiah(profitBersih);
-            
-            if (profitBersih >= 0) {
-                profitBersihEl.className = 'result-value profit-positive';
-                profitBersihEl.style.fontSize = '1.3rem';
-                profitBersihBox.style.background = '#d1fae5';
-            } else {
-                profitBersihEl.className = 'result-value profit-negative';
-                profitBersihEl.style.fontSize = '1.3rem';
-                profitBersihBox.style.background = '#fee2e2';
-            }
-        }
+      <div class="row">
+        <div class="row-label">
+          Gratis Ongkir XTRA (ukuran khusus)
+          <div class="row-hint">Masukkan % sesuai kategori Anda</div>
+        </div>
+        <div class="row-right">
+          <input type="number" id="ongkir_khusus_pct" value="0" min="0" max="100" step="0.1" class="w-sm" oninput="hitung()">
+          <span class="prefix">%</span>
+          <span class="row-value" id="out_ongkir_khusus">Rp 0</span>
+        </div>
+      </div>
 
-        const inputs = ['hargaJual', 'diskon', 'voucher', 'basketSize', 'hpp', 'biayaPenanganan', 
-                        'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 
-                        'biayaOperasional', 'biayaLain', 'pajakRate'];
-        
-        inputs.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.addEventListener('input', hitungSemua);
-                el.addEventListener('change', hitungSemua);
-            }
-        });
+      <div class="section-div">Program Opsional</div>
 
-        const selects = ['tipeToko', 'kategori', 'promoXTRA', 'promoXTRAplus', 'liveXTRA', 
-                         'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
-        
-        selects.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.addEventListener('change', hitungSemua);
-            }
-        });
+      <div class="row">
+        <div class="row-label">Promo XTRA <span class="badge">4.5% maks Rp 60.000</span></div>
+        <div class="row-right">
+          <select id="promo_xtra" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.045">Ya</option>
+          </select>
+          <span class="row-value" id="out_promo_xtra">Rp 0</span>
+        </div>
+      </div>
 
-        hitungSemua();
-    </script>
+      <div class="row">
+        <div class="row-label">Promo XTRA+ <span class="badge">6.5% maks Rp 80.000</span></div>
+        <div class="row-right">
+          <select id="promo_xtraplus" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.065">Ya</option>
+          </select>
+          <span class="row-value" id="out_promo_xtraplus">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Live XTRA <span class="badge">maks Rp 20.000</span></div>
+        <div class="row-right">
+          <select id="live_xtra" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.03">Ya (3%)</option>
+            <option value="0.02">Ya + Promo (2%)</option>
+          </select>
+          <span class="row-value" id="out_live_xtra">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">SPay Later XTRA 0%</div>
+        <div class="row-right">
+          <select id="spay_later" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.025">Tenor 3 bulan (2.5%)</option>
+            <option value="0.04">Tenor 6 bulan (4%)</option>
+          </select>
+          <span class="row-value" id="out_spay_later">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Hemat Biaya Kirim <span class="badge">Rp 350 flat</span></div>
+        <div class="row-right">
+          <select id="hemat_kirim" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="350">Ya</option>
+          </select>
+          <span class="row-value" id="out_hemat_kirim">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Asuransi Pengiriman <span class="badge">0.5%</span></div>
+        <div class="row-right">
+          <select id="asuransi" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.005">Ya</option>
+          </select>
+          <span class="row-value" id="out_asuransi">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Produk PO <span class="badge">3%</span></div>
+        <div class="row-right">
+          <select id="produk_po" onchange="hitung()">
+            <option value="0">Tidak</option>
+            <option value="0.03">Ya</option>
+          </select>
+          <span class="row-value" id="out_produk_po">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Biaya Shopee lain-lain (%)</div>
+        <div class="row-right">
+          <input type="number" id="lain_pct" value="0" min="0" step="0.1" class="w-sm" oninput="hitung()">
+          <span class="prefix">%</span>
+          <span class="row-value" id="out_lain_pct">Rp 0</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Biaya Shopee lain-lain (Rp)</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="lain_rp" value="0" oninput="hitung()">
+        </div>
+      </div>
+
+      <div class="total-row">
+        <span class="tl">Total Biaya Shopee</span>
+        <span class="tv" id="out_total_shopee">Rp –</span>
+      </div>
+      <div class="total-row" style="background:#f0fdf4;border-color:#86efac;">
+        <span class="tl" style="color:#166534">Dana yang Dicairkan</span>
+        <span class="tv" style="color:#166534" id="out_dana_cair">Rp –</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COGS -->
+  <div class="card">
+    <div class="card-header">
+      <span>📦</span>
+      <h2>COGS (Modal)</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="row-label">
+          Harga Pokok Produk (HPP)
+          <div class="row-hint">Modal beli barang</div>
+        </div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="hpp" value="60000" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">
+          Biaya Penanganan Khusus
+          <div class="row-hint">Contoh: kemasan produk print</div>
+        </div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="penanganan" value="0" oninput="hitung()">
+        </div>
+      </div>
+      <div class="total-row">
+        <span class="tl">Total COGS</span>
+        <span class="tv" id="out_total_cogs">Rp –</span>
+      </div>
+      <div class="total-row" style="background:#eff6ff;border-color:#93c5fd;">
+        <span class="tl" style="color:#1e40af">Profit Kotor</span>
+        <span class="tv" style="color:#1e40af" id="out_profit_kotor">Rp –</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PENGELUARAN -->
+  <div class="card">
+    <div class="card-header">
+      <span>💸</span>
+      <h2>Pengeluaran</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="row-label">
+          Biaya Iklan (ROAS)
+          <div class="row-hint">Harga Jual Nett ÷ ROAS</div>
+        </div>
+        <div class="row-right">
+          <input type="number" id="roas" value="10" min="0.1" step="0.1" class="w-sm" oninput="hitung()">
+          <span class="prefix">× ROAS</span>
+          <span class="row-value" id="out_iklan_roas">Rp –</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Biaya Iklan Shopee lain-lain</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="iklan_lain" value="0" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Komisi Afiliasi (%)</div>
+        <div class="row-right">
+          <input type="number" id="afiliasi_pct" value="0" min="0" max="100" step="0.1" class="w-sm" oninput="hitung()">
+          <span class="prefix">%</span>
+          <span class="row-value" id="out_afiliasi">Rp 0</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Biaya Promosi di Luar Shopee</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="promo_luar" value="0" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Biaya Packing</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="packing" value="3000" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Biaya Operasional</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="operasional" value="3000" oninput="hitung()">
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Biaya Lain-lain</div>
+        <div class="row-right">
+          <span class="prefix">Rp</span>
+          <input type="number" id="biaya_lain" value="0" oninput="hitung()">
+        </div>
+      </div>
+      <div class="total-row">
+        <span class="tl">Total Biaya Pengeluaran</span>
+        <span class="tv" id="out_total_pengeluaran">Rp –</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAJAK -->
+  <div class="card">
+    <div class="card-header">
+      <span>🧾</span>
+      <h2>Pajak</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="row-label">
+          Pajak UMKM (% × omset)
+          <div class="row-hint">Default 0.5% dari harga jual produk</div>
+        </div>
+        <div class="row-right">
+          <input type="number" id="pajak_pct" value="0.5" min="0" step="0.1" class="w-sm" oninput="hitung()">
+          <span class="prefix">%</span>
+          <span class="row-value" id="out_pajak">Rp –</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HASIL AKHIR -->
+  <div class="card">
+    <div class="card-header">
+      <span>🏆</span>
+      <h2>Hasil Akhir</h2>
+    </div>
+    <div class="card-body">
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="ri-label">Dana Dicairkan</div>
+          <div class="ri-value" id="res_dana">Rp –</div>
+        </div>
+        <div class="result-item">
+          <div class="ri-label">Total COGS</div>
+          <div class="ri-value" id="res_cogs">Rp –</div>
+        </div>
+        <div class="result-item">
+          <div class="ri-label">Profit Kotor</div>
+          <div class="ri-value" id="res_kotor">Rp –</div>
+        </div>
+        <div class="result-item">
+          <div class="ri-label">Total Pengeluaran</div>
+          <div class="ri-value" id="res_pengeluaran">Rp –</div>
+        </div>
+        <div class="result-item">
+          <div class="ri-label">Profit Sebelum Pajak</div>
+          <div class="ri-value" id="res_sebelum_pajak">Rp –</div>
+        </div>
+        <div class="result-item">
+          <div class="ri-label">Pajak</div>
+          <div class="ri-value" id="res_pajak">Rp –</div>
+        </div>
+      </div>
+      <div class="profit-final neutral" id="profit_final_card">
+        <span class="pf-label" id="profit_final_label">Profit Bersih</span>
+        <span class="pf-value" id="res_profit_bersih">Rp –</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  Kalkulator ini untuk keperluan simulasi. Data estimasi dapat berbeda dengan kondisi aktual Shopee.
+</footer>
+
+<script>
+// ============================================================
+// DATA KATEGORI & BIAYA ADMIN
+// Format: [nama, pct_nonStar, pct_mall]
+// ============================================================
+const DATA_KATEGORI = {
+  fashion: [
+    ["Aksesoris Fashion – Kacamata, Anting, Cincin", 10.20, 10.20],
+    ["Aksesoris Fashion – Masker", 8.25, 10.45],
+    ["Aksesoris Fashion – Logam Mulia (Emas/Perak)", 4.25, 3.20],
+    ["Fashion Bayi & Anak", 9.00, 10.20],
+    ["Fashion Muslim – Mukena, Sajadah", 8.25, 9.95],
+    ["Fashion Muslim – Pakaian Wanita", 10.00, 11.70],
+    ["Jam Tangan", 9.00, 10.20],
+    ["Koper & Tas Travel – Tas Duffel", 10.00, 11.70],
+    ["Koper & Tas Travel – Aksesoris Travel", 9.00, 10.20],
+    ["Pakaian Pria – Kaos Kaki", 10.00, 10.20],
+    ["Pakaian Pria – Atasan (Kemeja/Kaos)", 8.25, 9.95],
+    ["Pakaian Wanita – Kaos Kaki", 10.00, 10.20],
+    ["Pakaian Wanita – Atasan", 8.25, 9.95],
+    ["Sepatu Pria & Wanita", 9.00, 10.20],
+    ["Tas Pria & Wanita", 9.00, 10.20]
+  ],
+  fmcg: [
+    ["Ibu & Bayi – Mainan Inflatable/Perosotan", 10.00, 11.70],
+    ["Ibu & Bayi – Perlengkapan Bayi Umum", 9.00, 10.20],
+    ["Ibu & Bayi – Susu Formula", 6.75, 7.20],
+    ["Kesehatan – Hand Sanitizer", 10.00, 10.20],
+    ["Kesehatan – Obat-obatan Umum", 9.50, 7.20],
+    ["Kesehatan – Kondom & Kesehatan Seksual", 9.00, 7.70],
+    ["Makanan & Minuman – Makanan Ringan", 10.00, 10.20],
+    ["Makanan & Minuman – Minuman", 10.00, 10.20],
+    ["Makanan & Minuman – Makanan Instan", 9.00, 7.20],
+    ["Perawatan & Kecantikan – Alat Kecantikan", 8.25, 9.95],
+    ["Perawatan & Kecantikan – Kosmetik", 8.25, 9.95]
+  ],
+  elektronik: [
+    ["Audio – Earphone/Headphone/Headset", 6.75, 7.20],
+    ["Audio – Speaker/Home Theater", 9.00, 7.20],
+    ["Elektronik – Peralatan Rumah Tangga Besar", 6.50, 7.20],
+    ["Handphone & Aksesoris – Aksesoris HP", 10.00, 10.20],
+    ["Handphone – Handphone", 5.25, 4.70],
+    ["Tablet", 5.25, 4.70],
+    ["Kamera & Drone", 9.50, 10.20],
+    ["Komputer & Aksesoris", 6.75, 10.20],
+    ["Gaming & Konsol", 9.50, 7.70]
+  ],
+  lifestyle: [
+    ["Buku & Alat Tulis", 9.00, 10.20],
+    ["Hewan Peliharaan", 9.50, 10.20],
+    ["Hobi & Koleksi", 9.50, 10.20],
+    ["Mobil & Sepeda Motor (Aksesoris)", 8.25, 10.20],
+    ["Olahraga & Outdoor", 10.00, 10.20],
+    ["Perlengkapan Rumah", 10.00, 10.20]
+  ],
+  lainnya: [
+    ["Tiket & Voucher", 9.50, 10.20],
+    ["Layanan – Listrik, Air, Pulsa", 9.50, 10.20],
+    ["E-Money", 8.25, 9.95]
+  ]
+};
+
+// Rate Gratis Ongkir XTRA ukuran biasa per kategori utama (%)
+// Sesuaikan dengan kebijakan terbaru Shopee
+const ONGKIR_BIASA_RATE = {
+  fashion: 8,
+  fmcg: 8,
+  elektronik: 6,
+  lifestyle: 8,
+  lainnya: 8
+};
+
+const MAX_PROMO_XTRA      = 60000;
+const MAX_PROMO_XTRAPLUS  = 80000;
+const MAX_LIVE_XTRA       = 20000;
+const BIAYA_PEMBAYARAN_FIXED = 1431;
+const BIAYA_PROSES_PER_PCS   = 1250;
+
+// ============================================================
+// FORMAT RUPIAH
+// ============================================================
+function rp(n) {
+  return 'Rp ' + Math.round(n).toLocaleString('id-ID');
+}
+
+function g(id) {
+  return parseFloat(document.getElementById(id).value) || 0;
+}
+
+function sv(id, val) {
+  var el = document.getElementById(id);
+  if (el) el.textContent = val;
+}
+
+// ============================================================
+// UPDATE SUB KATEGORI
+// ============================================================
+function updateSubKategori() {
+  var kat = document.getElementById('kategori_utama').value;
+  var list = DATA_KATEGORI[kat] || [];
+  var sel = document.getElementById('sub_kategori');
+  sel.innerHTML = '<option value="">-- Pilih sub kategori --</option>';
+  list.forEach(function(item) {
+    var opt = document.createElement('option');
+    opt.value = item[0];
+    opt.setAttribute('data-nonstar', item[1]);
+    opt.setAttribute('data-mall', item[2]);
+    opt.textContent = item[0] + ' (' + item[1] + '% / ' + item[2] + '% Mall)';
+    sel.appendChild(opt);
+  });
+  hitung();
+}
+
+// ============================================================
+// FUNGSI HITUNG UTAMA
+// ============================================================
+function hitung() {
+  var hargaJual = g('harga_jual');
+  var diskon    = g('diskon');
+  var voucher   = g('voucher');
+  var hargaNett = hargaJual - diskon - voucher;
+  sv('out_harga_nett', rp(hargaNett));
+
+  // Biaya Admin
+  var tipe = document.getElementById('tipe_toko').value;
+  var selSub = document.getElementById('sub_kategori');
+  var selOpt = selSub.options[selSub.selectedIndex];
+  var adminRate = 0;
+  if (selOpt && selOpt.value) {
+    adminRate = tipe === 'mall'
+      ? parseFloat(selOpt.getAttribute('data-mall')) || 0
+      : parseFloat(selOpt.getAttribute('data-nonstar')) || 0;
+  }
+  var biayaAdmin = hargaNett * (adminRate / 100);
+  document.getElementById('badge_admin').textContent = adminRate + '%';
+  sv('out_admin', rp(biayaAdmin));
+
+  // Biaya Pembayaran
+  sv('out_pembayaran', rp(BIAYA_PEMBAYARAN_FIXED));
+
+  // Biaya Proses Pesanan
+  var basket = Math.max(1, g('basket'));
+  var biayaProses = BIAYA_PROSES_PER_PCS * basket;
+  sv('out_proses', rp(biayaProses));
+
+  // Gratis Ongkir Biasa
+  var kat = document.getElementById('kategori_utama').value;
+  var ongkirBiasaAktif = parseInt(document.getElementById('ongkir_biasa_aktif').value) || 0;
+  var ongkirBiasaRate = ONGKIR_BIASA_RATE[kat] || 8;
+  document.getElementById('badge_ongkir_biasa').textContent = ongkirBiasaRate + '%';
+  var valOngkirBiasa = ongkirBiasaAktif ? hargaNett * (ongkirBiasaRate / 100) : 0;
+  sv('out_ongkir_biasa', rp(valOngkirBiasa));
+
+  // Gratis Ongkir Khusus
+  var ongkirKhususPct = g('ongkir_khusus_pct') / 100;
+  var valOngkirKhusus = hargaNett * ongkirKhususPct;
+  sv('out_ongkir_khusus', rp(valOngkirKhusus));
+
+  // Promo XTRA
+  var promoXtraRate = parseFloat(document.getElementById('promo_xtra').value) || 0;
+  var valPromoXtra = Math.min(hargaNett * promoXtraRate, MAX_PROMO_XTRA);
+  sv('out_promo_xtra', rp(valPromoXtra));
+
+  // Promo XTRA+
+  var promoXtraPlusRate = parseFloat(document.getElementById('promo_xtraplus').value) || 0;
+  var valPromoXtraPlus = Math.min(hargaNett * promoXtraPlusRate, MAX_PROMO_XTRAPLUS);
+  sv('out_promo_xtraplus', rp(valPromoXtraPlus));
+
+  // Live XTRA
+  var liveXtraRate = parseFloat(document.getElementById('live_xtra').value) || 0;
+  var valLiveXtra = Math.min(hargaNett * liveXtraRate, MAX_LIVE_XTRA);
+  sv('out_live_xtra', rp(valLiveXtra));
+
+  // SPay Later
+  var spayRate = parseFloat(document.getElementById('spay_later').value) || 0;
+  var valSpay = hargaNett * spayRate;
+  sv('out_spay_later', rp(valSpay));
+
+  // Hemat Kirim
+  var hematKirim = parseFloat(document.getElementById('hemat_kirim').value) || 0;
+  sv('out_hemat_kirim', rp(hematKirim));
+
+  // Asuransi
+  var asuransiRate = parseFloat(document.getElementById('asuransi').value) || 0;
+  var valAsuransi = hargaNett * asuransiRate;
+  sv('out_asuransi', rp(valAsuransi));
+
+  // Produk PO
+  var poRate = parseFloat(document.getElementById('produk_po').value) || 0;
+  var valPO = hargaNett * poRate;
+  sv('out_produk_po', rp(valPO));
+
+  // Lain-lain
+  var lainPct = g('lain_pct') / 100;
+  var valLainPct = hargaNett * lainPct;
+  sv('out_lain_pct', rp(valLainPct));
+  var lainRp = g('lain_rp');
+
+  // TOTAL BIAYA SHOPEE
+  var totalShopee = biayaAdmin + BIAYA_PEMBAYARAN_FIXED + biayaProses
+    + valOngkirBiasa + valOngkirKhusus
+    + valPromoXtra + valPromoXtraPlus + valLiveXtra
+    + valSpay + hematKirim + valAsuransi + valPO
+    + valLainPct + lainRp;
+
+  sv('out_total_shopee', rp(totalShopee));
+
+  var danaDicairkan = hargaNett - totalShopee;
+  sv('out_dana_cair', rp(danaDicairkan));
+  sv('res_dana', rp(danaDicairkan));
+
+  // COGS
+  var hpp = g('hpp');
+  var penanganan = g('penanganan');
+  var totalCogs = hpp + penanganan;
+  sv('out_total_cogs', rp(totalCogs));
+  sv('res_cogs', rp(totalCogs));
+
+  var profitKotor = danaDicairkan - totalCogs;
+  sv('out_profit_kotor', rp(profitKotor));
+  sv('res_kotor', rp(profitKotor));
+
+  // PENGELUARAN
+  var roas = g('roas');
+  var iklanRoas = roas > 0 ? hargaNett / roas : 0;
+  sv('out_iklan_roas', rp(iklanRoas));
+
+  var iklanLain = g('iklan_lain');
+  var afiliasi = hargaNett * (g('afiliasi_pct') / 100);
+  sv('out_afiliasi', rp(afiliasi));
+
+  var promoLuar = g('promo_luar');
+  var packing = g('packing');
+  var ops = g('operasional');
+  var biayaLain = g('biaya_lain');
+
+  var totalPengeluaran = iklanRoas + iklanLain + afiliasi + promoLuar + packing + ops + biayaLain;
+  sv('out_total_pengeluaran', rp(totalPengeluaran));
+  sv('res_pengeluaran', rp(totalPengeluaran));
+
+  // PAJAK
+  var pajakPct = g('pajak_pct') / 100;
+  var pajak = hargaJual * pajakPct;
+  sv('out_pajak', rp(pajak));
+  sv('res_pajak', rp(pajak));
+
+  // HASIL AKHIR
+  var profitSebelumPajak = profitKotor - totalPengeluaran;
+  sv('res_sebelum_pajak', rp(profitSebelumPajak));
+
+  var profitBersih = profitSebelumPajak - pajak;
+  sv('res_profit_bersih', rp(profitBersih));
+
+  var card = document.getElementById('profit_final_card');
+  card.className = 'profit-final';
+  if (profitBersih > 0)      card.classList.add('positive');
+  else if (profitBersih < 0) card.classList.add('negative');
+  else                        card.classList.add('neutral');
+}
+
+// Init
+updateSubKategori();
+hitung();
+</script>
+
 </body>
 </html>

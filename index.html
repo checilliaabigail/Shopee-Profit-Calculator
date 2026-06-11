@@ -789,4 +789,89 @@
             document.getElementById('danaDicairkan').innerText = formatRupiah(danaDicairkan);
             
             // 15. COGS
-            const totalCOGS = hpp + biayaPen
+            const totalCOGS = hpp + biayaPenanganan;
+            document.getElementById('totalCOGS').innerText = formatRupiah(totalCOGS);
+            
+            // 16. Profit Kotor
+            const profitKotor = danaDicairkan - totalCOGS;
+            document.getElementById('profitKotor').innerText = formatRupiah(profitKotor);
+            
+            // 17. Biaya Iklan dari ROAS
+            let biayaIklan = 0;
+            if (roas > 0) {
+                biayaIklan = (1 / roas) * hargaNett;
+            }
+            
+            // 18. Komisi Afiliasi
+            const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
+            
+            // 19. Total Pengeluaran
+            const totalPengeluaran = biayaIklan + biayaIklanLain + biayaKomisiAfiliasi + promosiLuar + 
+                                     biayaPacking + biayaOperasional + biayaLain;
+            document.getElementById('totalBiaya').innerText = formatRupiah(totalPengeluaran);
+            
+            // 20. Profit Sebelum Pajak
+            const profitSebelumPajak = profitKotor - totalPengeluaran;
+            document.getElementById('profitSebelumPajak').innerText = formatRupiah(profitSebelumPajak);
+            
+            // 21. Pajak
+            const pajak = pajakRate * hargaNett;
+            document.getElementById('pajak').innerText = formatRupiah(pajak);
+            
+            // 22. Profit Bersih
+            const profitBersih = profitSebelumPajak - pajak;
+            const profitBersihEl = document.getElementById('profitBersih');
+            const profitBersihBox = document.getElementById('profitBersihBox');
+            
+            profitBersihEl.innerText = formatRupiah(profitBersih);
+            
+            if (profitBersih >= 0) {
+                profitBersihEl.className = 'result-value profit-positive';
+                profitBersihBox.style.background = '#d1fae5';
+            } else {
+                profitBersihEl.className = 'result-value profit-negative';
+                profitBersihBox.style.background = '#fee2e2';
+            }
+        }
+
+        // ============================================================
+        // EVENT LISTENERS
+        // ============================================================
+        kategoriSelect.addEventListener('change', updateSubKategori);
+        tipeTokoSelect.addEventListener('change', () => {
+            hitungBiayaAdmin();
+            hitungSemua();
+        });
+        subKategoriSelect.addEventListener('change', () => {
+            hitungBiayaAdmin();
+            hitungSemua();
+        });
+        
+        // Daftar semua input yang perlu trigger hitungSemua
+        const allInputs = ['hargaJual', 'diskon', 'voucher', 'biayaPembayaranManual', 'biayaProsesManual', 
+                           'gratisOngkirBiasaManual', 'gratisOngkirKhususManual', 'hpp', 'biayaPenanganan', 
+                           'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 
+                           'biayaOperasional', 'biayaLain', 'pajakRate'];
+        
+        allInputs.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', hitungSemua);
+                el.addEventListener('change', hitungSemua);
+            }
+        });
+        
+        const toggleSelects = ['promoXTRA', 'promoXTRAplus', 'liveXTRA', 'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
+        toggleSelects.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('change', hitungSemua);
+            }
+        });
+        
+        // Inisialisasi
+        updateSubKategori();
+        hitungSemua();
+    </script>
+</body>
+</html>

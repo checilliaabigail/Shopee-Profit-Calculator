@@ -197,4 +197,231 @@
     ],
     "adminFee": 4.25
   },
+  {
+    "id": 18,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "subKategori": "Aksesoris Fashion Lainnya",
+    "jenisProduk": [
+      "Aksesoris Fashion Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 19,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Aksesoris Bayi & Anak",
+    "jenisProduk": [
+      "Ransel", 
+      "Tas Selempang & Bahu", 
+      "Tas Troli", 
+      "Dompet", 
+      "Tas & Koper Lainnya", 
+      "Jam Tangan", 
+      "Topi", 
+      "Kacamata", 
+      "Aksesoris Rambut", 
+      "Sarung Tangan", 
+      "Ikat Pinggang", 
+      "Kaos Kaki", 
+      "Syal", 
+      "Alat Penutup Telinga", 
+      "Aksesoris Bayi & Anak Lainnya", 
+      "Jas Hujan", 
+      "Sepatu Boot Hujan", 
+      "Perlengkapan Hujan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 20,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Pakaian Anak Laki-Laki",
+    "jenisProduk": [
+      "Kostum", 
+      "Pakaian Dalam", 
+      "Pakaian Tidur", 
+      "Baju Renang", 
+      "Kaos", 
+      "Kaos Polo", 
+      "Kemeja", 
+      "Jaket & Coat Reguler", 
+      "Outerwear Musim Dingin", 
+      "Rompi", 
+      "Sweater & Kardigan", 
+      "Blazer", 
+      "Hoodie", 
+      "Outerwear Lainnya", 
+      "Jeans", 
+      "Celana", 
+      "Celana Pendek", 
+      "Overall", 
+      "Jas & Setelan", 
+      "Pakaian Anak Laki-Laki Lainnya", 
+      "Atasan Lainnya", 
+      "Bawahan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 21,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Pakaian Anak Perempuan",
+    "jenisProduk": [
+      "Kostum", 
+      "Pakaian Dalam", 
+      "Baju Tidur", 
+      "Baju Renang", 
+      "Kaos", 
+      "Kaos Polo", 
+      "Kemeja & Blouse", 
+      "Jaket & Coat Reguler", 
+      "Outerwear Musim Dingin", 
+      "Rompi", 
+      "Sweater & Kardigan", 
+      "Blazer", 
+      "Hoodie", 
+      "Outerwear Lainnya", 
+      "Jeans", 
+      "Celana Panjang", 
+      "Celana Pendek", 
+      "Rok", 
+      "Legging", 
+      "Romper", 
+      "Jumpsuit & Overall",
+      "Dress",
+      "Jas & Setelan",
+      "Pakaian Anak Perempuan Lainnya",
+      "Atasan Lainnya", 
+      "Bawahan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 22,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Pakaian Bayi",
+    "jenisProduk": [
+      "Outerwear Reguler",
+      "Outerwear Musim Dingin",
+      "Dress",
+      "Celana Panjang & Legging", 
+      "Celana Pendek",
+      "Rok",
+      "Bawahan Lainnya", 
+      "Baju Tidur",
+      "Atasan", 
+      "Bodysuit & Jumper", 
+      "Set",
+      "Baju Renang",
+      "Pakaian Bayi Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 23,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Sepatu Anak Laki-Laki",
+    "jenisProduk": [
+      "Sepatu Boot", 
+      "Sandal", 
+      "Sepatu Sneaker", 
+      "Flip Flop", 
+      "Sepatu Formal", 
+      "Loafers", 
+      "Sepatu Anak Laki-Laki Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 24,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Sepatu Anak Perempuan",
+    "jenisProduk": [
+      "Sepatu Boot", 
+      "Sandal", 
+      "Sepatu Sneaker",
+      "Loafers", 
+      "Flip Flop",
+      "Flats", 
+      "Sepatu Anak Perempuan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 25,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Sepatu Bayi",
+    "jenisProduk": [
+      "Sepatu Bayi"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 26,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Aksesoris Bayi & Anak",
+    "jenisProduk": [
+      "Gelang",
+      "Anting",
+      "Kalung",
+      "Cincin",
+      "Perhiasan Lainnya"
+    ],
+    "adminFee": 4.25
+  },
+  {
+    "id": 27,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Bayi & Anak",
+    "subKategori": "Fashion Bayi & Anak Lainnya",
+    "jenisProduk": [
+      "Fashion Bayi & Anak Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 28,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Muslim",
+    "subKategori": "Pakaian Muslim Wanita",
+    "jenisProduk": [
+      "Baju Olahraga Muslim", 
+      "Baju Renang Muslim"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 29,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Muslim",
+    "subKategori": "Mukena & Perlengkapan Sholat",
+    "jenisProduk": [
+      "Baju Olahraga Muslim", 
+      "Baju Renang Muslim"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 30,
+    "kategoriUtama": "Fashion",
+    "kategori": "Fashion Muslim",
+    "subKategori": "Outerwear",
+    "jenisProduk": [
+      "Rompi", 
+      "Jaket",
+      "Mantel",
+      "Cardigan",
+      "Outerwear Lainnya"
+    ],
+    "adminFee": 10.00
+  },
 ]

@@ -472,9 +472,7 @@
       "Handsock", 
       "Aksesoris Lainnya", 
       "Tunik", 
-      "Kemeja", 
-      "Blus", 
-      "& Inner",
+      "Kemeja, Blus, & Inner",
       "Atasan Menyusui",
       "Atasan Muslim Lainnya",
       "Gamis",
@@ -800,6 +798,273 @@
     "subKategori": "Pakaian Pria Lainnya",
     "jenisProduk": [
       "Pakaian Pria Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 61,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Kaos Kaki & Stocking",
+    "jenisProduk": [
+      "Kaos Kaki"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 62,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Kaos Kaki & Stocking",
+    "jenisProduk": [
+      "Stocking", 
+      "Kaos Kaki & Stocking Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 63,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Atasan",
+    "jenisProduk": [
+      "Tanktop & Kamisol",
+      "Kemben", 
+      "Kaos",
+      "Kemeja & Blouse",
+      "Kaus Polo",
+      "Bodysuit",
+      "Atasan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 64,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Baju Hamil",
+    "jenisProduk": [
+      "Bra Menyusui",
+      "Dress Hamil",
+      "Atasan Hamil",
+      "Baju Menyusui",
+      "Set Baju Hamil",
+      "Celana Hamil",
+      "Baju Hamil Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 65,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Celana Jeans",
+    "jenisProduk": [
+      "Celana Jeans"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 66,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Celana Panjang & Legging",
+    "jenisProduk": [
+      "Legging & Tregging",
+      "Celana Panjang",
+      "Celana Panjang & Legging Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 67,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Celana Pendek",
+    "jenisProduk": [
+      "Celana Pendek",
+      "Rok Celana",
+      "Celana Pendek Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 68,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Dress",
+    "jenisProduk": [
+      "Dress"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 69,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Hoodie & Sweatshirt",
+    "jenisProduk": [
+      "Sweatshirt",
+      "Hoodie",
+      "Hoodie & Sweatshirt Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 70,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Jaket, Mantel, & Rompi",
+    "jenisProduk": [
+      "Jaket & Mantel Musim Dingin",
+      "Cape",
+      "Blazer",
+      "Jaket",
+      "Rompi",
+      "Jaket, Mantel, & Rompi Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 71,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Jumpsuit, Playsuit, & Overall",
+    "jenisProduk": [
+      "Jumpsuit", 
+      "Playsuit",
+      "Overall",
+      "Jumpsuit, Playsuit, & Overall Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 72,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Kain",
+    "jenisProduk": [
+      "Batik",
+      "Kebaya",
+      "Katun",
+      "Wol",
+      "Beludru, Sutra, & Satin", 
+      "Kulit, Vinil & Nilon", 
+      "Denim",
+      "Kanvas",
+      "Songket",
+      "Kain Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 73,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Kostum",
+    "jenisProduk": [
+      "Kostum"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 74,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Pakaian Dalam",
+    "jenisProduk": [
+      "Set Pakaian Dalam",
+      "Bra",
+      "Celana Dalam",
+      "Pakaian Dalam Termal",
+      "Strap",
+      "Padding",
+      "Stiker Nipple",
+      "Aksesoris Bra Lainnya",
+      "Korset", 
+      "Celana Stretch",
+      "Sexy Lingerie",
+      "Pakaian Dalam Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 75,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Pakaian Tidur & Piyama",
+    "jenisProduk": [
+      "Piyama",
+      "Daster",
+      "Kimono",
+      "Pakaian Tidur & Piyama Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 76,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Pakaian Tradisional",
+    "jenisProduk": [
+      "Atasan Tradisional",
+      "Bawahan Tradisional",
+      "Set Pakaian Tradisional",
+      "Dress Tradisional",
+      "Pakaian Tradisional Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 77,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Rok",
+    "jenisProduk": [
+      "Rok"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 78,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Set",
+    "jenisProduk": [
+      "Set Pakaian Couple",
+      "Set Pakaian Keluarga",
+      "Set Wanita",
+      "Set Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 79,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Sweater & Cardigan",
+    "jenisProduk": [
+      "Sweater & Cardigan"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 80,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Wedding Dress",
+    "jenisProduk": [
+      "Wedding Dress"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 81,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Wanita",
+    "subKategori": "Pakaian Wanita Lainnya",
+    "jenisProduk": [
+      "Pakaian Wanita Lainnya"
     ],
     "adminFee": 8.25
   },

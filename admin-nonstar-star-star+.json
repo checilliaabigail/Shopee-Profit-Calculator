@@ -418,7 +418,7 @@
     "jenisProduk": [
       "Rompi", 
       "Jaket",
-      "Mantel",
+      "Mantel",                              
       "Cardigan",
       "Outerwear Lainnya"
     ],
@@ -569,5 +569,238 @@
       "Jam Tangan Lainnya"
     ],
     "adminFee": 9.00
+  },
+  {
+    "id": 41,
+    "kategoriUtama": "Fashion",
+    "kategori": "Koper & Tas Travel",
+    "subKategori": "Aksesoris Travel",
+    "jenisProduk": [
+      "Passport Cover", 
+      "Organizer Travel", 
+      "Pelindung & Sarung Koper", 
+      "Tag Koper", 
+      "Strap Koper", 
+      "Gembok Koper", 
+      "Timbangan Koper", 
+      "Bantal Leher & Penutup Mata", 
+      "Botol & Wadah Isi Ulang", 
+      "Aksesoris Travel Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 42,
+    "kategoriUtama": "Fashion",
+    "kategori": "Koper & Tas Travel",
+    "subKategori": "Koper",
+    "jenisProduk": [
+      "Koper"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 43,
+    "kategoriUtama": "Fashion",
+    "kategori": "Koper & Tas Travel",
+    "subKategori": "Tas Travel",
+    "jenisProduk": [
+      "Tas Serut", 
+      "Tas Lipat",
+      "Tas Travel Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 44,
+    "kategoriUtama": "Fashion",
+    "kategori": "Koper & Tas Travel",
+    "subKategori": "Koper & Tas Travel Lainnya",
+    "jenisProduk": [
+      "Koper & Tas Travel Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 45,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Kaos Kaki",
+    "jenisProduk": [
+      "Kaos Kaki"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 46,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Atasan",
+    "jenisProduk": [
+      "Kemeja", 
+      "Kaos Polo", 
+      "Kaos", 
+      "Tanktop",
+      "Atasan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 47,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Celana Panjang",
+    "jenisProduk": [
+      "Celana Panjang",
+      "Celana Panjang Lainnya",
+      "Cargo",
+      "Jogger"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 48,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Celana Panjang Jeans",
+    "jenisProduk": [
+      "Celana Panjang Jeans"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 49,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Celana Pendek",
+    "jenisProduk": [
+      "Celana Pendek"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 50,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Hoodie & Sweatshirt",
+    "jenisProduk": [
+      "Hoodie", 
+      "Sweatshirt", 
+      "Hoodie & Sweatshirt Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 51,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Jaket, Mantel, & Rompi",
+    "jenisProduk": [
+      "Jaket", 
+      "Rompi", 
+      "Jaket & Mantel Musim Dingin",
+      "Jaket, Mantel, & Rompi Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 52,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Jas Formal",
+    "jenisProduk": [
+      "Set Jas Formal",
+      "Jas & Blazer Formal",
+      "Celana Formal",
+      "Rompi Formal",
+      "Jas Formal Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 53,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Kostum",
+    "jenisProduk": [
+      "Kostum"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 54,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Pakaian Dalam",
+    "jenisProduk": [
+      "Celana Dalam",
+      "Kaos Dalam",
+      "Pakaian Dalam Termal",
+      "Pakaian Dalam Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 55,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Pakaian Kerja",
+    "jenisProduk": [
+      "Pakaian Kerja"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 56,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Pakaian Tidur",
+    "jenisProduk": [
+      "Pakaian Tidur"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 57,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Pakaian Tradisional",
+    "jenisProduk": [
+      "Atasan Tradisional",
+      "Bawahan Tradisional",
+      "Set Pakaian Tradisional",
+      "Pakaian Tradisional Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 58,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Set Pakaian Pria",
+    "jenisProduk": [
+      "Set Pakaian Pria"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 59,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Sweater & Cardigan",
+    "jenisProduk": [
+      "Sweater & Cardigan"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 60,
+    "kategoriUtama": "Fashion",
+    "kategori": "Pakaian Pria",
+    "subKategori": "Pakaian Pria Lainnya",
+    "jenisProduk": [
+      "Pakaian Pria Lainnya"
+    ],
+    "adminFee": 8.25
   },
 ]

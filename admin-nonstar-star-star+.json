@@ -1780,4 +1780,600 @@
     ],
     "adminFee": 9.50
   },
+  {
+    "id": 137,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Kesehatan Seksual",
+    "jenisProduk": [
+      "Kondom",
+      "Pelumas",
+      "Penunjang Performa",
+      "Kesehatan Seksual Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 138,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Obat-obatan & Alat Kesehatan",
+    "jenisProduk": [
+      "Alat Ukur Tekanan Darah",
+      "Alat Ukur Gula Darah",
+      "Oximeter",
+      "Termometer",
+      "Alat Tes & Monitor Lainnya",
+      "Alat Bantu Jalan",
+      "Kursi Roda",
+      "Alat Penopang Tubuh",
+      "Alat Bantu Dengar",
+      "Alat Bantu Cedera & Disabilitas Lainnya",
+      "Perawatan Hidung & Pernafasan"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 139,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Perawatan Diri",
+    "jenisProduk": [
+      "Anti Nyamuk & Serangga",
+      "Sikat Gigi",
+      "Sikat Gigi Elektrik",
+      "Pasta Gigi",
+      "Dental Floss",
+      "Obat Kumur",
+      "Perawatan Gigi Palsu",
+      "Pemutih Gigi",
+      "Alat Ortodontik",
+      "Kesehatan Mulut Lainnya",
+      "Pembalut & Panty Liner",
+      "Tampon",
+      "Tes Kehamilan & Kesuburan",
+      "Menstrual Cup",
+      "Pembersih Kewanitaan",
+      "Cream Kewanitaan",
+      "Kewanitaan Lainnya",
+      "Perawatan Diri Lainnya",
+      "Lensa Kontak",
+      "Kesehatan Mata Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 140,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Suplemen Makanan",
+    "jenisProduk": [
+      "Diet & Detoks",
+      "Suplemen Kecantikan",
+      "Kebugaran",
+      "Kesejahteraan",
+      "Suplemen Makanan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 141,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Kesehatan Lainnya",
+    "jenisProduk": [
+      "Kesehatan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 142,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Makanan Ringan",
+    "jenisProduk": [
+      "Biskuit, Kue, & Wafer",
+      "Keripik & Kerupuk",
+      "Biji-bijian",
+      "Popcorn",
+      "Rumput Laut",
+      "Kacang",
+      "Puding, Jeli, & Marshmallow",
+      "Dendeng",
+      "Buah Kering",
+      "Snack Seafood",
+      "Makanan Ringan Kering Lainnya",
+      "Abon",
+      "Makanan Ringan Lainnya"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 143,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Makanan Ringan",
+    "jenisProduk": [
+      "Permen, Cokelat"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 144,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Bahan Pokok",
+    "jenisProduk": [
+      "Buah Kaleng", 
+      "Daging Kaleng",
+      "Seafood Kaleng",
+      "Sayur Kaleng",
+      "Sup Kaleng",
+      "Makanan Kaleng Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 145,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Minuman",
+    "jenisProduk": [
+      "Kopi",
+      "Teh",
+      "Minuman Cokelat",
+      "Minuman Energi & Isotonik",
+      "Air Mineral",
+      "Jus & Sirup",
+      "Cordial & Sirup",
+      "Minuman Bersoda",
+      "Minuman Bubuk Instan",
+      "Minuman Pencuci Mulut",
+      "Minuman Tradisional & Herbal",
+      "Topping Minuman",
+      "Susu Non-Dairy",
+      "Minuman Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 146,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Minuman Alkohol",
+    "jenisProduk": [
+      "Bir & Cider",
+      "Wine & Champagne",
+      "Liquor & Spirits",
+      "Sake, Soju, & Umeshu",
+      "Minuman Alkohol Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 147,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Set Hadiah & Hampers",
+    "jenisProduk": [
+      "Set Hadiah & Hampers"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 148,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Makanan Instan",
+    "jenisProduk": [
+      "Makanan Siap Saji",
+      "Nasi & Bubur Instan",
+      "Hotpot Instan",
+      "Mie & Pasta Instan",
+      "Makanan Instan Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 149,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Roti & Kue",
+    "jenisProduk": [
+      "Roti",
+      "Kue & Pie",
+      "Pastry",
+      "Roti & Kue Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 150,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Susu & Olahan",
+    "jenisProduk": [
+      "Susu Segar",
+      "Susu UHT",
+      "Susu Kental Manis & Evaporasi",
+      "Susu Bubuk",
+      "Yoghurt",
+      "Krimer",
+      "Mentega & Margarin",
+      "Keju",
+      "Tahu",
+      "Susu & Olahan Lainnya",
+      "Susu Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 151,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Bahan Baking",
+    "jenisProduk": [
+      "Tepung Premix Instan",
+      "Tepung",
+      "Penyedap Kue",
+      "Baking Powder & Soda Kue",
+      "Bahan Baking Lainnya",
+      "Pewarna Makanan",
+      "Bahan Dekorasi Kue"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 152,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Bahan Pokok",
+    "jenisProduk": [
+      "Biji-bijian & Kacang-kacangan",
+      "Seafood Kering",
+      "Makanan Herbal & Tradisional",
+      "Mie",
+      "Beras",
+      "Pasta",
+      "Acar Sayuran",
+      "Makanan Kering Lainnya",
+      "Bahan Pokok Lainnya"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 153,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Kebutuhan Memasak",
+    "jenisProduk": [
+      "Minyak",
+      "Lada",
+      "Garam",
+      "Rempah-rempah",
+      "Kecap & Saus Lainnya",
+      "Dressing",
+      "Saus Cabai & Sambal",
+      "Cuka",
+      "Anggur Masak",
+      "Gula",
+      "Pemanis",
+      "Penambah Rasa",
+      "Tepung Bumbu",
+      "Bumbu Masak Lainnya",
+      "Kebutuhan Memasak Lainnya",
+      "Kaldu, Saus, & Sup Instan",
+      "Bumbu Masak Instan"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 154,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Makanan Segar & Beku",
+    "jenisProduk": [
+      "Daging Sapi",
+      "Daging Ayam",
+      "Daging Babi",
+      "Daging Kambing",
+      "Ikan",
+      "Udang",
+      "Kepiting",
+      "Daging Vegetarian",
+      "Kol & Kubis",
+      "Rempah Segar",
+      "Sayuran Daun",
+      "Terong & Labu",
+      "Brokoli & Kembang Kol",
+      "Cabai & Paprika",
+      "Bawang & Jahe",
+      "Kacang-kacangan & Jagung",
+      "Umbi-umbian & Sayuran Batang",
+      "Kecambah",
+      "Sayuran Salad",
+      "Sayur Potong & Paket Aneka Sayur",
+      "Sayuran Lainnya",
+      "Apel & Pir",
+      "Pisang",
+      "Buah Beri",
+      "Jeruk",
+      "Lemon & Limau",
+      "Anggur",
+      "Melon & Semangka",
+      "Buah Berbiji Tengah (Alpukat, Kurma, Ceri, dll)",
+      "Buah Tropis & Eksotis",
+      "Buah Potong & Paket Aneka Buah", 
+      "Buah Lainnya", 
+      "Jamur", 
+      "Makanan Beku Olahan", 
+      "Daging & Seafood Beku", 
+      "Daging Lainnya", 
+      "Makanan Segar & Beku Lainnya", 
+      "Seafood Lainnya"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 155,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Menu Sarapan",
+    "jenisProduk": [
+      "Madu & Olesan", 
+      "Selai & Olesan",
+      "Sereal, Granola, & Oat",
+      "Bar Sereal",
+      "Menu Sarapan Lainnya"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 156,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Susu & Olahan",
+    "jenisProduk": [
+      "Es Krim"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 157,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Susu & Olahan",
+    "jenisProduk": [
+      "Telur"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 158,
+    "kategoriUtama": "FMCG",
+    "kategori": "Makanan & Minuman",
+    "subKategori": "Makanan & Minuman Lainnya",
+    "jenisProduk": [
+      "Makanan & Minuman Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 159,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Alat Kecantikan",
+    "jenisProduk": [
+      "Aksesoris Make Up Lainnya",
+      "Kapas",
+      "Tas Make Up",
+      "Kaca / Cermin",
+      "Pembersih Make Up Brush",
+      "Make Up Brush",
+      "Make Up Sponge & Applicator",
+      "Penjepit Bulu Mata",
+      "Eyebrow Template",
+      "Bulu Mata Palsu",
+      "Skot Mata",
+      "Rautan",
+      "Facial Steamer",
+      "Alat Pelangsing & Pijat Wajah",
+      "Alat Pembersih Wajah", 
+      "Alat Perawatan Wajah Lainnya",
+      "Alat Pelangsing Tubuh",
+      "Alat Penghilang Bulu Rambut",
+      "Sisir",
+      "Hair Dryer",
+      "Peralatan Styling Rambut",
+      "Alat Styling Heatless",
+      "Alat Rambut Lainnya",
+      "Alat Kecantikan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 160,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Kosmetik",
+    "jenisProduk": [
+      "Make Up Base & Primer",
+      "Foundation",
+      "BB & CC Cream",
+      "Bedak",
+      "Concealer & Corrector",
+      "Bronzer",
+      "Contour & Highlighter",
+      "Setting & Finishing Spray",
+      "Blush",
+      "Kosmetik Wajah Lainnya",
+      "Eyeshadow",
+      "Primer Mata",
+      "Eyeliner",
+      "Maskara",
+      "Eyebrow",
+      "Kosmetik Mata Lainnya",
+      "Lipstik",
+      "Lip Gloss", 
+      "Lip Liner",
+      "Lip Tint", 
+      "Lip Plumper",
+      "Kosmetik Bibir Lainnya",
+      "Pembersih Make Up",
+      "Kosmetik Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 161,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Paket & Set Kecantikan",
+    "jenisProduk": [
+      "Paket & Set Kecantikan"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 162,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Parfum & Wewangian",
+    "jenisProduk": [
+      "Parfum & Wewangian"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 163,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan Pria",
+    "jenisProduk": [
+      "Perawatan Tubuh",
+      "Pembersih Wajah",
+      "Pelembab & Treatment",
+      "Perawatan Setelah Bercukur",
+      "Cream",
+      "Foam & Gel",
+      "Pisau Cukur",
+      "Alat Cukur",
+      "Sikat Cukur",
+      "Trimmers",
+      "Gunting & Groomer Multi-fungsi",
+      "Aksesoris Cukur",
+      "Perawatan Rambut",
+      "Perawatan Pria Lainnya", 
+      "Perawatan Wajah Lainnya",
+      "Shaving & Grooming Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 164,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan Rambut",
+    "jenisProduk": [
+      "Shampo",
+      "Pewarna Rambut",
+      "Treatment Rambut",
+      "Kondisioner Rambut dan Kulit Kepala",
+      "Hair Styling",
+      "Perawatan Rambut Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 165,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan Tangan, Kaki & Kuku",
+    "jenisProduk": [
+      "Masker Tangan",
+      "Lotion",
+      "Cream & Scrub",
+      "Sabun Cuci Tangan",
+      "Perawatan Tangan Lainnya",
+      "Deodoran Kaki",
+      "Masker Kaki",
+      "Lotion",
+      "Cream & Scrub",
+      "Perawatan Kaki Lainnya",
+      "Base & Top Coat",
+      "Cat Kuku",
+      "Pembersih Cat Kuku",
+      "Treatment Kuku",
+      "Kuku Palsu",
+      "Nail Art & Sticker",
+      "Alat & Mesin Manicure",
+      "Perawatan Kuku Lainnya",
+      "Perawatan Tangan",
+      "Kaki & Kuku Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 166,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan Tubuh",
+    "jenisProduk": [
+      "Sabun Mandi",
+      "Scrub & Peel Tubuh",
+      "Masker Tubuh",
+      "Minyak Tubuh",
+      "Body Cream",
+      "Body Lotion & Body Butter",
+      "Deodoran",
+      "Minyak Pijat",
+      "Cream & Wax Penghilang Bulu Rambut",
+      "Sunscreen & Aftersun Tubuh",
+      "Tanning Oil & Self Tanners",
+      "Perawatan Payudara",
+      "Perawatan Tubuh Lainnya",
+      "Sun Care Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 167,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan Wajah",
+    "jenisProduk": [
+      "Pembersih Wajah",
+      "Toner",
+      "Pelembab Wajah",
+      "Minyak Wajah",
+      "Facial Mist",
+      "Serum & Essence Wajah",
+      "Scrub & Peel Wajah",
+      "Masker Wajah",
+      "Sunscreen Wajah",
+      "Perawatan Wajah After Sun",
+      "Kertas Minyak",
+      "Treatment Jerawat",
+      "Perawatan Wajah Lainnya",
+      "Cream Mata",
+      "Masker Mata",
+      "Serum Alis & Bulu Mata",
+      "Treatment Mata Lainnya",
+      "Pelembab Bibir",
+      "Scrub & Exfoliator Bibir",
+      "Masker Bibir",
+      "Treatment Bibir Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 168,
+    "kategoriUtama": "FMCG",
+    "kategori": "Perawatan & Kecantikan",
+    "subKategori": "Perawatan & Kecantikan Lainnya",
+    "jenisProduk": [
+      "Perawatan & Kecantikan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
 ]

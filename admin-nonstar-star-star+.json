@@ -48,7 +48,7 @@
     "kategori": "Aksesoris Fashion",
     "subKategori": "Cincin",
     "jenisProduk": [
-      "Masker"
+      "Cincin"
     ],
     "adminFee": 9.00
   },
@@ -1159,5 +1159,625 @@
       "Sepatu Pria Lainnya"
     ],
     "adminFee": 9.00
+  },
+  {
+    "id": 90,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Aksesoris & Perawatan Sepatu",
+    "jenisProduk": [
+      "Parfum Sepatu", 
+      "Sol Dalam Sepatu", 
+      "Shoe Tree & Horns", 
+      "Perawatan Sepatu",
+      "Tali Sepatu",
+      "Aksesoris & Perawatan Sepatu Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 91,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Boots",
+    "jenisProduk": [
+      "Sepatu Boot Hujan",
+      "Sepatu Boot Fashion",
+      "Boots Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 92,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Heels",
+    "jenisProduk": [
+      "Heels"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 93,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Sandal Jepit & Sandal Lainnya",
+    "jenisProduk": [
+      "Sandal Flat",
+      "Sandal Jepit",
+      "Sandal Kesehatan",
+      "Sandal Rumah",
+      "Sandal Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 94,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Sepatu Flat",
+    "jenisProduk": [
+      "Flat & Ballerina",
+      "Loafer",
+      "Sepatu Oxford",
+      "Slip-On",
+      "Mules & Mary Janes",
+      "Sepatu Flat Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 95,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Sneakers",
+    "jenisProduk": [
+      "Sneakers"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 96,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Wedges",
+    "jenisProduk": [
+      "Wedges"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 97,
+    "kategoriUtama": "Fashion",
+    "kategori": "Sepatu Wanita",
+    "subKategori": "Sepatu Wanita Lainnya",
+    "jenisProduk": [
+      "Sepatu Wanita Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 98,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Clutch",
+    "jenisProduk": [
+      "Clutch"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 99,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Dompet",
+    "jenisProduk": [
+      "Dompet Kartu",
+      "Dompet Koin",
+      "Dompet Kunci & Handphone",
+      "Dompet Lipat",
+      "Dompet Panjang",
+      "Dompet Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 100,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Ransel Pria",
+    "jenisProduk": [
+      "Ransel Pria"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 101,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tas Kerja",
+    "jenisProduk": [
+      "Tas Kerja"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 102,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tas Laptop",
+    "jenisProduk": [
+      "Tas & Case Laptop",
+      "Sarung Laptop",
+      "Ransel Laptop",
+      "Tas Laptop Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 103,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tas Pinggang Pria",
+    "jenisProduk": [
+      "Tas Pinggang Pria"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 104,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tas Selempang & Bahu Pria",
+    "jenisProduk": [
+      "Tas Selempang & Bahu Pria"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 105,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tote Bag",
+    "jenisProduk": [
+      "Tote Bag"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 106,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Pria",
+    "subKategori": "Tas Pria Lainnya",
+    "jenisProduk": [
+      "Tas Pria Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 107,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Aksesoris Tas",
+    "jenisProduk": [
+      "Tali Tas",
+      "Gantungan Tas",
+      "Hiasan & Gantungan Kunci",
+      "Organizer Tas",
+      "Produk Perawatan & Pembersih Tas",
+      "Aksesoris Tas Wanita Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 108,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Clutch",
+    "jenisProduk": [
+      "Clutch"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 109,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Dompet Wanita",
+    "jenisProduk": [
+      "Dompet Kartu",
+      "Dompet Koin",
+      "Dompet Kunci & Handphone",
+      "Dompet Lipat",
+      "Dompet Panjang",
+      "Dompet Wanita Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 110,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Ransel Wanita",
+    "jenisProduk": [
+      "Ransel Wanita"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 111,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Tas Laptop",
+    "jenisProduk": [
+      "Tas & Case Laptop",
+      "Sarung Laptop",
+      "Ransel Laptop",
+      "Tas Laptop Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 112,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Tas Pinggang Wanita",
+    "jenisProduk": [
+      "Tas Pinggang Wanita"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 113,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Tas Selempang & Bahu Wanita",
+    "jenisProduk": [
+      "Tas Selempang & Bahu Wanita"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 114,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Top Handle Bag",
+    "jenisProduk": [
+      "Top Handle Bag"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 115,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Tote Bag",
+    "jenisProduk": [
+      "Tote Bag"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 116,
+    "kategoriUtama": "Fashion",
+    "kategori": "Tas Wanita",
+    "subKategori": "Tas Wanita Lainnya",
+    "jenisProduk": [
+      "Tas Wanita Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 117,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Mainan",
+    "jenisProduk": [
+      "Inflatable & Perosotan"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 118,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Keamanan Bayi",
+    "jenisProduk": [
+      "Baby Monitor",
+      "Kelambu",
+      "Bumper, Rail, & Guard",
+      "Pelindung Sudut",
+      "Pintu & Pagar Bayi",
+      "Pengaman Laci & Lemari",
+      "Alat Keamanan Bayi Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 119,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Kesehatan Kehamilan",
+    "jenisProduk": [
+      "Susu Ibu Hamil",
+      "Vitamin & Suplemen Ibu Hamil",
+      "Pelembab & Cream",
+      "Kesehatan Kehamilan Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 120,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Mainan",
+    "jenisProduk": [
+      "Mainan Balok",
+      "Puzzle",
+      "Mainan Slime & Squishy"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 121,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Perlengkapan Ibu Hamil",
+    "jenisProduk": [
+      "Penyangga Perut",
+      "Bantal Ibu Hamil",
+      "Perlengkapan Ibu Hamil Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 122,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Perlengkapan Makan Bayi",
+    "jenisProduk": [
+      "Pompa ASI & Aksesoris",
+      "Breast Pad, Shell, & Shield",
+      "Apron Menyusui",
+      "Kantong ASI",
+      "Perlengkapan Menyusui Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 123,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Perlengkapan Travelling Bayi",
+    "jenisProduk": [
+      "Gendongan Bayi",
+      "Stroller & Perlengkapan Travelling",
+      "Aksesoris Stroller",
+      "Dudukan Mobil & Motor",
+      "Aksesoris Dudukan Mobil & Motor",
+      "Tas Perlengkapan Bayi",
+      "Sabuk Pengaman Anak",
+      "Perlengkapan Travelling Bayi Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 124,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Popok & Pispot",
+    "jenisProduk": [
+      "Perlak",
+      "Pispot",
+      "Popok Sekali Pakai",
+      "Popok Kain & Aksesoris",
+      "Popok & Pispot Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 125,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Kamar Bayi",
+    "jenisProduk": [
+      "Boks & Matras Tidur Bayi",
+      "Ayunan Bayi",
+      "Baby Walker",
+      "Selimut & Bedong",
+      "Bantal & Guling",
+      "Sprei",
+      "Tempat Penyimpanan",
+      "Kamar Bayi Lainnya",
+      "Matras & Sprei Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 126,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Kesehatan Bayi",
+    "jenisProduk": [
+      "Perawatan Hidung & Pernafasan",
+      "Baby Lotion & Cream",
+      "Minyak",
+      "Bedak",
+      "Perawatan Mulut Bayi",
+      "Sun Care Bayi",
+      "Kesehatan Bayi Lainnya",
+      "Perawatan Kulit Bayi Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 127,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Mainan",
+    "jenisProduk": [
+      "Mainan & Playmat Bayi",
+      "Pagar Mainan Bayi",
+      "Mainan Saat Mandi",
+      "Crib Mobile & Rattle",
+      "Gigitan Bayi",
+      "Boneka & Aksesoris",
+      "Rumah Boneka & Aksesoris",
+      "Mainan Boneka",
+      "Mainan Peran",
+      "Kendaraan Mainan",
+      "Sepeda, Skuter, & Ride-On",
+      "Tenda Mainan, Terowongan Mainan, & Ball Pit",
+      "Kolam, Pelampung, & Mainan Pasir",
+      "Mainan Olahraga",
+      "Mainan Terbang, Layang-layang, & Kincir Angin",
+      "Pistol Mainan",
+      "Mainan Matematika, Mainan Ilmu Pengetahuan Alam & Teknologi",
+      "Shape Sorter",
+      "Mainan Musik",
+      "Mainan Tablet & Komputer",
+      "Seni & Kerajinan",
+      "Kartu Edukasi Anak",
+      "Poster Edukatif",
+      "Mainan Robot",
+      "Mainan Lainnya",
+      "Mainan Bayi & Anak Lainnya",
+      "Mainan Outdoor Lainnya",
+      "Mainan Edukatif Lainnya",
+      "Boneka & Mainan Boneka Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 128,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Perlengkapan Makan Bayi",
+    "jenisProduk": [
+      "Kursi Makan Bayi",
+      "Celemek Bayi",
+      "Dot Bayi",
+      "Food Processor",
+      "Gelas Bayi",
+      "Peralatan Makan Bayi",
+      "Tempat Makan Bayi",
+      "Peralatan Makan Lainnya",
+      "Perlengkapan Makan Bayi Lainnya",
+      "Tas Pendingin Botol Susu",
+      "Botol Susu & Aksesoris",
+      "Penghangat Botol",
+      "Sterilizer",
+      "Perlengkapan Botol Susu Lainnya",
+      "Pembersih Botol Susu"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 129,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Perlengkapan Mandi",
+    "jenisProduk": [
+      "Perawatan Rambut & Sabun Mandi",
+      "Parfum Bayi",
+      "Tisu",
+      "Detergen Pakaian Bayi",
+      "Bak Mandi & Dudukan",
+      "Jas Mandi, Handuk, & Lap Mandi",
+      "Penutup Rambut",
+      "Alat & Aksesoris Mandi",
+      "Alat Perawatan Bayi",
+      "Perlengkapan Mandi Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 130,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Set & Paket Hadiah",
+    "jenisProduk": [
+      "Set & Paket Hadiah"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 131,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Susu Formula & Makanan Bayi",
+    "jenisProduk": [
+      "Susu Formula",
+      "Bubur & Sereal Bayi",
+      "Camilan Bayi",
+      "Susu Formula & Makanan Bayi Lainnya"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 132,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Kesehatan Bayi",
+    "jenisProduk": [
+      "Vitamin & Suplemen Bayi"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 133,
+    "kategoriUtama": "FMCG",
+    "kategori": "Ibu & Bayi",
+    "subKategori": "Ibu & Bayi Lainnya",
+    "jenisProduk": [
+      "Ibu & Bayi Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 134,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Perawatan Diri",
+    "jenisProduk": [
+      "Hand Sanitizer"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 135,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Obat-obatan & Alat Kesehatan",
+    "jenisProduk": [
+      "Obat Bebas (OTC)",
+      "Obat Tradisional",
+      "Timbangan & Alat Ukur Kadar Lemak",
+      "Stetoskop",
+      "Obat Pereda Nyeri",
+      "Alat Laboratorium",
+      "Sarung Tangan & Masker Medis",
+      "Alat Medis Lainnya",
+      "Plester & Perban",
+      "Alat P3K",
+      "Salep & Krim",
+      "Antiseptik & Disinfektan",
+      "P3K Lainnya",
+      "Obat Resep"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 136,
+    "kategoriUtama": "FMCG",
+    "kategori": "Kesehatan",
+    "subKategori": "Perawatan Diri",
+    "jenisProduk": [
+      "Alat Pijat & Terapi",
+      "Popok Dewasa",
+      "Perawatan Telinga",
+      "Cairan Lensa & Obat Tetes Mata"
+    ],
+    "adminFee": 9.50
   },
 ]

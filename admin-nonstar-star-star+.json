@@ -2691,7 +2691,6 @@
       "PSP",
       "Game PC",
       "Video Game Lainnya"
-      
     ],
     "adminFee": 9.50
   },
@@ -2702,7 +2701,6 @@
     "subKategori": "Aksesoris Konsol",
     "jenisProduk": [
       "Aksesoris Konsol"
-      
     ],
     "adminFee": 9.00
   },
@@ -2713,8 +2711,148 @@
     "subKategori": "Gaming & Konsol Lainnya",
     "jenisProduk": [
       "Gaming & Konsol Lainnya"
-      
     ],
     "adminFee": 9.00
+  },
+  {
+    "id": 194,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Aksesoris",
+    "jenisProduk": [
+      "Tongsis",
+      "Tomsis",
+      "Flash & Lampu Selfie Handphone",
+      "Aksesoris Selfie Lainnya",
+      "Lensa Tambahan Handphone",
+      "Lazypod",
+      "Phone Holder",
+      "Tali & Gantungan Handphone",
+      "Pouch Handphone",
+      "Aksesoris Lainnya",
+      "Casing, Penggulung, & Pengikat Kabel",
+      "Travel Adaptor",
+      "Kabel & Adaptor Handphone",
+      "Charger",
+      "Charger Docking",
+      "Kabel",
+      "Charger & Adaptor Lainnya",
+      "Casing & Skin Tablet",
+      "Casing & Skin Handphone",
+      "Pelindung Layar Handphone",
+      "Casing & Skin Lainnya",
+      "Casing & Skin Earphone"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 195,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Perangkat Wearable",
+    "jenisProduk": [
+      "Perangkat VR"
+    ],
+    "adminFee": 10.00
+  },
+  {
+    "id": 196,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Aksesoris",
+    "jenisProduk": [
+      "Aksesoris Perangkat Wearable",
+      "Kipas USB",
+      "Stylus",
+      "Baterai",
+      "Powerbank",
+      "Powercase",
+      "Powerbank & Baterai Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 197,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Perangkat Wearable",
+    "jenisProduk": [
+      "Smartwatch & Fitness Tracker",
+      "Pelacak GPS",
+      "Perangkat Wearable Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 198,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Aksesoris",
+    "jenisProduk": [
+      "Alat Casting",
+      "Kartu Memori"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 199,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Kartu Perdana",
+    "jenisProduk": [
+      "Kartu Perdana"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 200,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Walkie Talkie",
+    "jenisProduk": [
+      "Walkie Talkie"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 201,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Aksesoris",
+    "jenisProduk": [
+      "Modem",
+      "USB & Lampu Handphone"
+    ],
+    "adminFee": 6.75
+  },
+  {
+    "id": 202,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Handphone",
+    "jenisProduk": [
+      "Handphone"
+    ],
+    "adminFee": 5.25
+  },
+  {
+    "id": 203,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Tablet",
+    "jenisProduk": [
+      "Tablet"
+    ],
+    "adminFee": 5.25
+  },
+  {
+    "id": 204,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Handphone & Aksesoris Lainnya",
+    "jenisProduk": [
+      "Handphone & Aksesoris Lainnya"
+    ],
+    "adminFee": 10.00
   },
 ]

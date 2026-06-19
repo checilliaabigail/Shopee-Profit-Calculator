@@ -2500,4 +2500,221 @@
     ],
     "adminFee": 9.50
   },
+  {
+    "id": 180,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Peralatan Listrik Besar",
+    "jenisProduk": [
+      "Pengering Sepatu",
+      "Penghangat Ruangan",
+      "Peralatan Listrik Besar Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 181,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Peralatan Listrik Kecil",
+    "jenisProduk": [
+      "Flosser Elektrik",
+      "Telepon Kabel",
+      "Telepon Wireless",
+      "Mesin Fax",
+      "Telepon Lainnya",
+      "Perlengkapan Listrik Kecil Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 182,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Remot Kontrol",
+    "jenisProduk": [
+      "Remot Kontrol"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 183,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Rokok Elektronik & Shisha",
+    "jenisProduk": [
+      "Pods, Mods, & Hookah",
+      "Liquid & Perasa Rokok Elektronik/Shisha",
+      "Aksesoris Rokok Elektronik/Shisha",
+      "Perlengkapan Rokok Elektronik/Shisha",
+      "Rokok Elektronik Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 184,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Peralatan Listrik Besar",
+    "jenisProduk": [
+      "Mesin Cuci",
+      "Pengering Pakaian",
+      "Mesin Cuci & Pengering Lainnya",
+      "AC",
+      "AC Portable",
+      "Kipas Angin",
+      "Pendingin Ruangan Lainnya"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 185,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Peralatan Listrik Kecil",
+    "jenisProduk": [
+      "Mesin Jahit & Aksesoris",
+      "Setrika & Mesin Uap",
+      "Purifier",
+      "Dehumidifier",
+      "Purifier & Humidifier Lainnya",
+      "Penyedot Debu & Peralatan Perawatan Lantai"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 186,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Perangkat Dapur",
+    "jenisProduk": [
+      "Dispenser & Filter Air",
+      "Kompor & Regulator Gas",
+      "Pemanas Air",
+      "Kulkas Wine",
+      "Juicer",
+      "Blender & Mesin Kacang Kedelai",
+      "Mesin Kopi & Aksesoris",
+      "Mixer",
+      "Dishwashers",
+      "Air Fryer",
+      "Deep Fryer",
+      "Microwave",
+      "Oven",
+      "Pemanggang Roti",
+      "Food Processor & Penggiling Daging",
+      "Alat Masak Serbaguna",
+      "Panci Presto",
+      "Slow Cooker & Mesin Sous Vide",
+      "Penanak Nasi", 
+      "Pembuat Waffle & Crepe",
+      "Perebus Telur",
+      "Pembuat Roti",
+      "Pembuat Takoyaki",
+      "Pembuat Dessert",
+      "Pembuat Soda",
+      "Peralatan Masak Khusus Lainnya",
+      "Kulkas",
+      "Freezer",
+      "Penghisap Asap Dapur",
+      "Perangkat Dapur Lainnya"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 187,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "TV & Aksesoris",
+    "jenisProduk": [
+      "TV",
+      "Antena TV",
+      "TV Box & Receiver TV",
+      "Bracket TV",
+      "TV & Aksesoris Lainnya"
+    ],
+    "adminFee": 6.50
+  },
+  {
+    "id": 188,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Proyektor & Aksesoris",
+    "jenisProduk": [
+      "Proyektor & Layar Proyektor",
+      "Pointer",
+      "Proyektor & Aksesoris Lainnya"
+    ],
+    "adminFee": 5.25
+  },
+  {
+    "id": 189,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Elektronik",
+    "subKategori": "Elektronik Lainnya",
+    "jenisProduk": [
+      "Elektronik Lainnya"
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 190,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Konsol Game",
+    "jenisProduk": [
+      "Playstation",
+      "Xbox",
+      "Wii",
+      "Nintendo 3DS & DS",
+      "Gameboy",
+      "Switch",
+      "PS Vita",
+      "PSP",
+      "Konsol Game Lainnya"
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 191,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Video Game",
+    "jenisProduk": [
+      "Playstation", 
+      "Xbox",
+      "Wii",
+      "Nintendo 3DS & DS",
+      "Gameboy",
+      "Switch",
+      "PS Vita",
+      "PSP",
+      "Game PC",
+      "Video Game Lainnya"
+      
+    ],
+    "adminFee": 9.50
+  },
+  {
+    "id": 192,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Aksesoris Konsol",
+    "jenisProduk": [
+      "Aksesoris Konsol"
+      
+    ],
+    "adminFee": 9.00
+  },
+  {
+    "id": 193,
+    "kategoriUtama": "Elektronik",
+    "kategori": "Gaming & Konsol",
+    "subKategori": "Gaming & Konsol Lainnya",
+    "jenisProduk": [
+      "Gaming & Konsol Lainnya"
+      
+    ],
+    "adminFee": 9.00
+  },
 ]

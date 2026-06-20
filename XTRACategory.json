@@ -1,1 +1,49 @@
+[
+  {
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "B",
+    "subKategori": "Logam Mulia",
+    "jenisProduk": [
+      "Berlian",
+      "Logam Mulia Lainnya",
+      "Perak",
+      "Permata",
+      "Platinum & Emas"
+    ],
+    "regular": {
+      "rate": 0.02,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.035,
+      "maxPerQty": 60000
+    }
+  },
 
+  {
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "B",
+    "subKategori": "Perhiasan Berharga",
+    "jenisProduk": [
+      "Anting",
+      "Bros & Pin",
+      "Cincin",
+      "Gelang Kaki",
+      "Gelang Tangan",
+      "Kalung",
+      "Liontin",
+      "Perhiasan Berharga Lainnya",
+      "Set Perhiasan"
+    ],
+    "regular": {
+      "rate": 0.02,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.035,
+      "maxPerQty": 60000
+    }
+  },
+]

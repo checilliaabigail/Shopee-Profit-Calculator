@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "kategoriUtama": "Fashion",
     "kategori": "Aksesoris Fashion",
     "kategoriProduk": "B",
@@ -20,8 +21,8 @@
       "maxPerQty": 60000
     }
   },
-
   {
+    "id": 2,
     "kategoriUtama": "Fashion",
     "kategori": "Aksesoris Fashion",
     "kategoriProduk": "B",
@@ -43,6 +44,580 @@
     },
     "special": {
       "rate": 0.035,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 3,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "G",
+    "subKategori": "Aksesoris Tambahan",
+    "jenisProduk": [
+      "Masker"
+    ],
+    "regular": {
+      "rate": 0.075,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.09,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 4,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Aksesoris Rambut",
+    "jenisProduk": [
+      "Aksesoris Rambut Lainnya",
+      "Bando & Bandana",
+      "Hiasan Kepala",
+      "Tiara & Mahkota Bunga",
+      "Ikat Rambut",
+      "Pita & Scrunchie",
+      "Jepitan & Pin Rambut",
+      "Rambut Palsu & Extension"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 5,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Aksesoris Tambahan",
+    "jenisProduk": [
+      "Aksesoris Tambahan Lainnya",
+      "Bordir",
+      "Bros & Pin",
+      "Kancing Manset",
+      "Liontin",
+      "Sapu Tangan",
+      "Tato Temporer"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 6,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Anting",
+    "jenisProduk": [
+      "Anting"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 7,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Cincin",
+    "jenisProduk": [
+      "Cincin"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 8,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Dasi",
+    "jenisProduk": [
+      "Dasi"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 9,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Gelang Kaki",
+    "jenisProduk": [
+      "Gelang Kaki"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 10,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Gelang Tangan & Bangle",
+    "jenisProduk": [
+      "Gelang Tangan & Bangle"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 11,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Ikat Pinggang",
+    "jenisProduk": [
+      "Ikat Pinggang"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 12,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Kacamata & Aksesoris",
+    "jenisProduk": [
+      "Aksesoris Kacamata Lainnya",
+      "Frame & Lensa Kacamata",
+      "Kacamata Hitam",
+      "Tempat Kacamata & Aksesoris"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 13,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Kalung",
+    "jenisProduk": [
+      "Kalung"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 14,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Sarung Tangan",
+    "jenisProduk": [
+      "Sarung Tangan"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 15,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Set & Paket Aksesoris",
+    "jenisProduk": [
+      "Set & Paket Aksesoris"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 16,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Syal & Selendang",
+    "jenisProduk": [
+      "Syal & Selendang"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 17,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Topi",
+    "jenisProduk": [
+      "Topi"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 18,
+    "kategoriUtama": "Fashion",
+    "kategori": "Aksesoris Fashion",
+    "kategoriProduk": "H",
+    "subKategori": "Aksesoris Fashion Lainnya",
+    "jenisProduk": [
+      "Aksesoris Fashion Lainnya"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 19,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "B",
+    "subKategori": "Aksesoris Bayi & Anak",
+    "jenisProduk": [
+      "Anting",
+      "Cincin",
+      "Gelang",
+      "Kalung",
+      "Perhiasan Lainnya"
+    ],
+    "regular": {
+      "rate": 0.02,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.035,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 20,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Aksesoris Bayi & Anak",
+    "jenisProduk": [
+      "Aksesoris Bayi & Anak Lainnya",
+      "Aksesoris Rambut",
+      "Alat Penutup Telinga",
+      "Dompet",
+      "Ikat Pinggang",
+      "Jam Tangan",
+      "Kacamata",
+      "Kaos Kaki",
+      "Ransel",
+      "Sarung Tangan",
+      "Syal",
+      "Tas & Koper Lainnya",
+      "Tas Selempang & Bahu",
+      "Tas Troli",
+      "Topi"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 21,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Pakaian Anak Laki-Laki",
+    "jenisProduk": [
+      "Atasan Lainnya",
+      "Baju Renang",
+      "Bawahan Lainnya",
+      "Blazer",
+      "Celana",
+      "Celana Pendek",
+      "Hoodie",
+      "Jaket & Coat Reguler",
+      "Jas & Setelan",
+      "Jeans",
+      "Kaos",
+      "Kaos Polo",
+      "Kemeja",
+      "Kostum",
+      "Outerwear Lainnya",
+      "Outerwear Musim Dingin",
+      "Overall",
+      "Pakaian Anak Laki-Laki Lainnya",
+      "Pakaian Dalam",
+      "Pakaian Tidur",
+      "Rompi",
+      "Sweater & Kardigan"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 22,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Pakaian Anak Perempuan",
+    "jenisProduk": [
+      "Atasan Lainnya",
+      "Baju Renang",
+      "Baju Tidur",
+      "Bawahan Lainnya",
+      "Blazer",
+      "Celana Panjang",
+      "Celana Pendek",
+      "Dress",
+      "Hoodie",
+      "Jaket & Coat Reguler",
+      "Jas & Setelan",
+      "Jeans",
+      "Kaos",
+      "Kaos Polo",
+      "Kemeja & Blouse",
+      "Kostum",
+      "Legging",
+      "Outerwear Lainnya",
+      "Outerwear Musim Dingin",
+      "Pakaian Anak Perempuan Lainnya",
+      "Pakaian Dalam",
+      "Rok",
+      "Romper",
+      "Jumpsuit & Overall",
+      "Rompi",
+      "Sweater & Kardigan"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 23,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Pakaian Bayi",
+    "jenisProduk": [
+      "Atasan",
+      "Baju Renang",
+      "Baju Tidur",
+      "Bawahan Lainnya",
+      "Bodysuit & Jumper",
+      "Celana Panjang & Legging",
+      "Celana Pendek",
+      "Dress",
+      "Outerwear Musim Dingin",
+      "Outerwear Reguler",
+      "Pakaian Bayi Lainnya",
+      "Rok",
+      "Set"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 24,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Sepatu Anak Laki-Laki",
+    "jenisProduk": [
+      "Flip Flop",
+      "Loafers",
+      "Sandal",
+      "Sepatu Anak Laki-Laki Lainnya",
+      "Sepatu Boot",
+      "Sepatu Formal",
+      "Sepatu Sneaker"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 25,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Sepatu Anak Perempuan",
+    "jenisProduk": [
+      "Flats",
+      "Flip Flop",
+      "Loafers",
+      "Sandal",
+      "Sepatu Anak Perempuan Lainnya",
+      "Sepatu Boot",
+      "Sepatu Sneaker"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 26,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "D",
+    "subKategori": "Sepatu Bayi",
+    "jenisProduk": [
+      "Sepatu Bayi"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 27,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak",
+    "kategoriProduk": "H",
+    "subKategori": "Aksesoris Bayi & Anak",
+    "jenisProduk": [
+      "Jas Hujan",
+      "Perlengkapan Hujan Lainnya",
+      "Sepatu Boot Hujan"
+    ],
+    "regular": {
+      "rate": 0.08,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.095,
+      "maxPerQty": 60000
+    }
+  },
+  {
+    "id": 28,
+    "kategoriUtama": "Fashion Bayi & Anak",
+    "kategori": "Fashion Bayi & Anak Lainnya",
+    "kategoriProduk": "D",
+    "subKategori": "Fashion Bayi & Anak Lainnya",
+    "jenisProduk": [
+      "Fashion Bayi & Anak Lainnya"
+    ],
+    "regular": {
+      "rate": 0.055,
+      "maxPerQty": 40000
+    },
+    "special": {
+      "rate": 0.07,
       "maxPerQty": 60000
     }
   },

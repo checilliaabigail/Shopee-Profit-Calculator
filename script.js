@@ -227,7 +227,7 @@ function selectProduct(item) {
         }
     }
 
-    // Hitung ulang
+    // Hitung ulang SEMUA
     hitungBiayaAdmin();
     hitungBiayaPembayaran();
     hitungSemua();
@@ -244,6 +244,8 @@ function getNumber(id) {
     const el = document.getElementById(id);
     if (!el) return 0;
     const val = el.value;
+    // Jika value kosong atau NaN, return 0
+    if (val === '' || val === null || val === undefined) return 0;
     return parseFloat(val) || 0;
 }
 
@@ -257,6 +259,57 @@ function formatRupiah(angka) {
     if (isNaN(angka) || angka === null || angka === undefined) return 'Rp 0';
     const bilangan = Math.round(angka);
     return 'Rp ' + bilangan.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+// ============================================================
+// FUNGSI RESET FORM
+// ============================================================
+function resetForm() {
+    // Reset semua input ke kosong
+    const inputIds = [
+        'productName', 'hargaJual', 'diskon', 'voucher',
+        'biayaProsesManual', 'gratisOngkirBiasaManual', 'gratisOngkirKhususManual',
+        'hpp', 'biayaPenanganan', 'roas', 'biayaIklanLain',
+        'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 'biayaOperasional',
+        'biayaLain', 'pajakRate'
+    ];
+
+    inputIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            if (el.type === 'text' || el.type === 'number') {
+                el.value = '';
+            }
+        }
+    });
+
+    // Reset dropdown ke default
+    DOM.kategoriSelect.value = 'fashion';
+    DOM.tipeTokoSelect.value = 'nonStar';
+
+    // Reset sub kategori
+    DOM.subKategoriSelect.innerHTML = '<option value="">-- Pilih Sub Kategori --</option>';
+    DOM.subKategoriDisplay.value = '';
+    DOM.subKategoriHidden.value = '';
+
+    // Reset search
+    DOM.searchProduk.value = '';
+    DOM.searchResults.classList.remove('show');
+    DOM.searchResults.innerHTML = '';
+
+    // Reset toggles
+    DOM.toggles.promoXTRA.value = 'No';
+    DOM.toggles.promoXTRAplus.value = 'No';
+    DOM.toggles.liveXTRA.value = 'No';
+    DOM.toggles.spayLater.value = 'No';
+    DOM.toggles.hematKirim.value = 'No';
+    DOM.toggles.asuransi.value = 'No';
+    DOM.toggles.produkPO.value = 'No';
+
+    // Update sub kategori
+    updateSubKategoriFromJSON();
+
+    console.log('🔄 Form telah direset!');
 }
 
 // ============================================================
@@ -424,11 +477,31 @@ function hitungPromoXTRAplus() {
 
 // ============================================================
 // FUNGSI HITUNG GRATIS ONGKIR XTRA DARI JSON
-// (Berdasarkan nama produk yang dipilih)
 // ============================================================
 function hitungGratisOngkirDariJSON() {
     // Ambil nama produk dari search input
-    const productName = DOM.searchProduk.value.trim();
+    let productName = DOM.searchProduk.value.trim();
+
+    // Jika search kosong, coba ambil dari sub kategori display
+    if (!productName) {
+        const displayText = DOM.subKategoriDisplay.value;
+        const match = displayText.match(/^(.+?)\s*\(/);
+        if (match) {
+            productName = match[1].trim();
+        }
+    }
+
+    // Jika masih kosong, coba ambil dari sub kategori yang dipilih
+    if (!productName) {
+        const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
+        if (selectedOption && selectedOption.value) {
+            const productData = dataAdminNonMall.find(item => item.subKategori === selectedOption.value);
+            if (productData && productData.jenisProduk && productData.jenisProduk.length > 0) {
+                productName = productData.jenisProduk[0];
+            }
+        }
+    }
+
     const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
     const subKategori = selectedOption ? selectedOption.value : '';
     const kategoriUtama = selectedOption ? selectedOption.getAttribute('data-kategori-utama') || '' : '';
@@ -565,11 +638,10 @@ function hitungSemua() {
     // 4. Biaya Proses Pesanan
     let biayaProses = biayaProsesManual;
 
-    // 5. Gratis Ongkir (gabungan dari manual + JSON)
+    // 5. Gratis Ongkir
     let gratisOngkirBiasa = gratisOngkirBiasaManual;
     let gratisOngkirKhusus = gratisOngkirKhususManual;
 
-    // Coba ambil dari JSON jika manual bernilai 0
     const ongkirFromJSON = hitungGratisOngkirDariJSON();
     if (gratisOngkirBiasa === 0 && ongkirFromJSON.biasa > 0) {
         gratisOngkirBiasa = ongkirFromJSON.biasa;
@@ -684,15 +756,22 @@ function attachEventListeners() {
         hitungSemua();
     });
 
-    DOM.subKategoriSelect.addEventListener('change', () => {
-        const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
+    DOM.subKategoriSelect.addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
         if (selectedOption && selectedOption.value) {
             const kategoriUtama = selectedOption.getAttribute('data-kategori-utama') || '';
             DOM.subKategoriDisplay.value = `${selectedOption.value} (${kategoriUtama})`;
             DOM.subKategoriHidden.value = selectedOption.value;
+
+            // Jika user pilih manual, coba set searchProduk dengan produk pertama
+            const productData = dataAdminNonMall.find(item => item.subKategori === selectedOption.value);
+            if (productData && productData.jenisProduk && productData.jenisProduk.length > 0) {
+                DOM.searchProduk.value = productData.jenisProduk[0];
+            }
         } else {
             DOM.subKategoriDisplay.value = '';
             DOM.subKategoriHidden.value = '';
+            DOM.searchProduk.value = '';
         }
         hitungBiayaAdmin();
         hitungSemua();
@@ -751,7 +830,7 @@ function attachEventListeners() {
 // ============================================================
 function initApp() {
     cacheDomElements();
-    updateSubKategoriFromJSON();
+    resetForm();
     attachEventListeners();
     hitungSemua();
     console.log('🚀 Aplikasi siap digunakan!');

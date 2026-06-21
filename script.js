@@ -11,7 +11,8 @@ let dataXTRACategory = [];
 let dataAdminMall = [];
 let dataAdminNonMall = [];
 let dataPromoXtra = [];
-let dataXtraFee = {};
+let dataXtraFee = [];
+let dataBiayaPembayaran = [];
 
 // ============================================================
 // DOM REFERENSI
@@ -23,6 +24,7 @@ function cacheDomElements() {
     DOM.subKategoriSelect = document.getElementById('subKategori');
     DOM.tipeTokoSelect = document.getElementById('tipeToko');
     DOM.biayaAdminText = document.getElementById('biayaAdminText');
+    DOM.biayaPembayaranText = document.getElementById('biayaPembayaranText');
     DOM.hargaNett = document.getElementById('hargaNett');
     DOM.totalBiayaShopee = document.getElementById('totalBiayaShopee');
     DOM.danaDicairkan = document.getElementById('danaDicairkan');
@@ -40,7 +42,6 @@ function cacheDomElements() {
         hargaJual: document.getElementById('hargaJual'),
         diskon: document.getElementById('diskon'),
         voucher: document.getElementById('voucher'),
-        biayaPembayaranManual: document.getElementById('biayaPembayaranManual'),
         biayaProsesManual: document.getElementById('biayaProsesManual'),
         gratisOngkirBiasaManual: document.getElementById('gratisOngkirBiasaManual'),
         gratisOngkirKhususManual: document.getElementById('gratisOngkirKhususManual'),
@@ -72,12 +73,13 @@ function cacheDomElements() {
 // ============================================================
 async function loadAllData() {
     try {
-        const [xtraCategory, adminMall, adminNonMall, promoXtra, xtraFee] = await Promise.all([
+        const [xtraCategory, adminMall, adminNonMall, promoXtra, xtraFee, biayaPembayaran] = await Promise.all([
             fetch(`${DATA_PATH}xtraCategory.json`).then(r => { if (!r.ok) throw new Error('xtraCategory.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}admin_mall.json`).then(r => { if (!r.ok) throw new Error('admin_mall.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}admin_non-mall.json`).then(r => { if (!r.ok) throw new Error('admin_non-mall.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}promo_xtra.json`).then(r => { if (!r.ok) throw new Error('promo_xtra.json not found'); return r.json(); }),
-            fetch(`${DATA_PATH}xtraFee.json`).then(r => { if (!r.ok) throw new Error('xtraFee.json not found'); return r.json(); })
+            fetch(`${DATA_PATH}xtraFee.json`).then(r => { if (!r.ok) throw new Error('xtraFee.json not found'); return r.json(); }),
+            fetch(`${DATA_PATH}biaya_pembayaran.json`).then(r => { if (!r.ok) throw new Error('biaya_pembayaran.json not found'); return r.json(); })
         ]);
         
         dataXTRACategory = xtraCategory;
@@ -85,6 +87,7 @@ async function loadAllData() {
         dataAdminNonMall = adminNonMall;
         dataPromoXtra = promoXtra;
         dataXtraFee = xtraFee;
+        dataBiayaPembayaran = biayaPembayaran;
         
         console.log('✅ Semua data berhasil dimuat!');
         console.log('📊 xtraCategory:', dataXTRACategory.length, 'items');
@@ -92,6 +95,7 @@ async function loadAllData() {
         console.log('📊 admin_non-mall:', dataAdminNonMall.length, 'items');
         console.log('📊 promo_xtra:', dataPromoXtra.length, 'items');
         console.log('📊 xtraFee:', Object.keys(dataXtraFee).length, 'kategori');
+        console.log('📊 biaya_pembayaran:', dataBiayaPembayaran.length, 'items');
         
         // Inisialisasi aplikasi setelah data dimuat
         initApp();
@@ -219,6 +223,50 @@ function hitungBiayaAdmin() {
 }
 
 // ============================================================
+// FUNGSI HITUNG BIAYA PEMBAYARAN DARI JSON
+// ============================================================
+function hitungBiayaPembayaran() {
+    const tipeToko = DOM.tipeTokoSelect.value;
+    const hargaJual = getNumber('hargaJual');
+    const diskon = getNumber('diskon');
+    const voucher = getNumber('voucher');
+    const hargaNett = hargaJual - diskon - voucher;
+    
+    if (hargaNett <= 0) {
+        DOM.biayaPembayaranText.innerText = '0% → Rp 0';
+        return 0;
+    }
+    
+    // Cari data biaya pembayaran berdasarkan tipe toko
+    let data = null;
+    if (tipeToko === 'mall') {
+        data = dataBiayaPembayaran.find(item => item.tipeToko === 'mall');
+    } else {
+        data = dataBiayaPembayaran.find(item => item.tipeToko === 'nonStar');
+    }
+    
+    if (!data) {
+        DOM.biayaPembayaranText.innerText = '0% → Rp 0';
+        return 0;
+    }
+    
+    const rate = data.rate || 0;
+    const maxPerQty = data.maxPerQty || 0;
+    
+    let biaya = hargaNett * rate;
+    
+    // Terapkan batas maksimal jika ada
+    if (maxPerQty > 0 && biaya > maxPerQty) {
+        biaya = maxPerQty;
+    }
+    
+    const persenDisplay = (rate * 100).toFixed(1) + '%';
+    DOM.biayaPembayaranText.innerText = `${persenDisplay} → ${formatRupiah(biaya)}`;
+    
+    return biaya;
+}
+
+// ============================================================
 // FUNGSI HITUNG PROMO XTRA
 // ============================================================
 function hitungPromoXTRA() {
@@ -319,7 +367,6 @@ function hitungSemua() {
     const pajakRate = getNumber('pajakRate') / 100;
     
     // INPUT MANUAL untuk biaya yang belum otomatis
-    const biayaPembayaranManual = getNumber('biayaPembayaranManual');
     const biayaProsesManual = getNumber('biayaProsesManual');
     const gratisOngkirBiasaManual = getNumber('gratisOngkirBiasaManual');
     const gratisOngkirKhususManual = getNumber('gratisOngkirKhususManual');
@@ -332,8 +379,9 @@ function hitungSemua() {
     let biayaAdmin = hitungBiayaAdmin();
     if (isNaN(biayaAdmin)) biayaAdmin = 0;
     
-    // 3. Biaya Pembayaran (input manual)
-    let biayaPembayaran = biayaPembayaranManual;
+    // 3. Biaya Pembayaran (otomatis dari tipe toko + JSON)
+    let biayaPembayaran = hitungBiayaPembayaran();
+    if (isNaN(biayaPembayaran)) biayaPembayaran = 0;
     
     // 4. Biaya Proses Pesanan (input manual)
     let biayaProses = biayaProsesManual;
@@ -451,6 +499,7 @@ function attachEventListeners() {
     
     DOM.tipeTokoSelect.addEventListener('change', () => {
         hitungBiayaAdmin();
+        hitungBiayaPembayaran();
         hitungSemua();
     });
     
@@ -460,7 +509,7 @@ function attachEventListeners() {
     });
     
     // Semua input number
-    const inputIds = ['hargaJual', 'diskon', 'voucher', 'biayaPembayaranManual', 'biayaProsesManual', 
+    const inputIds = ['hargaJual', 'diskon', 'voucher', 'biayaProsesManual', 
                       'gratisOngkirBiasaManual', 'gratisOngkirKhususManual', 'hpp', 'biayaPenanganan', 
                       'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 
                       'biayaOperasional', 'biayaLain', 'pajakRate'];

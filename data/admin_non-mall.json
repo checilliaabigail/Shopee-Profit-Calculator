@@ -14,7 +14,7 @@
       "Tiara & Mahkota Bunga",
       "Aksesoris Rambut Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
       "Sapu Tangan",
       "Aksesoris Tambahan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 3,
@@ -40,7 +40,7 @@
     "jenisProduk": [
       "Anting"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 4,
@@ -50,7 +50,7 @@
     "jenisProduk": [
       "Cincin"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 5,
@@ -60,7 +60,7 @@
     "jenisProduk": [
       "Dasi"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 6,
@@ -70,7 +70,7 @@
     "jenisProduk": [
       "Gelang Kaki"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 7,
@@ -80,7 +80,7 @@
     "jenisProduk": [
       "Gelang Tangan & Bangle"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 8,
@@ -90,7 +90,7 @@
     "jenisProduk": [
       "Ikat Pinggang"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 9,
@@ -103,7 +103,7 @@
       "Tempat Kacamata & Aksesoris",
       "Aksesoris Kacamata Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 10,
@@ -113,7 +113,7 @@
     "jenisProduk": [
       "Kalung"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 11,
@@ -123,7 +123,7 @@
     "jenisProduk": [
       "Sarung Tangan"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 12,
@@ -133,7 +133,7 @@
     "jenisProduk": [
       "Set & Paket Aksesoris"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 13,
@@ -143,7 +143,7 @@
     "jenisProduk": [
       "Syal & Selendang"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 14,
@@ -153,7 +153,7 @@
     "jenisProduk": [
       "Topi"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 15,
@@ -205,7 +205,7 @@
     "jenisProduk": [
       "Aksesoris Fashion Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 19,
@@ -213,26 +213,26 @@
     "kategori": "Fashion Bayi & Anak",
     "subKategori": "Aksesoris Bayi & Anak",
     "jenisProduk": [
-      "Ransel", 
-      "Tas Selempang & Bahu", 
-      "Tas Troli", 
-      "Dompet", 
-      "Tas & Koper Lainnya", 
-      "Jam Tangan", 
-      "Topi", 
-      "Kacamata", 
-      "Aksesoris Rambut", 
-      "Sarung Tangan", 
-      "Ikat Pinggang", 
-      "Kaos Kaki", 
-      "Syal", 
-      "Alat Penutup Telinga", 
-      "Aksesoris Bayi & Anak Lainnya", 
-      "Jas Hujan", 
-      "Sepatu Boot Hujan", 
+      "Ransel",
+      "Tas Selempang & Bahu",
+      "Tas Troli",
+      "Dompet",
+      "Tas & Koper Lainnya",
+      "Jam Tangan",
+      "Topi",
+      "Kacamata",
+      "Aksesoris Rambut",
+      "Sarung Tangan",
+      "Ikat Pinggang",
+      "Kaos Kaki",
+      "Syal",
+      "Alat Penutup Telinga",
+      "Aksesoris Bayi & Anak Lainnya",
+      "Jas Hujan",
+      "Sepatu Boot Hujan",
       "Perlengkapan Hujan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 20,
@@ -240,30 +240,30 @@
     "kategori": "Fashion Bayi & Anak",
     "subKategori": "Pakaian Anak Laki-Laki",
     "jenisProduk": [
-      "Kostum", 
-      "Pakaian Dalam", 
-      "Pakaian Tidur", 
-      "Baju Renang", 
-      "Kaos", 
-      "Kaos Polo", 
-      "Kemeja", 
-      "Jaket & Coat Reguler", 
-      "Outerwear Musim Dingin", 
-      "Rompi", 
-      "Sweater & Kardigan", 
-      "Blazer", 
-      "Hoodie", 
-      "Outerwear Lainnya", 
-      "Jeans", 
-      "Celana", 
-      "Celana Pendek", 
-      "Overall", 
-      "Jas & Setelan", 
-      "Pakaian Anak Laki-Laki Lainnya", 
-      "Atasan Lainnya", 
+      "Kostum",
+      "Pakaian Dalam",
+      "Pakaian Tidur",
+      "Baju Renang",
+      "Kaos",
+      "Kaos Polo",
+      "Kemeja",
+      "Jaket & Coat Reguler",
+      "Outerwear Musim Dingin",
+      "Rompi",
+      "Sweater & Kardigan",
+      "Blazer",
+      "Hoodie",
+      "Outerwear Lainnya",
+      "Jeans",
+      "Celana",
+      "Celana Pendek",
+      "Overall",
+      "Jas & Setelan",
+      "Pakaian Anak Laki-Laki Lainnya",
+      "Atasan Lainnya",
       "Bawahan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 21,
@@ -271,34 +271,34 @@
     "kategori": "Fashion Bayi & Anak",
     "subKategori": "Pakaian Anak Perempuan",
     "jenisProduk": [
-      "Kostum", 
-      "Pakaian Dalam", 
-      "Baju Tidur", 
-      "Baju Renang", 
-      "Kaos", 
-      "Kaos Polo", 
-      "Kemeja & Blouse", 
-      "Jaket & Coat Reguler", 
-      "Outerwear Musim Dingin", 
-      "Rompi", 
-      "Sweater & Kardigan", 
-      "Blazer", 
-      "Hoodie", 
-      "Outerwear Lainnya", 
-      "Jeans", 
-      "Celana Panjang", 
-      "Celana Pendek", 
-      "Rok", 
-      "Legging", 
-      "Romper", 
+      "Kostum",
+      "Pakaian Dalam",
+      "Baju Tidur",
+      "Baju Renang",
+      "Kaos",
+      "Kaos Polo",
+      "Kemeja & Blouse",
+      "Jaket & Coat Reguler",
+      "Outerwear Musim Dingin",
+      "Rompi",
+      "Sweater & Kardigan",
+      "Blazer",
+      "Hoodie",
+      "Outerwear Lainnya",
+      "Jeans",
+      "Celana Panjang",
+      "Celana Pendek",
+      "Rok",
+      "Legging",
+      "Romper",
       "Jumpsuit & Overall",
       "Dress",
       "Jas & Setelan",
       "Pakaian Anak Perempuan Lainnya",
-      "Atasan Lainnya", 
+      "Atasan Lainnya",
       "Bawahan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 22,
@@ -309,18 +309,18 @@
       "Outerwear Reguler",
       "Outerwear Musim Dingin",
       "Dress",
-      "Celana Panjang & Legging", 
+      "Celana Panjang & Legging",
       "Celana Pendek",
       "Rok",
-      "Bawahan Lainnya", 
+      "Bawahan Lainnya",
       "Baju Tidur",
-      "Atasan", 
-      "Bodysuit & Jumper", 
+      "Atasan",
+      "Bodysuit & Jumper",
       "Set",
       "Baju Renang",
       "Pakaian Bayi Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 23,
@@ -328,15 +328,15 @@
     "kategori": "Fashion Bayi & Anak",
     "subKategori": "Sepatu Anak Laki-Laki",
     "jenisProduk": [
-      "Sepatu Boot", 
-      "Sandal", 
-      "Sepatu Sneaker", 
-      "Flip Flop", 
-      "Sepatu Formal", 
-      "Loafers", 
+      "Sepatu Boot",
+      "Sandal",
+      "Sepatu Sneaker",
+      "Flip Flop",
+      "Sepatu Formal",
+      "Loafers",
       "Sepatu Anak Laki-Laki Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 24,
@@ -344,15 +344,15 @@
     "kategori": "Fashion Bayi & Anak",
     "subKategori": "Sepatu Anak Perempuan",
     "jenisProduk": [
-      "Sepatu Boot", 
-      "Sandal", 
+      "Sepatu Boot",
+      "Sandal",
       "Sepatu Sneaker",
-      "Loafers", 
+      "Loafers",
       "Flip Flop",
-      "Flats", 
+      "Flats",
       "Sepatu Anak Perempuan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 25,
@@ -362,7 +362,7 @@
     "jenisProduk": [
       "Sepatu Bayi"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 26,
@@ -386,7 +386,7 @@
     "jenisProduk": [
       "Fashion Bayi & Anak Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 28,
@@ -394,10 +394,10 @@
     "kategori": "Fashion Muslim",
     "subKategori": "Pakaian Muslim Wanita",
     "jenisProduk": [
-      "Baju Olahraga Muslim", 
+      "Baju Olahraga Muslim",
       "Baju Renang Muslim"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 29,
@@ -405,8 +405,13 @@
     "kategori": "Fashion Muslim",
     "subKategori": "Mukena & Perlengkapan Sholat",
     "jenisProduk": [
-      "Baju Olahraga Muslim", 
-      "Baju Renang Muslim"
+      "Set Perlengkapan Sholat",
+      "Sajadah",
+      "Peci",
+      "Songkok & Kopiah",
+      "Mukena",
+      "Mukena Travel",
+      "Mukena & Perlengkapan Sholat Lainnya"
     ],
     "adminFee": 8.25
   },
@@ -416,9 +421,9 @@
     "kategori": "Fashion Muslim",
     "subKategori": "Outerwear",
     "jenisProduk": [
-      "Rompi", 
+      "Rompi",
       "Jaket",
-      "Mantel",                              
+      "Mantel",
       "Cardigan",
       "Outerwear Lainnya"
     ],
@@ -469,10 +474,12 @@
       "Hijab Lainnya",
       "Aksesoris Hijab Lainnya",
       "Kaos Kaki",
-      "Handsock", 
-      "Aksesoris Lainnya", 
-      "Tunik", 
-      "Kemeja, Blus, & Inner",
+      "Handsock",
+      "Aksesoris Lainnya",
+      "Tunik",
+      "Kemeja",
+      "Blus",
+      "& Inner",
       "Atasan Menyusui",
       "Atasan Muslim Lainnya",
       "Gamis",
@@ -482,13 +489,13 @@
       "Baju Kelelawar",
       "Baju Kurung",
       "Set Baju Muslim",
-      "Jumpsuit", 
-      "Dress Lainnya", 
-      "Rok", 
-      "Celana Panjang", 
-      "Legging", 
+      "Jumpsuit",
+      "Dress Lainnya",
+      "Rok",
+      "Celana Panjang",
+      "Legging",
       "Celana Palazzo",
-      "Bawahan Lainnya", 
+      "Bawahan Lainnya",
       "Pakaian Muslim Wanita Lainnya"
     ],
     "adminFee": 8.25
@@ -519,14 +526,14 @@
     "kategori": "Jam Tangan",
     "subKategori": "Aksesoris Jam Tangan",
     "jenisProduk": [
-      "Strap", 
-      "Alat Servis Jam Tangan", 
-      "Pengait Jam Tangan", 
-      "Baterai Jam Tangan", 
-      "Kotak Jam Tangan", 
+      "Strap",
+      "Alat Servis Jam Tangan",
+      "Pengait Jam Tangan",
+      "Baterai Jam Tangan",
+      "Kotak Jam Tangan",
       "Aksesoris Jam Tangan lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 37,
@@ -536,7 +543,7 @@
     "jenisProduk": [
       "Jam Tangan Couple"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 38,
@@ -546,7 +553,7 @@
     "jenisProduk": [
       "Jam Tangan Pria"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 39,
@@ -556,7 +563,7 @@
     "jenisProduk": [
       "Jam Tangan Wanita"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 40,
@@ -566,7 +573,7 @@
     "jenisProduk": [
       "Jam Tangan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 41,
@@ -574,18 +581,18 @@
     "kategori": "Koper & Tas Travel",
     "subKategori": "Aksesoris Travel",
     "jenisProduk": [
-      "Passport Cover", 
-      "Organizer Travel", 
-      "Pelindung & Sarung Koper", 
-      "Tag Koper", 
-      "Strap Koper", 
-      "Gembok Koper", 
-      "Timbangan Koper", 
-      "Bantal Leher & Penutup Mata", 
-      "Botol & Wadah Isi Ulang", 
+      "Passport Cover",
+      "Organizer Travel",
+      "Pelindung & Sarung Koper",
+      "Tag Koper",
+      "Strap Koper",
+      "Gembok Koper",
+      "Timbangan Koper",
+      "Bantal Leher & Penutup Mata",
+      "Botol & Wadah Isi Ulang",
       "Aksesoris Travel Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 42,
@@ -595,7 +602,7 @@
     "jenisProduk": [
       "Koper"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 43,
@@ -603,11 +610,11 @@
     "kategori": "Koper & Tas Travel",
     "subKategori": "Tas Travel",
     "jenisProduk": [
-      "Tas Serut", 
+      "Tas Serut",
       "Tas Lipat",
       "Tas Travel Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 44,
@@ -617,7 +624,7 @@
     "jenisProduk": [
       "Koper & Tas Travel Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 45,
@@ -627,7 +634,7 @@
     "jenisProduk": [
       "Kaos Kaki"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 46,
@@ -635,9 +642,9 @@
     "kategori": "Pakaian Pria",
     "subKategori": "Atasan",
     "jenisProduk": [
-      "Kemeja", 
-      "Kaos Polo", 
-      "Kaos", 
+      "Kemeja",
+      "Kaos Polo",
+      "Kaos",
       "Tanktop",
       "Atasan Lainnya"
     ],
@@ -682,8 +689,8 @@
     "kategori": "Pakaian Pria",
     "subKategori": "Hoodie & Sweatshirt",
     "jenisProduk": [
-      "Hoodie", 
-      "Sweatshirt", 
+      "Hoodie",
+      "Sweatshirt",
       "Hoodie & Sweatshirt Lainnya"
     ],
     "adminFee": 8.25
@@ -694,10 +701,12 @@
     "kategori": "Pakaian Pria",
     "subKategori": "Jaket, Mantel, & Rompi",
     "jenisProduk": [
-      "Jaket", 
-      "Rompi", 
+      "Jaket",
+      "Rompi",
       "Jaket & Mantel Musim Dingin",
-      "Jaket, Mantel, & Rompi Lainnya"
+      "Jaket",
+      "Mantel",
+      "& Rompi Lainnya"
     ],
     "adminFee": 8.25
   },
@@ -809,7 +818,7 @@
     "jenisProduk": [
       "Kaos Kaki"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 62,
@@ -817,10 +826,10 @@
     "kategori": "Pakaian Wanita",
     "subKategori": "Kaos Kaki & Stocking",
     "jenisProduk": [
-      "Stocking", 
+      "Stocking",
       "Kaos Kaki & Stocking Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 63,
@@ -829,7 +838,7 @@
     "subKategori": "Atasan",
     "jenisProduk": [
       "Tanktop & Kamisol",
-      "Kemben", 
+      "Kemben",
       "Kaos",
       "Kemeja & Blouse",
       "Kaus Polo",
@@ -921,7 +930,9 @@
       "Blazer",
       "Jaket",
       "Rompi",
-      "Jaket, Mantel, & Rompi Lainnya"
+      "Jaket",
+      "Mantel",
+      "& Rompi Lainnya"
     ],
     "adminFee": 8.25
   },
@@ -931,10 +942,12 @@
     "kategori": "Pakaian Wanita",
     "subKategori": "Jumpsuit, Playsuit, & Overall",
     "jenisProduk": [
-      "Jumpsuit", 
+      "Jumpsuit",
       "Playsuit",
       "Overall",
-      "Jumpsuit, Playsuit, & Overall Lainnya"
+      "Jumpsuit",
+      "Playsuit",
+      "& Overall Lainnya"
     ],
     "adminFee": 8.25
   },
@@ -948,8 +961,11 @@
       "Kebaya",
       "Katun",
       "Wol",
-      "Beludru, Sutra, & Satin", 
-      "Kulit, Vinil & Nilon", 
+      "Beludru",
+      "Sutra",
+      "& Satin",
+      "Kulit",
+      "Vinil & Nilon",
       "Denim",
       "Kanvas",
       "Songket",
@@ -981,7 +997,7 @@
       "Padding",
       "Stiker Nipple",
       "Aksesoris Bra Lainnya",
-      "Korset", 
+      "Korset",
       "Celana Stretch",
       "Sexy Lingerie",
       "Pakaian Dalam Lainnya"
@@ -1074,14 +1090,14 @@
     "kategori": "Sepatu Pria",
     "subKategori": "Aksesoris & Perawatan Sepatu",
     "jenisProduk": [
-      "Alat Perawatan & Pembersih Sepatu", 
+      "Alat Perawatan & Pembersih Sepatu",
       "Parfum Sepatu",
       "Shoe Tree & Horns",
       "Insole Sepatu",
-      "Aksesoris & Perawatan Sepatu Lainnya", 
+      "Aksesoris & Perawatan Sepatu Lainnya",
       "Tali Sepatu"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 83,
@@ -1094,7 +1110,7 @@
       "Safety Boot",
       "Boot Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 84,
@@ -1104,7 +1120,7 @@
     "jenisProduk": [
       "Loafer"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 85,
@@ -1114,7 +1130,7 @@
     "jenisProduk": [
       "Oxford"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 86,
@@ -1128,7 +1144,7 @@
       "Sandal Kesehatan",
       "Sandal Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 87,
@@ -1138,7 +1154,7 @@
     "jenisProduk": [
       "Slip-On & Mules"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 88,
@@ -1148,7 +1164,7 @@
     "jenisProduk": [
       "Sneakers"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 89,
@@ -1158,7 +1174,7 @@
     "jenisProduk": [
       "Sepatu Pria Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 90,
@@ -1166,14 +1182,14 @@
     "kategori": "Sepatu Wanita",
     "subKategori": "Aksesoris & Perawatan Sepatu",
     "jenisProduk": [
-      "Parfum Sepatu", 
-      "Sol Dalam Sepatu", 
-      "Shoe Tree & Horns", 
+      "Parfum Sepatu",
+      "Sol Dalam Sepatu",
+      "Shoe Tree & Horns",
       "Perawatan Sepatu",
       "Tali Sepatu",
       "Aksesoris & Perawatan Sepatu Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 91,
@@ -1185,7 +1201,7 @@
       "Sepatu Boot Fashion",
       "Boots Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 92,
@@ -1195,7 +1211,7 @@
     "jenisProduk": [
       "Heels"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 93,
@@ -1209,7 +1225,7 @@
       "Sandal Rumah",
       "Sandal Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 94,
@@ -1224,7 +1240,7 @@
       "Mules & Mary Janes",
       "Sepatu Flat Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 95,
@@ -1234,7 +1250,7 @@
     "jenisProduk": [
       "Sneakers"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 96,
@@ -1244,7 +1260,7 @@
     "jenisProduk": [
       "Wedges"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 97,
@@ -1254,7 +1270,7 @@
     "jenisProduk": [
       "Sepatu Wanita Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 98,
@@ -1264,7 +1280,7 @@
     "jenisProduk": [
       "Clutch"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 99,
@@ -1279,7 +1295,7 @@
       "Dompet Panjang",
       "Dompet Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 100,
@@ -1289,7 +1305,7 @@
     "jenisProduk": [
       "Ransel Pria"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 101,
@@ -1299,7 +1315,7 @@
     "jenisProduk": [
       "Tas Kerja"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 102,
@@ -1312,7 +1328,7 @@
       "Ransel Laptop",
       "Tas Laptop Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 103,
@@ -1322,7 +1338,7 @@
     "jenisProduk": [
       "Tas Pinggang Pria"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 104,
@@ -1332,7 +1348,7 @@
     "jenisProduk": [
       "Tas Selempang & Bahu Pria"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 105,
@@ -1342,7 +1358,7 @@
     "jenisProduk": [
       "Tote Bag"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 106,
@@ -1352,7 +1368,7 @@
     "jenisProduk": [
       "Tas Pria Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 107,
@@ -1367,7 +1383,7 @@
       "Produk Perawatan & Pembersih Tas",
       "Aksesoris Tas Wanita Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 108,
@@ -1377,7 +1393,7 @@
     "jenisProduk": [
       "Clutch"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 109,
@@ -1392,7 +1408,7 @@
       "Dompet Panjang",
       "Dompet Wanita Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 110,
@@ -1402,7 +1418,7 @@
     "jenisProduk": [
       "Ransel Wanita"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 111,
@@ -1415,7 +1431,7 @@
       "Ransel Laptop",
       "Tas Laptop Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 112,
@@ -1425,7 +1441,7 @@
     "jenisProduk": [
       "Tas Pinggang Wanita"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 113,
@@ -1435,7 +1451,7 @@
     "jenisProduk": [
       "Tas Selempang & Bahu Wanita"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 114,
@@ -1445,7 +1461,7 @@
     "jenisProduk": [
       "Top Handle Bag"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 115,
@@ -1455,7 +1471,7 @@
     "jenisProduk": [
       "Tote Bag"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 116,
@@ -1465,7 +1481,7 @@
     "jenisProduk": [
       "Tas Wanita Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 117,
@@ -1475,7 +1491,7 @@
     "jenisProduk": [
       "Inflatable & Perosotan"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 118,
@@ -1485,13 +1501,15 @@
     "jenisProduk": [
       "Baby Monitor",
       "Kelambu",
-      "Bumper, Rail, & Guard",
+      "Bumper",
+      "Rail",
+      "& Guard",
       "Pelindung Sudut",
       "Pintu & Pagar Bayi",
       "Pengaman Laci & Lemari",
       "Alat Keamanan Bayi Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 119,
@@ -1504,7 +1522,7 @@
       "Pelembab & Cream",
       "Kesehatan Kehamilan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 120,
@@ -1516,7 +1534,7 @@
       "Puzzle",
       "Mainan Slime & Squishy"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 121,
@@ -1528,7 +1546,7 @@
       "Bantal Ibu Hamil",
       "Perlengkapan Ibu Hamil Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 122,
@@ -1537,12 +1555,14 @@
     "subKategori": "Perlengkapan Makan Bayi",
     "jenisProduk": [
       "Pompa ASI & Aksesoris",
-      "Breast Pad, Shell, & Shield",
+      "Breast Pad",
+      "Shell",
+      "& Shield",
       "Apron Menyusui",
       "Kantong ASI",
       "Perlengkapan Menyusui Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 123,
@@ -1559,7 +1579,7 @@
       "Sabuk Pengaman Anak",
       "Perlengkapan Travelling Bayi Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 124,
@@ -1573,7 +1593,7 @@
       "Popok Kain & Aksesoris",
       "Popok & Pispot Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 125,
@@ -1626,13 +1646,22 @@
       "Mainan Boneka",
       "Mainan Peran",
       "Kendaraan Mainan",
-      "Sepeda, Skuter, & Ride-On",
-      "Tenda Mainan, Terowongan Mainan, & Ball Pit",
-      "Kolam, Pelampung, & Mainan Pasir",
+      "Sepeda",
+      "Skuter",
+      "& Ride-On",
+      "Tenda Mainan",
+      "Terowongan Mainan",
+      "& Ball Pit",
+      "Kolam",
+      "Pelampung",
+      "& Mainan Pasir",
       "Mainan Olahraga",
-      "Mainan Terbang, Layang-layang, & Kincir Angin",
+      "Mainan Terbang",
+      "Layang-layang",
+      "& Kincir Angin",
       "Pistol Mainan",
-      "Mainan Matematika, Mainan Ilmu Pengetahuan Alam & Teknologi",
+      "Mainan Matematika",
+      "Mainan Ilmu Pengetahuan Alam & Teknologi",
       "Shape Sorter",
       "Mainan Musik",
       "Mainan Tablet & Komputer",
@@ -1683,7 +1712,9 @@
       "Tisu",
       "Detergen Pakaian Bayi",
       "Bak Mandi & Dudukan",
-      "Jas Mandi, Handuk, & Lap Mandi",
+      "Jas Mandi",
+      "Handuk",
+      "& Lap Mandi",
       "Penutup Rambut",
       "Alat & Aksesoris Mandi",
       "Alat Perawatan Bayi",
@@ -1722,7 +1753,7 @@
     "jenisProduk": [
       "Vitamin & Suplemen Bayi"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 133,
@@ -1742,7 +1773,7 @@
     "jenisProduk": [
       "Hand Sanitizer"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 135,
@@ -1765,7 +1796,7 @@
       "P3K Lainnya",
       "Obat Resep"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 136,
@@ -1778,7 +1809,7 @@
       "Perawatan Telinga",
       "Cairan Lensa & Obat Tetes Mata"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 137,
@@ -1791,7 +1822,7 @@
       "Penunjang Performa",
       "Kesehatan Seksual Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 138,
@@ -1811,7 +1842,7 @@
       "Alat Bantu Cedera & Disabilitas Lainnya",
       "Perawatan Hidung & Pernafasan"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 139,
@@ -1840,7 +1871,7 @@
       "Lensa Kontak",
       "Kesehatan Mata Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 140,
@@ -1854,7 +1885,7 @@
       "Kesejahteraan",
       "Suplemen Makanan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 141,
@@ -1864,7 +1895,7 @@
     "jenisProduk": [
       "Kesehatan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 142,
@@ -1872,13 +1903,17 @@
     "kategori": "Makanan & Minuman",
     "subKategori": "Makanan Ringan",
     "jenisProduk": [
-      "Biskuit, Kue, & Wafer",
+      "Biskuit",
+      "Kue",
+      "& Wafer",
       "Keripik & Kerupuk",
       "Biji-bijian",
       "Popcorn",
       "Rumput Laut",
       "Kacang",
-      "Puding, Jeli, & Marshmallow",
+      "Puding",
+      "Jeli",
+      "& Marshmallow",
       "Dendeng",
       "Buah Kering",
       "Snack Seafood",
@@ -1886,7 +1921,7 @@
       "Abon",
       "Makanan Ringan Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 143,
@@ -1894,9 +1929,10 @@
     "kategori": "Makanan & Minuman",
     "subKategori": "Makanan Ringan",
     "jenisProduk": [
-      "Permen, Cokelat"
+      "Permen",
+      "Cokelat"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 144,
@@ -1904,14 +1940,14 @@
     "kategori": "Makanan & Minuman",
     "subKategori": "Bahan Pokok",
     "jenisProduk": [
-      "Buah Kaleng", 
+      "Buah Kaleng",
       "Daging Kaleng",
       "Seafood Kaleng",
       "Sayur Kaleng",
       "Sup Kaleng",
       "Makanan Kaleng Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 145,
@@ -1934,7 +1970,7 @@
       "Susu Non-Dairy",
       "Minuman Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 146,
@@ -1945,10 +1981,12 @@
       "Bir & Cider",
       "Wine & Champagne",
       "Liquor & Spirits",
-      "Sake, Soju, & Umeshu",
+      "Sake",
+      "Soju",
+      "& Umeshu",
       "Minuman Alkohol Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 147,
@@ -1958,7 +1996,7 @@
     "jenisProduk": [
       "Set Hadiah & Hampers"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 148,
@@ -1972,7 +2010,7 @@
       "Mie & Pasta Instan",
       "Makanan Instan Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 149,
@@ -1985,7 +2023,7 @@
       "Pastry",
       "Roti & Kue Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 150,
@@ -2062,7 +2100,9 @@
       "Tepung Bumbu",
       "Bumbu Masak Lainnya",
       "Kebutuhan Memasak Lainnya",
-      "Kaldu, Saus, & Sup Instan",
+      "Kaldu",
+      "Saus",
+      "& Sup Instan",
       "Bumbu Masak Instan"
     ],
     "adminFee": 6.75
@@ -2101,15 +2141,18 @@
       "Lemon & Limau",
       "Anggur",
       "Melon & Semangka",
-      "Buah Berbiji Tengah (Alpukat, Kurma, Ceri, dll)",
+      "Buah Berbiji Tengah (Alpukat",
+      "Kurma",
+      "Ceri",
+      "dll)",
       "Buah Tropis & Eksotis",
-      "Buah Potong & Paket Aneka Buah", 
-      "Buah Lainnya", 
-      "Jamur", 
-      "Makanan Beku Olahan", 
-      "Daging & Seafood Beku", 
-      "Daging Lainnya", 
-      "Makanan Segar & Beku Lainnya", 
+      "Buah Potong & Paket Aneka Buah",
+      "Buah Lainnya",
+      "Jamur",
+      "Makanan Beku Olahan",
+      "Daging & Seafood Beku",
+      "Daging Lainnya",
+      "Makanan Segar & Beku Lainnya",
       "Seafood Lainnya"
     ],
     "adminFee": 6.75
@@ -2120,9 +2163,11 @@
     "kategori": "Makanan & Minuman",
     "subKategori": "Menu Sarapan",
     "jenisProduk": [
-      "Madu & Olesan", 
+      "Madu & Olesan",
       "Selai & Olesan",
-      "Sereal, Granola, & Oat",
+      "Sereal",
+      "Granola",
+      "& Oat",
       "Bar Sereal",
       "Menu Sarapan Lainnya"
     ],
@@ -2146,7 +2191,7 @@
     "jenisProduk": [
       "Telur"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 158,
@@ -2156,7 +2201,7 @@
     "jenisProduk": [
       "Makanan & Minuman Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 159,
@@ -2178,7 +2223,7 @@
       "Rautan",
       "Facial Steamer",
       "Alat Pelangsing & Pijat Wajah",
-      "Alat Pembersih Wajah", 
+      "Alat Pembersih Wajah",
       "Alat Perawatan Wajah Lainnya",
       "Alat Pelangsing Tubuh",
       "Alat Penghilang Bulu Rambut",
@@ -2214,9 +2259,9 @@
       "Eyebrow",
       "Kosmetik Mata Lainnya",
       "Lipstik",
-      "Lip Gloss", 
+      "Lip Gloss",
       "Lip Liner",
-      "Lip Tint", 
+      "Lip Tint",
       "Lip Plumper",
       "Kosmetik Bibir Lainnya",
       "Pembersih Make Up",
@@ -2263,7 +2308,7 @@
       "Gunting & Groomer Multi-fungsi",
       "Aksesoris Cukur",
       "Perawatan Rambut",
-      "Perawatan Pria Lainnya", 
+      "Perawatan Pria Lainnya",
       "Perawatan Wajah Lainnya",
       "Shaving & Grooming Lainnya"
     ],
@@ -2383,12 +2428,14 @@
     "subKategori": "Media Player",
     "jenisProduk": [
       "MP3 & MP4 Player",
-      "CD, DVD, & Blu-ray Player",
+      "CD",
+      "DVD",
+      "& Blu-ray Player",
       "Voice Recorders",
       "Radio & Pemutar Kaset",
       "Media Player Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 170,
@@ -2398,7 +2445,7 @@
     "jenisProduk": [
       "Amplifier & Mixer"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 171,
@@ -2408,7 +2455,7 @@
     "jenisProduk": [
       "Kabel & Konverter Audio & Video"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 172,
@@ -2418,7 +2465,7 @@
     "jenisProduk": [
       "Mikrofon & Aksesoris"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 173,
@@ -2431,7 +2478,7 @@
       "AV Receiver",
       "Perangkat Audio & Speaker Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 174,
@@ -2439,7 +2486,9 @@
     "kategori": "Audio",
     "subKategori": "Earphone, Headphone, & Headset",
     "jenisProduk": [
-      "Earphone, Headphone, & Headset"
+      "Earphone",
+      "Headphone",
+      "& Headset"
     ],
     "adminFee": 6.75
   },
@@ -2451,7 +2500,7 @@
     "jenisProduk": [
       "Audio Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 176,
@@ -2468,7 +2517,7 @@
       "Anti Petir",
       "Kelistrikan Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 177,
@@ -2478,7 +2527,7 @@
     "jenisProduk": [
       "Baterai"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 178,
@@ -2488,7 +2537,7 @@
     "jenisProduk": [
       "Water Heater"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 179,
@@ -2498,7 +2547,7 @@
     "jenisProduk": [
       "Foot Bath & Spa"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 180,
@@ -2510,7 +2559,7 @@
       "Penghangat Ruangan",
       "Peralatan Listrik Besar Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 181,
@@ -2525,7 +2574,7 @@
       "Telepon Lainnya",
       "Perlengkapan Listrik Kecil Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 182,
@@ -2535,7 +2584,7 @@
     "jenisProduk": [
       "Remot Kontrol"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 183,
@@ -2543,13 +2592,15 @@
     "kategori": "Elektronik",
     "subKategori": "Rokok Elektronik & Shisha",
     "jenisProduk": [
-      "Pods, Mods, & Hookah",
+      "Pods",
+      "Mods",
+      "& Hookah",
       "Liquid & Perasa Rokok Elektronik/Shisha",
       "Aksesoris Rokok Elektronik/Shisha",
       "Perlengkapan Rokok Elektronik/Shisha",
       "Rokok Elektronik Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 184,
@@ -2565,7 +2616,7 @@
       "Kipas Angin",
       "Pendingin Ruangan Lainnya"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 185,
@@ -2580,7 +2631,7 @@
       "Purifier & Humidifier Lainnya",
       "Penyedot Debu & Peralatan Perawatan Lantai"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 186,
@@ -2606,7 +2657,7 @@
       "Alat Masak Serbaguna",
       "Panci Presto",
       "Slow Cooker & Mesin Sous Vide",
-      "Penanak Nasi", 
+      "Penanak Nasi",
       "Pembuat Waffle & Crepe",
       "Perebus Telur",
       "Pembuat Roti",
@@ -2619,7 +2670,7 @@
       "Penghisap Asap Dapur",
       "Perangkat Dapur Lainnya"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 187,
@@ -2633,7 +2684,7 @@
       "Bracket TV",
       "TV & Aksesoris Lainnya"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 188,
@@ -2655,7 +2706,7 @@
     "jenisProduk": [
       "Elektronik Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 190,
@@ -2673,7 +2724,7 @@
       "PSP",
       "Konsol Game Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 191,
@@ -2681,7 +2732,7 @@
     "kategori": "Gaming & Konsol",
     "subKategori": "Video Game",
     "jenisProduk": [
-      "Playstation", 
+      "Playstation",
       "Xbox",
       "Wii",
       "Nintendo 3DS & DS",
@@ -2692,7 +2743,7 @@
       "Game PC",
       "Video Game Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 192,
@@ -2702,7 +2753,7 @@
     "jenisProduk": [
       "Aksesoris Konsol"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 193,
@@ -2712,7 +2763,7 @@
     "jenisProduk": [
       "Gaming & Konsol Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 194,
@@ -2730,7 +2781,9 @@
       "Tali & Gantungan Handphone",
       "Pouch Handphone",
       "Aksesoris Lainnya",
-      "Casing, Penggulung, & Pengikat Kabel",
+      "Casing",
+      "Penggulung",
+      "& Pengikat Kabel",
       "Travel Adaptor",
       "Kabel & Adaptor Handphone",
       "Charger",
@@ -2743,7 +2796,7 @@
       "Casing & Skin Lainnya",
       "Casing & Skin Earphone"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 195,
@@ -2753,7 +2806,7 @@
     "jenisProduk": [
       "Perangkat VR"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 196,
@@ -2769,7 +2822,7 @@
       "Powercase",
       "Powerbank & Baterai Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 197,
@@ -2781,7 +2834,7 @@
       "Pelacak GPS",
       "Perangkat Wearable Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 198,
@@ -2792,7 +2845,7 @@
       "Alat Casting",
       "Kartu Memori"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 199,
@@ -2802,7 +2855,7 @@
     "jenisProduk": [
       "Kartu Perdana"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 200,
@@ -2812,7 +2865,7 @@
     "jenisProduk": [
       "Walkie Talkie"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 201,
@@ -2853,7 +2906,7 @@
     "jenisProduk": [
       "Handphone & Aksesoris Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 205,
@@ -2866,11 +2919,13 @@
       "Printer Foto",
       "Charger Baterai",
       "Baterai & Battery Grip",
-      "Tripod, Monopod, & Aksesoris",
+      "Tripod",
+      "Monopod",
+      "& Aksesoris",
       "Aksesoris Kamera Lainnya",
       "Gimbal & Stabilizer"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 206,
@@ -2884,7 +2939,7 @@
       "Kamera Pengintai",
       "Kamera Keamanan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 207,
@@ -2899,7 +2954,7 @@
       "Lenspen & Brush",
       "Perawatan Kamera Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 208,
@@ -2909,7 +2964,7 @@
     "jenisProduk": [
       "Aksesoris Drone"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 209,
@@ -2917,13 +2972,13 @@
     "kategori": "Kamera & Drone",
     "subKategori": "Aksesoris Kamera",
     "jenisProduk": [
-      "Flash", 
+      "Flash",
       "Flash Trigger",
       "Flash Diffuser",
       "Aksesoris Flash Lainnya",
       "Tas & Casing Kamera"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 210,
@@ -2937,7 +2992,7 @@
       "Hood Lensa",
       "Aksesoris Lensa Lainnya"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 211,
@@ -2947,7 +3002,7 @@
     "jenisProduk": [
       "Drone"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 212,
@@ -2964,7 +3019,7 @@
       "DSLR",
       "Kamera Lainnya"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 213,
@@ -2974,7 +3029,7 @@
     "jenisProduk": [
       "Lensa"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 214,
@@ -2984,7 +3039,7 @@
     "jenisProduk": [
       "Kamera & Drone Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 215,
@@ -3055,7 +3110,7 @@
     "jenisProduk": [
       "Sound Card"
     ],
-    "adminFee": 6.50
+    "adminFee": 6.5
   },
   {
     "id": 220,
@@ -3164,7 +3219,7 @@
     "jenisProduk": [
       "Komputer & Aksesoris Lainnya"
     ],
-    "adminFee": 5.25
+    "adminFee": 6.75
   },
   {
     "id": 228,
@@ -3183,7 +3238,7 @@
       "Buku Gambar & Sketsa",
       "Perlengkapan Menggambar Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 229,
@@ -3193,7 +3248,7 @@
     "jenisProduk": [
       "Bubble Wrap"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 230,
@@ -3207,15 +3262,19 @@
       "Lem",
       "Printer Label",
       "Lanyard & Name Tag",
-      "Klip Kertas, Push Pin, & Paku Payung",
+      "Klip Kertas",
+      "Push Pin",
+      "& Paku Payung",
       "Pembolong Kertas",
       "Gunting",
       "Stempel & Bak Stempel",
       "Stapler & Staples",
       "Kalender",
-      "Folder, Organizer Kertas, & Aksesoris"
+      "Folder",
+      "Organizer Kertas",
+      "& Aksesoris"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 231,
@@ -3230,7 +3289,7 @@
       "Highlighter",
       "Alat Tulis Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 232,
@@ -3249,7 +3308,7 @@
       "Label & Stiker",
       "Buku Tulis & Kertas Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 233,
@@ -3264,7 +3323,7 @@
       "Kardus",
       "Bungkus Kado Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 234,
@@ -3273,12 +3332,14 @@
     "subKategori": "Perlengkapan Sekolah & Kantor",
     "jenisProduk": [
       "Papan Tulis & Papan Jalan",
-      "Penggaris, Busur Derajat, & Stensil",
+      "Penggaris",
+      "Busur Derajat",
+      "& Stensil",
       "Rautan",
       "Tempat Pensil",
       "Perlengkapan Sekolah & Kantor Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 235,
@@ -3291,7 +3352,7 @@
       "Materai & Perangko",
       "Surat-Menyurat Lainnya"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 236,
@@ -3301,12 +3362,12 @@
     "jenisProduk": [
       "Buku & Alat Tulis Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 237,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "Majalah & Koran",
     "jenisProduk": [
       "Bisnis",
@@ -3314,41 +3375,49 @@
       "Remaja",
       "Majalah & Koran Lainnya"
     ],
-    "adminFee": 10.00
+    "adminFee": 10.0
   },
   {
     "id": 238,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "Buku Bacaan",
     "jenisProduk": [
       "Komik",
       "Buku Audio",
       "Buku Bacaan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 239,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "Buku Bacaan",
     "jenisProduk": [
       "Buku Anak-Anak",
       "Stiker & Buku Mewarnai",
-      "Pertanian, Kehutanan, & Perikanan",
+      "Pertanian",
+      "Kehutanan",
+      "& Perikanan",
       "Kamus",
       "Sains & Matematika",
       "Kedokteran",
       "Pendidikan",
-      "Seni, Desain, & Fotografi",
+      "Seni",
+      "Desain",
+      "& Fotografi",
       "Hobi",
       "Musik",
       "Buku Resep & Masak",
-      "Kesehatan, Kebugaran, & Diet",
+      "Kesehatan",
+      "Kebugaran",
+      "& Diet",
       "Wisata & Turisme",
       "Parenting & Keluarga",
-      "Politik, Hukum, & Ilmu Sosial",
+      "Politik",
+      "Hukum",
+      "& Ilmu Sosial",
       "Biografi & Memoar",
       "Sejarah & Budaya",
       "Agama & Filsafat",
@@ -3357,25 +3426,28 @@
       "Bisnis & Investasi",
       "Komputer & Teknologi",
       "Literatur Klasik",
-      "Fantasi, Action, Crime, & Thrillers",
+      "Fantasi",
+      "Action",
+      "Crime",
+      "& Thrillers",
       "Romansa"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 240,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "E-Book",
     "jenisProduk": [
       "E-Book"
     ],
-    "adminFee": 9.00
+    "adminFee": 9.0
   },
   {
     "id": 241,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "Buku Bacaan",
     "jenisProduk": [
       "Buku Bayi"
@@ -3385,12 +3457,12 @@
   {
     "id": 242,
     "kategoriUtama": "Lifestyle",
-    "kategori": "Buku & Alat Tulis",
+    "kategori": "Buku & Majalah",
     "subKategori": "Buku & Majalah Lainnya",
     "jenisProduk": [
       "Buku & Majalah Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 243,
@@ -3420,7 +3492,7 @@
       "Furniture Hewan Lainnya",
       "Aksesoris Hewan Peliharaan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 244,
@@ -3433,7 +3505,7 @@
       "Perawatan Kuku",
       "Grooming Hewan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 245,
@@ -3448,7 +3520,7 @@
       "Plastik & Sekop Kotoran",
       "Litter & Toilet Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 246,
@@ -3467,7 +3539,7 @@
       "Makanan Reptil",
       "Makanan Hewan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
     "id": 247,
@@ -3485,1054 +3557,1121 @@
       "Topi",
       "Pakaian & Aksesoris Hewan Lainnya"
     ],
-    "adminFee": 9.50
+    "adminFee": 9.5
   },
   {
-  "id": 248,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hewan Peliharaan",
-  "subKategori": "Perawatan Kesehatan Hewan",
-  "jenisProduk": [
-    "Anti Kutu",
-    "Obat",
-    "Perawatan Kesehatan Hewan Lainnya",
-    "Vitamin & Suplemen"
-  ],
-  "adminFee": 9.50
+    "id": 248,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hewan Peliharaan",
+    "subKategori": "Perawatan Kesehatan Hewan",
+    "jenisProduk": [
+      "Anti Kutu",
+      "Obat",
+      "Perawatan Kesehatan Hewan Lainnya",
+      "Vitamin & Suplemen"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 249,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hewan Peliharaan",
-  "subKategori": "Hewan Peliharaan Lainnya",
-  "jenisProduk": [
-    "Hewan Peliharaan Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 249,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hewan Peliharaan",
+    "subKategori": "Hewan Peliharaan Lainnya",
+    "jenisProduk": [
+      "Hewan Peliharaan Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 250,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Alat & Aksesoris Musik",
-  "jenisProduk": [
-    "Keyboard & Piano",
-    "Alat Musik Perkusi",
-    "Alat Musik Tiup",
-    "Ukulele",
-    "Gitar & Gitar Bass",
-    "Aksesoris Musik",
-    "Alat & Aksesoris Musik Lainnya",
-    "Alat Musik Petik Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 250,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Alat & Aksesoris Musik",
+    "jenisProduk": [
+      "Keyboard & Piano",
+      "Alat Musik Perkusi",
+      "Alat Musik Tiup",
+      "Ukulele",
+      "Gitar & Gitar Bass",
+      "Aksesoris Musik",
+      "Alat & Aksesoris Musik Lainnnya",
+      "Alat Musik Petik Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 251,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Album Foto",
-  "jenisProduk": [
-    "Album Foto"
-  ],
-  "adminFee": 9.50
+    "id": 251,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Album Foto",
+    "jenisProduk": [
+      "Album Foto"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 252,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "CD, DVD & Bluray",
-  "jenisProduk": [
-    "CD, DVD & Bluray"
-  ],
-  "adminFee": 9.50
+    "id": 252,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "CD, DVD & Bluray",
+    "jenisProduk": [
+      "CD",
+      "DVD & Bluray"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 253,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Koleksi",
-  "jenisProduk": [
-    "Action Figure",
-    "Patung",
-    "Mecha Model & Diecast",
-    "Vehicle Model & Diecast",
-    "Batu Akik & Alam",
-    "Koleksi Penggemar",
-    "Koleksi Olahraga",
-    "Koleksi Anime & Manga",
-    "Koin & Uang Kertas",
-    "Koleksi Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 253,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Koleksi",
+    "jenisProduk": [
+      "Action Figure",
+      "Patung",
+      "Mecha Model & Diecast",
+      "Vehicle Model & Diecast",
+      "Batu Akik & Alam",
+      "Koleksi Penggemar",
+      "Koleksi Olahraga",
+      "Koleksi Anime & Manga",
+      "Koin & Uang Kertas",
+      "Koleksi Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 254,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Mainan & Games",
-  "jenisProduk": [
-    "Dadu",
-    "Board Game & Mainan Kartu",
-    "Mainan Sulap",
-    "Mainan Prank",
-    "Kubus Rubik",
-    "Gangsing",
-    "Kendama",
-    "Yo-yo",
-    "Mainan & Aksesoris Remote Control",
-    "Mainan Kapsul",
-    "Mainan & Games Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 254,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Mainan & Games",
+    "jenisProduk": [
+      "Dadu",
+      "Board Game & Mainan Kartu",
+      "Mainan Sulap",
+      "Mainan Prank",
+      "Kubus Rubik",
+      "Gangsing",
+      "Kendama",
+      "Yo-yo",
+      "Mainan & Aksesoris Remote Control",
+      "Mainan Kapsul",
+      "Mainan & Games Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 255,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Perlengkapan Menjahit",
-  "jenisProduk": [
-    "Perlengkapan Menjahit"
-  ],
-  "adminFee": 9.50
+    "id": 255,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Perlengkapan Menjahit",
+    "jenisProduk": [
+      "Perlengkapan Menjahit"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 256,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Piringan Hitam",
-  "jenisProduk": [
-    "Piringan Hitam"
-  ],
-  "adminFee": 9.50
+    "id": 256,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Piringan Hitam",
+    "jenisProduk": [
+      "Piringan Hitam"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 257,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Souvenir & Hadiah",
-  "jenisProduk": [
-    "Kipas Tangan",
-    "Gantungan Kunci",
-    "Celengan",
-    "Magnet Kulkas",
-    "Souvenir Lainnya"
-  ],
-  "adminFee": 9.00
+    "id": 257,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Souvenir & Hadiah",
+    "jenisProduk": [
+      "Kipas Tangan",
+      "Gantungan Kunci",
+      "Celengan",
+      "Magnet Kulkas",
+      "Souvenir Lainnya"
+    ],
+    "adminFee": 9.0
   },
   {
-  "id": 258,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Hobi & Koleksi",
-  "subKategori": "Hobi & Koleksi Lainnya",
-  "jenisProduk": [
-    "Hobi & Koleksi Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 258,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Hobi & Koleksi",
+    "subKategori": "Hobi & Koleksi Lainnya",
+    "jenisProduk": [
+      "Hobi & Koleksi Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 259,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Suku Cadang Mobil",
-  "jenisProduk": [
-    "Bodi, Rangka, & Bemper Mobil",
-    "Wiper & Penyemprot Wiper Mobil",
-    "Knalpot Mobil",
-    "Roda, Velg, & Aksesoris",
-    "Ban Mobil & Aksesoris",
-    "Shock, Strutbar, & Suspensi Mobil",
-    "Radiator & Sistem Pendingin Mobil",
-    "Rantai, Transmisi, & Kopling",
-    "Bearing Roda & Seal Mobil",
-    "Piston Mobil",
-    "Filter Udara",
-    "Filter Oli",
-    "Sistem Pengereman Mobil",
-    "Fan Belt, Selang, & Pulley Mobil",
-    "Kumparan Pengapian",
-    "Busi",
-    "Aki & Aksesoris",
-    "Lampu Mobil",
-    "Sistem Bahan Bakar",
-    "Suku Cadang Mobil Lainnya",
-    "Suku Cadang Mesin Lainnya",
-    "Kelistrikan Lainnya",
-    "Pengapian Lainnya"
-  ],
-  "adminFee": 9.50
+    "id": 259,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Suku Cadang Mobil",
+    "jenisProduk": [
+      "Bodi",
+      "Rangka",
+      "& Bemper Mobil",
+      "Wiper & Penyemprot Wiper Mobil",
+      "Knalpot Mobil",
+      "Roda",
+      "Velg",
+      "& Aksesoris",
+      "Ban Mobil & Aksesoris",
+      "Shock",
+      "Strutbar",
+      "& Suspensi Mobil",
+      "Radiator & Sistem Pendingin Mobil",
+      "Rantai",
+      "Transmisi",
+      "& Kopling",
+      "Bearing Roda & Seal Mobil",
+      "Piston Mobil",
+      "Filter Udara",
+      "Filter Oli",
+      "Sistem Pengereman Mobil",
+      "Fan Belt",
+      "Selang",
+      "& Pulley Mobil",
+      "Kumparan Pengapian",
+      "Busi",
+      "Aki & Aksesoris",
+      "Lampu Mobil",
+      "Sistem Bahan Bakar",
+      "Suku Cadang Mobil Lainnya",
+      "Suku Cadang Mesin Lainnya",
+      "Kelistrikan Lainnya",
+      "Pengapian Lainnya"
+    ],
+    "adminFee": 9.5
   },
   {
-  "id": 260,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Oli & Pelumas Kendaraan",
-  "jenisProduk": [
-    "Oli",
-    "Aditif & Penghemat Bahan Bakar",
-    "Gemuk & Pelumas",
-    "Coolant",
-    "Pelumas Rem",
-    "Pelumas Transmisi",
-    "Perawatan Kendaraan Lainnya",
-    "Cairan Otomotif Lainnya"
-  ],
-  "adminFee": 9.00
+    "id": 260,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Oli & Pelumas Kendaraan",
+    "jenisProduk": [
+      "Oli",
+      "Aditif & Penghemat Bahan Bakar",
+      "Gemuk & Pelumas",
+      "Coolant",
+      "Pelumas Rem",
+      "Pelumas Transmisi",
+      "Perawatan Kendaraan Lainnya",
+      "Cairan Otomotif Lainnya"
+    ],
+    "adminFee": 9.0
   },
   {
-  "id": 261,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Aksesoris Eksterior Mobil",
-  "jenisProduk": [
-    "Hiasan Mobil",
-    "Antena Mobil",
-    "Sarung Mobil",
-    "Stiker, Logo, & Emblem Mobil",
-    "Karpet Lumpur",
-    "Sill Plate Mobil",
-    "Talang Air",
-    "Klakson & Aksesoris",
-    "Spion & Aksesoris",
-    "Aksesoris Plat Nomor Mobil",
-    "Aksesoris Eksterior Mobil Lainnya"
-  ],
-  "adminFee": 8.25
-  },
-{
-  "id": 262,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Aksesoris Interior Mobil",
-  "jenisProduk": [
-    "Navigasi & AV Receiver",
-    "Amplifier, Speaker, & Subwoofer",
-    "Organizer & Kompartemen Mobil",
-    "Parfum Mobil",
-    "Karpet Mobil",
-    "Penyangga Leher & Punggung",
-    "Matras Mobil",
-    "Setir & Sarung Setir Mobil",
-    "Jok & Sarung Jok Mobil",
-    "Holder Handphone",
-    "Pengisi Daya USB & Bluetooth Transmitter",
-    "Pedal & Stik Persneling",
-    "Sunshield & Pelindung Dashboard",
-    "Kunci Stir",
-    "Kamera Parkir",
-    "HUD, Speedometer, & Gauge",
-    "Aksesoris Interior Mobil Lainnya"
-  ],
-  "adminFee": 8.25
-  },
-{
-  "id": 263,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Gantungan & Sarung Kunci Kendaraan",
-  "jenisProduk": [
-    "Gantungan & Sarung Kunci Kendaraan"
-  ],
-  "adminFee": 8.25
-  },
-{
-  "id": 264,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Perawatan Kendaraan",
-  "jenisProduk": [
-    "Sabun Cuci & Wax",
-    "Pembersih Kaca & Anti-Air",
-    "Perawatan Interior",
-    "Perawatan Ban & Velg",
-    "Poles, Coating, & Sealant Mobil",
-    "Perawatan Kendaraan Lainnya"
-  ],
-  "adminFee": 8.25
-  },
-{
-  "id": 265,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Perkakas & Perlengkapan Kendaraan",
-  "jenisProduk": [
-    "Peralatan Uji, Diagnosa, & Servis",
-    "Pengukur Tekanan Udara Ban",
-    "Perkakas & Perlengkapan Kendaraan Lainnya"
-  ],
-  "adminFee": 8.25
+    "id": 261,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Aksesoris Eksterior Mobil",
+    "jenisProduk": [
+      "Hiasan Mobil",
+      "Antena Mobil",
+      "Sarung Mobil",
+      "Stiker",
+      "Logo",
+      "& Emblem Mobil",
+      "Karpet Lumpur",
+      "Sill Plate Mobil",
+      "Talang Air",
+      "Klakson & Aksesoris",
+      "Spion & Aksesoris",
+      "Aksesoris Plat Nomor Mobil",
+      "Aksesoris Eksterior Mobil Lainnya"
+    ],
+    "adminFee": 8.25
   },
   {
-  "id": 266,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Mobil",
-  "jenisProduk": [
-    "Mobil"
-  ],
-  "adminFee": 2.50
+    "id": 262,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Aksesoris Interior Mobil",
+    "jenisProduk": [
+      "Navigasi & AV Receiver",
+      "Amplifier",
+      "Speaker",
+      "& Subwoofer",
+      "Organizer & Kompartemen Mobil",
+      "Parfum Mobil",
+      "Karpet Mobil",
+      "Penyangga Leher & Punggung",
+      "Matras Mobil",
+      "Setir & Sarung Setir Mobil",
+      "Jok & Sarung Jok Mobil",
+      "Holder Handphone",
+      "Pengisi Daya USB & Bluetooth Transmitter",
+      "Pedal & Stik Persneling",
+      "Sunshield & Pelindung Dashboard",
+      "Kunci Stir",
+      "Kamera Parkir",
+      "HUD",
+      "Speedometer",
+      "& Gauge",
+      "Aksesoris Interior Mobil Lainnya"
+    ],
+    "adminFee": 8.25
   },
-{
-  "id": 267,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Mobil",
-  "subKategori": "Mobil Lainnya",
-  "jenisProduk": [
-    "Mobil Lainnya"
-  ],
-  "adminFee": 8.25
-},
   {
-  "id": 268,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Aksesoris Olahraga & Aktivitas Outdoor",
-  "jenisProduk": [
-    "Payung",
-    "Pelindung Mulut & Sport Tape",
-    "Stopwatch & Pedometer",
-    "Tas Sepatu",
-    "Gelang Olahraga",
-    "Ikat Kepala Olahraga",
-    "Topi Olahraga & Aktivitas Outdoor",
-    "Tas Anti Air",
-    "Alat Training",
-    "Alat Pelindung Gym",
-    "Aksesoris Olahraga & Aktivitas Outdoor Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 269,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Alat Rekreasi Olahraga & Aktivitas Outdoor",
-  "jenisProduk": [
-    "Sepeda",
-    "Komponen & Aksesoris Sepeda",
-    "Helm Sepeda",
-    "Bersepeda Lainnya",
-    "Alat Masak Camping",
-    "Lampu & Senter Camping",
-    "Aksesoris Tenda",
-    "Sleeping Bag",
-    "Teropong, Monokuler, & Teleskop",
-    "Kompas",
-    "Pisau Camping & Peralatan Survival",
-    "Tempat Tidur Gantung",
-    "Tongkat Hiking",
-    "Matras & Keranjang Piknik",
-    "Camping & Hiking Lainnya",
-    "Panjat Tebing",
-    "Busur Panah",
-    "Anak Panah",
-    "Panahan Lainnya",
-    "Bola Kaki",
-    "Sarung Tangan & Deker",
-    "Tiang Gawang & Net",
-    "Sepak Bola, Futsal, & Sepak Takraw Lainnya",
-    "Bola Basket",
-    "Ring Basket",
-    "Basket Lainnya",
-    "Bola Voli",
-    "Net Voli",
-    "Voli Lainnya",
-    "Raket Bulu Tangkis",
-    "Kok Bulu Tangkis",
-    "Net Bulu Tangkis",
-    "Bulu Tangkis Lainnya",
-    "Raket Tenis",
-    "Bola Tenis",
-    "Net Tenis",
-    "Tenis Lainnya",
-    "Bola Tenis Meja",
-    "Bet Tenis Meja",
-    "Net Tenis Meja",
-    "Tenis Meja Lainnya",
-    "Samsak & Bantalan Tinju",
-    "Sabuk Bela Diri",
-    "Sarung Tangan, Hand Wrap, & Helm",
-    "Tinju & Bela Diri Lainnya",
-    "Bola Golf",
-    "Stik Golf",
-    "Alat Pelindung & Training",
-    "Tas Golf",
-    "Golf Lainnya",
-    "Baseball & Softball",
-    "Squash",
-    "Rugbi",
-    "Billiard",
-    "Selancar & Wakeboard",
-    "Ice Skating & Olahraga Musim Dingin",
-    "Topi Renang",
-    "Kacamata Renang",
-    "Papan Pelampung",
-    "Senter Diving",
-    "Masker Diving",
-    "Kaki Katak",
-    "Jaket Pelampung",
-    "Diving & Renang Lainnya",
-    "Boating",
-    "Matras Yoga",
-    "Balok, Ring, & Foam Roller Yoga",
-    "Resistance Band",
-    "Yoga & Pilates Lainnya",
-    "Latihan Beban",
-    "Tali Skipping",
-    "Bola Gym",
-    "Alat Fitness",
-    "Ab Roller",
-    "Pull Up & Push Up Bar",
-    "Fitness Lainnya",
-    "Dart",
-    "Alat Rekreasi Olahraga & Aktivitas Outdoor Lainnya",
-    "Kail Pancing",
-    "Joran & Gulungan Pancing",
-    "Alat Pelacak Ikan",
-    "Senar Pancing",
-    "Umpan Pancing",
-    "Tas Pancing",
-    "Jaring Ikan",
-    "Alat Pancing Lainnya",
-    "Skateboard & Sepatu Roda",
-    "Skuter & Sepeda Roda Satu",
-    "Segway & Hoverboard",
-    "Helm & Alat Pelindung",
-    "Boardsport Lainnya",
-    "Piringan Pemutar Pinggang",
-    "Alat Olahraga Otot Tangan"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 270,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Pakaian Olahraga & Aktivitas Outdoor",
-  "jenisProduk": [
-    "Jaket Olahraga",
-    "Set Pakaian Olahraga & Aktivitas Outdoor",
-    "Atasan Olahraga",
-    "Jersey",
-    "Bawahan Olahraga",
-    "Celana Renang Pria",
-    "Bikini",
-    "Baju Renang Wanita",
-    "Rash Guard",
-    "Pakaian Renang Lainnya",
-    "Sports Bra",
-    "Pakaian Olahraga Anak",
-    "Pakaian Olahraga & Aktivitas Outdoor Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 271,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Sepatu Olahraga",
-  "jenisProduk": [
-    "Sepatu Basket",
-    "Sepatu Lari",
-    "Sepatu Training",
-    "Sepatu Tenis",
-    "Sepatu Voli",
-    "Sepatu Bulu Tangkis",
-    "Sepatu Futsal",
-    "Sepatu Hiking",
-    "Sepatu Sepak Bola",
-    "Sepatu Olahraga Anak",
-    "Sepatu Olahraga Lainnya"
-  ],
-  "adminFee": 10.00
-},
+    "id": 263,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Gantungan & Sarung Kunci Kendaraan",
+    "jenisProduk": [
+      "Gantungan & Sarung Kunci Kendaraan"
+    ],
+    "adminFee": 8.25
+  },
   {
-  "id": 272,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Aksesoris Olahraga & Aktivitas Outdoor",
-  "jenisProduk": [
-    "Jas Hujan"
-  ],
-  "adminFee": 8.25
-},
-{
-  "id": 273,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Olahraga & Outdoor",
-  "subKategori": "Olahraga & Outdoor Lainnya",
-  "jenisProduk": [
-    "Olahraga & Outdoor Lainnya"
-  ],
-  "adminFee": 10.00
-},
+    "id": 264,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Perawatan Kendaraan",
+    "jenisProduk": [
+      "Sabun Cuci & Wax",
+      "Pembersih Kaca & Anti-Air",
+      "Perawatan Interior",
+      "Perawatan Ban & Velg",
+      "Poles",
+      "Coating",
+      "& Sealant Mobil",
+      "Perawatan Kendaraan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
   {
-  "id": 274,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Alat Pengaman",
-  "jenisProduk": [
-    "Brankas",
-    "Pemadam Api",
-    "Perangkat Pintu & Gembok",
-    "Alat Pengaman Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 275,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Alat Pertukangan & Renovasi Rumah",
-  "jenisProduk": [
-    "Perekat & Tape",
-    "Sarung Tangan, Kacamata, & Masker Pelindung",
-    "Bak Cuci Piring & Kran Air",
-    "Atap & Lantai",
-    "Cat & Pelapis Dinding",
-    "Pompa Air & Aksesoris",
-    "Pompa Udara & Aksesoris",
-    "Tangga",
-    "Troli",
-    "Tenda & Terpal",
-    "Material Konstruksi",
-    "Pintu & Jendela",
-    "Alat Pemeliharaan Rumah Lainnya",
-    "Tool Box",
-    "Kunci Set",
-    "Palu",
-    "Tang",
-    "Paku, Sekrup, & Fastener",
-    "Amplas, Mesin Amplas, & Aksesoris",
-    "Meteran",
-    "Meteran Jalan",
-    "Bor",
-    "Obeng & Aksesoris",
-    "Gergaji, Mesin Pemotong, & Gerinda",
-    "Pressure Washer",
-    "Power Generator",
-    "Electrical Tester & Multimeter",
-    "Pengukur Jarak",
-    "Kompresor Udara",
-    "Perlengkapan Las",
-    "Blower",
-    "Perkakas Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 276,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Dekorasi",
-  "jenisProduk": [
-    "Tirai & Tirai Gulung",
-    "Bingkai Foto & Pajangan Dinding",
-    "Wallpaper & Stiker Dinding",
-    "Jam Dinding",
-    "Keset",
-    "Karpet & Tikar",
-    "Vas & Bejana",
-    "Lilin & Tempat Lilin",
-    "Cermin",
-    "Taplak Meja",
-    "Dekorasi Lainnya",
-    "Furniture & Pelindung Furniture"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 277,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Furniture",
-  "jenisProduk": [
-    "Bantal Sofa",
-    "Penahan Pintu",
-    "Rangka & Sandaran Tempat Tidur",
-    "Lemari Pakaian",
-    "Sofa",
-    "Lemari & Kabinet",
-    "Rak & Rak Gantung",
-    "Meja & Meja Tulis",
-    "Furniture Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 278,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Kamar Mandi",
-  "jenisProduk": [
-    "Kloset & Alas Dudukan Kloset",
-    "Tempat Sikat Gigi & Dispenser Odol",
-    "Dispenser, Tempat, & Kotak Sabun",
-    "Rak & Kabinet Kamar Mandi",
-    "Bak Mandi & Bathtub",
-    "Handuk Mandi",
-    "Handuk Wajah & Lap Tangan",
-    "Handuk Kimono",
-    "Handuk Mandi & Kimono Lainnya",
-    "Kepala Shower & Spray Bidet",
-    "Sikat & Spons Badan",
-    "Tirai Shower",
-    "Tempat Duduk Mandi & Pispot",
-    "Pegangan Kamar Mandi",
-    "Shower Cap",
-    "Kamar Mandi Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 279,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Kamar Tidur",
-  "jenisProduk": [
-    "Matras Pendingin",
-    "Pelindung Matras",
-    "Selimut",
-    "Bantal",
-    "Sprei",
-    "Sarung Bantal, & Sarung Guling",
-    "Matras",
-    "Kelambu",
-    "Guling",
-    "Kamar Tidur Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 280,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Organizer Rumah",
-  "jenisProduk": [
-    "Gantungan, Box, Tas, & Keranjang Penyimpanan",
-    "Box Penyimpanan Sepatu",
-    "Pengait",
-    "Tas & Keranjang Laundry",
-    "Organizer Meja",
-    "Organizer Lemari Pakaian",
-    "Organizer Perhiasan",
-    "Tempat Tisu",
-    "Organizer Rumah Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 281,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Penghangat Tangan & Kantong Kompres",
-  "jenisProduk": [
-    "Penghangat Tangan & Kantong Kompres"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 282,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Pengharum Ruangan & Aromaterapi",
-  "jenisProduk": [
-    "Diffuser, Humidifier, & Oil Burner",
-    "Pengharum Ruangan & Aromaterapi Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 283,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Peralatan Makan",
-  "jenisProduk": [
-    "Jug, Pitcher, & Aksesoris",
-    "Kantong & Set Teh",
-    "Cangkir, Mug, & Gelas",
-    "Botol Minum & Aksesoris",
-    "Mangkuk",
-    "Piring",
-    "Alat Makan",
-    "Sedotan",
-    "Tudung Saji & Penutup Makanan",
-    "Tatakan Piring & Gelas",
-    "Peralatan Makan Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 284,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perawatan Rumah",
-  "jenisProduk": [
-    "Tali Jemuran & Rak Pengering",
-    "Sikat Pembersih",
-    "Sapu",
-    "Kemoceng",
-    "Kain Pel",
-    "Basin, Ember, & Gayung Air",
-    "Spons & Scouring Pad",
-    "Tempat Sampah",
-    "Kantong Plastik & Kantong Sampah",
-    "Lap"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 285,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perlengkapan Dapur",
-  "jenisProduk": [
-    "Tempat Penyimpanan Makanan",
-    "Cling Wrap",
-    "Aluminium Foil",
-    "Peralatan Teh, Kopi, & Bartending",
-    "Rak Dapur",
-    "Celemek & Pelindung Tangan",
-    "Pembuka Tutup Kaleng & Botol",
-    "Korek Api & Pemantik",
-    "Timbangan Dapur",
-    "Perlengkapan Dapur Lainnya",
-    "Alat & Aksesoris Pemanggang",
-    "Alat & Dekorasi Baking",
-    "Penggorengan",
-    "Panci",
-    "Spatula & Capitan",
-    "Talenan",
-    "Pengocok Telur",
-    "Gelas & Sendok Takar",
-    "Saringan",
-    "Parutan & Peeler",
-    "Pisau & Gunting Dapur"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 286,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perlengkapan Keagamaan",
-  "jenisProduk": [
-    "Perlengkapan Keagamaan"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 287,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Taman",
-  "jenisProduk": [
-    "Tanaman",
-    "Dekorasi Taman",
-    "Tanah & Media Tanam",
-    "Pupuk",
-    "Bibit & Umbi",
-    "Pot & Planter",
-    "Sistem Pengairan",
-    "Peralatan Berkebun",
-    "Taman Lainnya",
-    "Mesin Pemotong Rumput"
-  ],
-  "adminFee": 10.00
-},
+    "id": 265,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Perkakas & Perlengkapan Kendaraan",
+    "jenisProduk": [
+      "Peralatan Uji",
+      "Diagnosa",
+      "& Servis",
+      "Pengukur Tekanan Udara Ban",
+      "Perkakas & Perlengkapan Kendaraan Lainnya"
+    ],
+    "adminFee": 8.25
+  },
   {
-  "id": 288,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Lampu",
-  "jenisProduk": [
-    "Lampu"
-  ],
-  "adminFee": 9.50
-},
+    "id": 266,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Mobil",
+    "jenisProduk": [
+      "Mobil"
+    ],
+    "adminFee": 2.5
+  },
   {
-  "id": 289,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Dekorasi",
-  "jenisProduk": [
-    "Bunga"
-  ],
-  "adminFee": 9.00
-},
-{
-  "id": 290,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Furniture",
-  "jenisProduk": [
-    "Kursi & Bangku"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 291,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Pengharum Ruangan & Aromaterapi",
-  "jenisProduk": [
-    "Minyak Esensial",
-    "Pengharum Ruangan"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 292,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perawatan Rumah",
-  "jenisProduk": [
-    "Pembasmi Hama & Gulma",
-    "Tisu & Tisu Kertas",
-    "Tisu Toilet",
-    "Pembersih",
-    "Pengharum Pakaian",
-    "Conditioner & Pelembut Pakaian",
-    "Detergen",
-    "Perawatan Rumah Lainnya",
-    "Perawatan Pakaian Lainnya"
-  ],
-  "adminFee": 10.00
-},
-{
-  "id": 293,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perlengkapan Pesta",
-  "jenisProduk": [
-    "Balon",
-    "Wooden Clip",
-    "Backdrop & Spanduk",
-    "Kartu Ucapan",
-    "Peralatan Makan Sekali Pakai",
-    "Topi & Topeng Pesta",
-    "Selempang/Sash",
-    "Perlengkapan Pesta Lainnya"
-  ],
-  "adminFee": 10.00
-},
+    "id": 267,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Mobil",
+    "subKategori": "Mobil Lainnya",
+    "jenisProduk": [
+      "Mobil Lainnya"
+    ],
+    "adminFee": 8.25
+  },
   {
-  "id": 294,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perlengkapan Dapur",
-  "jenisProduk": [
-    "Sealer"
-  ],
-  "adminFee": 6.50
-},
-{
-  "id": 295,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Perlengkapan Rumah",
-  "subKategori": "Perlengkapan Rumah Lainnya",
-  "jenisProduk": [
-    "Perlengkapan Rumah Lainnya"
-  ],
-  "adminFee": 10.00
-},
+    "id": 268,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Aksesoris Olahraga & Aktivitas Outdoor",
+    "jenisProduk": [
+      "Payung",
+      "Pelindung Mulut & Sport Tape",
+      "Stopwatch & Pedometer",
+      "Tas Sepatu",
+      "Gelang Olahraga",
+      "Ikat Kepala Olahraga",
+      "Topi Olahraga & Aktivitas Outdoor",
+      "Tas Anti Air",
+      "Alat Training",
+      "Alat Pelindung Gym",
+      "Aksesoris Olahraga & Aktivitas Outdoor Lainnya"
+    ],
+    "adminFee": 10.0
+  },
   {
-  "id": 296,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Sepeda Motor",
-  "subKategori": "Aksesoris Sepeda Motor",
-  "jenisProduk": [
-    "Karpet Motor",
-    "Speedometer, Odometer, & Gauge Motor",
-    "Sarung Motor",
-    "Stiker, Logo, & Emblem",
-    "Jok & Sarung Jok Motor",
-    "Spion Motor & Aksesoris",
-    "Kunci & Keamanan",
-    "Box Motor",
-    "Dudukan Handphone",
-    "Karpet Lumpur",
-    "Aksesoris Sepeda Motor Lainnya"
-  ],
-  "adminFee": 8.25
-},
-{
-  "id": 297,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Sepeda Motor",
-  "subKategori": "Helm & Aksesoris Pengendara Motor",
-  "jenisProduk": [
-    "Helm & Aksesoris Pengendara Motor"
-  ],
-  "adminFee": 8.25
-},
-{
-  "id": 298,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Sepeda Motor",
-  "subKategori": "Suku Cadang Motor",
-  "jenisProduk": [
-    "Radiator",
-    "Piston",
-    "CDI & ECU",
-    "Busi",
-    "Kumparan Pengapian",
-    "V-Belt",
-    "Filter Udara",
-    "Sistem Bahan Bakar",
-    "Sistem Pengereman",
-    "Shock, Strut, & Suspensi Motor",
-    "Rantai & Gir",
-    "Kopling",
-    "Bearing",
-    "Aki & Aksesoris",
-    "Klakson & Aksesoris",
-    "Kabel & Selang",
-    "Bodi & Rangka Motor",
-    "Knalpot Motor",
-    "Roda, Velg, & Aksesoris",
-    "Ban Motor & Aksesoris",
-    "Lampu Motor",
-    "Suku Cadang Motor Lainnya",
-    "Pengapian & Suku Cadang Mesin Lainnya",
-    "Rantai, Transmisi, & Kopling Lainnya"
-  ],
-  "adminFee": 8.25
-},
+    "id": 269,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Alat Rekreasi Olahraga & Aktivitas Outdoor",
+    "jenisProduk": [
+      "Sepeda",
+      "Komponen & Aksesoris Sepeda",
+      "Helm Sepeda",
+      "Bersepeda Lainnya",
+      "Alat Masak Camping",
+      "Lampu & Senter Camping",
+      "Aksesoris Tenda",
+      "Sleeping Bag",
+      "Teropong",
+      "Monokuler",
+      "& Teleskop",
+      "Kompas",
+      "Pisau Camping & Peralatan Survival",
+      "Tempat Tidur Gantung",
+      "Tongkat Hiking",
+      "Matras & Keranjang Piknik",
+      "Camping & Hiking Lainnya",
+      "Panjat Tebing",
+      "Busur Panah",
+      "Anak Panah",
+      "Panahan Lainnya",
+      "Bola Kaki",
+      "Sarung Tangan & Deker",
+      "Tiang Gawang & Net",
+      "Sepak Bola",
+      "Futsal",
+      "& Sepak Takraw Lainnya",
+      "Bola Basket",
+      "Ring Basket",
+      "Basket Lainnya",
+      "Bola Voli",
+      "Net Voli",
+      "Voli Lainnya",
+      "Raket Bulu Tangkis",
+      "Kok Bulu Tangkis",
+      "Net Bulu Tangkis",
+      "Bulu Tangkis Lainnya",
+      "Raket Tenis",
+      "Bola Tenis",
+      "Net Tenis",
+      "Tenis Lainnya",
+      "Bola Tenis Meja",
+      "Bet Tenis Meja",
+      "Net Tenis Meja",
+      "Tenis Meja Lainnya",
+      "Samsak & Bantalan Tinju",
+      "Sabuk Bela Diri",
+      "Sarung Tangan",
+      "Hand Wrap",
+      "& Helm",
+      "Tinju & Bela Diri Lainnya",
+      "Bola Golf",
+      "Stik Golf",
+      "Alat Pelindung & Training",
+      "Tas Golf",
+      "Golf Lainnya",
+      "Baseball & Softball",
+      "Squash",
+      "Rugbi",
+      "Billiard",
+      "Selancar & Wakeboard",
+      "Ice Skating & Olahraga Musim Dingin",
+      "Topi Renang",
+      "Kacamata Renang",
+      "Papan Pelampung",
+      "Senter Diving",
+      "Masker Diving",
+      "Kaki Katak",
+      "Jaket Pelampung",
+      "Diving & Renang Lainnya",
+      "Boating",
+      "Matras Yoga",
+      "Balok",
+      "Ring",
+      "& Foam Roller Yoga",
+      "Resistance Band",
+      "Yoga & Pilates Lainnya",
+      "Latihan Beban",
+      "Tali Skipping",
+      "Bola Gym",
+      "Alat Fitness",
+      "Ab Roller",
+      "Pull Up & Push Up Bar",
+      "Fitness Lainnya",
+      "Dart",
+      "Alat Rekreasi Olahraga & Aktivitas Outdoor Lainnya",
+      "Kail Pancing",
+      "Joran & Gulungan Pancing",
+      "Alat Pelacak Ikan",
+      "Senar Pancing",
+      "Umpan Pancing",
+      "Tas Pancing",
+      "Jaring Ikan",
+      "Alat Pancing Lainnya",
+      "Skateboard & Sepatu Roda",
+      "Skuter & Sepeda Roda Satu",
+      "Segway & Hoverboard",
+      "Helm & Alat Pelindung",
+      "Boardsport Lainnya",
+      "Piringan Pemutar Pinggang",
+      "Alat Olahraga Otot Tangan"
+    ],
+    "adminFee": 10.0
+  },
   {
-  "id": 299,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Sepeda Motor",
-  "subKategori": "Sepeda Motor",
-  "jenisProduk": [
-    "Sepeda Motor"
-  ],
-  "adminFee": 2.50
-},
-{
-  "id": 300,
-  "kategoriUtama": "Lifestyle",
-  "kategori": "Sepeda Motor",
-  "subKategori": "Sepeda Motor Lainnya",
-  "jenisProduk": [
-    "Sepeda Motor Lainnya"
-  ],
-  "adminFee": 8.25
-},
+    "id": 270,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Pakaian Olahraga & Aktivitas Outdoor",
+    "jenisProduk": [
+      "Jaket Olahraga",
+      "Set Pakaian Olahraga & Aktivitas Outdoor",
+      "Atasan Olahraga",
+      "Jersey",
+      "Bawahan Olahraga",
+      "Celana Renang Pria",
+      "Bikini",
+      "Baju Renang Wanita",
+      "Rash Guard",
+      "Pakaian Renang Lainnya",
+      "Sports Bra",
+      "Pakaian Olahraga Anak",
+      "Pakaian Olahraga & Aktivitas Outdoor Lainnya"
+    ],
+    "adminFee": 10.0
+  },
   {
-  "id": 301,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Belanja",
-  "jenisProduk": [
-    "Ritel"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 302,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Layanan",
-  "jenisProduk": [
-    "Layanan"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 303,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Listrik, Gas, & Air",
-  "jenisProduk": [
-    "Listrik, Gas, & Air"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 304,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Makanan & Minuman",
-  "jenisProduk": [
-    "Dine-in & Takeaway"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 305,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Shopee",
-  "jenisProduk": [
-    "Shopee Official",
-    "Saldo Iklan Shopee"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 306,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Streaming",
-  "jenisProduk": [
-    "Streaming"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 307,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Telco",
-  "jenisProduk": [
-    "Data",
-    "Pulsa"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 308,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Tiket Event",
-  "jenisProduk": [
-    "Hiburan",
-    "Acara, Pameran, & Konferensi",
-    "Konser & Pertunjukan"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 309,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Travel & Tour",
-  "jenisProduk": [
-    "Voucher Hotel",
-    "Penerbangan",
-    "Paket Tour"
-  ],
-  "adminFee": 9.50
-},
-{
-  "id": 310,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "Gaming",
-  "jenisProduk": [
-    "Gaming"
-  ],
-  "adminFee": 9.00
-},
-{
-  "id": 311,
-  "kategoriUtama": "Kategori Lainnya",
-  "kategori": "Tiket, Voucher, & Layanan",
-  "subKategori": "E-Money",
-  "jenisProduk": [
-    "E-Money"
-  ],
-  "adminFee": 8.25
-}
+    "id": 271,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Sepatu Olahraga",
+    "jenisProduk": [
+      "Sepatu Basket",
+      "Sepatu Lari",
+      "Sepatu Training",
+      "Sepatu Tenis",
+      "Sepatu Voli",
+      "Sepatu Bulu Tangkis",
+      "Sepatu Futsal",
+      "Sepatu Hiking",
+      "Sepatu Sepak Bola",
+      "Sepatu Olahraga Anak",
+      "Sepatu Olahraga Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 272,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Aksesoris Olahraga & Aktivitas Outdoor",
+    "jenisProduk": [
+      "Jas Hujan"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 273,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Olahraga & Outdoor",
+    "subKategori": "Olahraga & Outdoor Lainnya",
+    "jenisProduk": [
+      "Olahraga & Outdoor Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 274,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Alat Pengaman",
+    "jenisProduk": [
+      "Brankas",
+      "Pemadam Api",
+      "Perangkat Pintu & Gembok",
+      "Alat Pengaman Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 275,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Alat Pertukangan & Renovasi Rumah",
+    "jenisProduk": [
+      "Perekat & Tape",
+      "Sarung Tangan",
+      "Kacamata",
+      "& Masker Pelindung",
+      "Bak Cuci Piring & Kran Air",
+      "Atap & Lantai",
+      "Cat & Pelapis Dinding",
+      "Pompa Air & Aksesoris",
+      "Pompa Udara & Aksesoris",
+      "Tangga",
+      "Troli",
+      "Tenda & Terpal",
+      "Material Konstruksi",
+      "Pintu & Jendela",
+      "Alat Pemeliharaan Rumah Lainnya",
+      "Tool Box",
+      "Kunci Set",
+      "Palu",
+      "Tang",
+      "Paku",
+      "Sekrup",
+      "& Fastener",
+      "Amplas",
+      "Mesin Amplas",
+      "& Aksesoris",
+      "Meteran",
+      "Meteran Jalan",
+      "Bor",
+      "Obeng & Aksesoris",
+      "Gergaji",
+      "Mesin Pemotong",
+      "& Gerinda",
+      "Pressure Washer",
+      "Power Generator",
+      "Electrical Tester & Multimeter",
+      "Pengukur Jarak",
+      "Kompresor Udara",
+      "Perlengkapan Las",
+      "Blower",
+      "Perkakas Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 276,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Dekorasi",
+    "jenisProduk": [
+      "Tirai & Tirai Gulung",
+      "Bingkai Foto & Pajangan Dinding",
+      "Wallpaper & Stiker Dinding",
+      "Jam Dinding",
+      "Keset",
+      "Karpet & Tikar",
+      "Vas & Bejana",
+      "Lilin & Tempat Lilin",
+      "Cermin",
+      "Taplak Meja",
+      "Dekorasi Lainnya",
+      "Furniture & Pelindung Furniture"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 277,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Furniture",
+    "jenisProduk": [
+      "Bantal Sofa",
+      "Penahan Pintu",
+      "Rangka & Sandaran Tempat Tidur",
+      "Lemari Pakaian",
+      "Sofa",
+      "Lemari & Kabinet",
+      "Rak & Rak Gantung",
+      "Meja & Meja Tulis",
+      "Furniture Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 278,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Kamar Mandi",
+    "jenisProduk": [
+      "Kloset & Alas Dudukan Kloset",
+      "Tempat Sikat Gigi & Dispenser Odol",
+      "Dispenser",
+      "Tempat",
+      "& Kotak Sabun",
+      "Rak & Kabinet Kamar Mandi",
+      "Bak Mandi & Bathtub",
+      "Handuk Mandi",
+      "Handuk Wajah & Lap Tangan",
+      "Handuk Kimono",
+      "Handuk Mandi & Kimono Lainnya",
+      "Kepala Shower & Spray Bidet",
+      "Sikat & Spons Badan",
+      "Tirai Shower",
+      "Tempat Duduk Mandi & Pispot",
+      "Pegangan Kamar Mandi",
+      "Shower Cap",
+      "Kamar Mandi Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 279,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Kamar Tidur",
+    "jenisProduk": [
+      "Matras Pendingin",
+      "Pelindung Matras",
+      "Selimut",
+      "Bantal",
+      "Sprei",
+      "Sarung Bantal",
+      "& Sarung Guling",
+      "Matras",
+      "Kelambu",
+      "Guling",
+      "Kamar Tidur Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 280,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Organizer Rumah",
+    "jenisProduk": [
+      "Gantungan",
+      "Box",
+      "Tas",
+      "& Keranjang Penyimpanan",
+      "Box Penyimpanan Sepatu",
+      "Pengait",
+      "Tas & Keranjang Laundry",
+      "Organizer Meja",
+      "Organizer Lemari Pakaian",
+      "Organizer Perhiasan",
+      "Tempat Tisu",
+      "Organizer Rumah Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 281,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Penghangat Tangan & Kantong Kompres",
+    "jenisProduk": [
+      "Penghangat Tangan & Kantong Kompres"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 282,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Pengharum Ruangan & Aromaterapi",
+    "jenisProduk": [
+      "Diffuser",
+      "Humidifier",
+      "& Oil Burner",
+      "Pengharum Ruangan & Aromaterapi Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 283,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Peralatan Makan",
+    "jenisProduk": [
+      "Jug",
+      "Pitcher",
+      "& Aksesoris",
+      "Kantong & Set Teh",
+      "Cangkir",
+      "Mug",
+      "& Gelas",
+      "Botol Minum & Aksesoris",
+      "Mangkuk",
+      "Piring",
+      "Alat Makan",
+      "Sedotan",
+      "Tudung Saji & Penutup Makanan",
+      "Tatakan Piring & Gelas",
+      "Peralatan Makan Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 284,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perawatan Rumah",
+    "jenisProduk": [
+      "Tali Jemuran & Rak Pengering",
+      "Sikat Pembersih",
+      "Sapu",
+      "Kemoceng",
+      "Kain Pel",
+      "Basin",
+      "Ember",
+      "& Gayung Air",
+      "Spons & Scouring Pad",
+      "Tempat Sampah",
+      "Kantong Plastik & Kantong Sampah",
+      "Lap"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 285,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perlengkapan Dapur",
+    "jenisProduk": [
+      "Tempat Penyimpanan Makanan",
+      "Cling Wrap",
+      "Aluminium Foil",
+      "Peralatan Teh",
+      "Kopi",
+      "& Bartending",
+      "Rak Dapur",
+      "Celemek & Pelindung Tangan",
+      "Pembuka Tutup Kaleng & Botol",
+      "Korek Api & Pemantik",
+      "Timbangan Dapur",
+      "Perlengkapan Dapur Lainnya",
+      "Alat & Aksesoris Pemanggang",
+      "Alat & Dekorasi Baking",
+      "Penggorengan",
+      "Panci",
+      "Spatula & Capitan",
+      "Talenan",
+      "Pengocok Telur",
+      "Gelas & Sendok Takar",
+      "Saringan",
+      "Parutan & Peeler",
+      "Pisau & Gunting Dapur"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 286,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perlengkapan Keagamaan",
+    "jenisProduk": [
+      "Perlengkapan Keagamaan"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 287,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Taman",
+    "jenisProduk": [
+      "Tanaman",
+      "Dekorasi Taman",
+      "Tanah & Media Tanam",
+      "Pupuk",
+      "Bibit & Umbi",
+      "Pot & Planter",
+      "Sistem Pengairan",
+      "Peralatan Berkebun",
+      "Taman Lainnya",
+      "Mesin Pemotong Rumput"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 288,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Lampu",
+    "jenisProduk": [
+      "Lampu"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 289,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Dekorasi",
+    "jenisProduk": [
+      "Bunga"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 290,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Furniture",
+    "jenisProduk": [
+      "Kursi & Bangku"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 291,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Pengharum Ruangan & Aromaterapi",
+    "jenisProduk": [
+      "Minyak Esensial",
+      "Pengharum Ruangan"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 292,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perawatan Rumah",
+    "jenisProduk": [
+      "Pembasmi Hama & Gulma",
+      "Tisu & Tisu Kertas",
+      "Tisu Toilet",
+      "Pembersih",
+      "Pengharum Pakaian",
+      "Conditioner & Pelembut Pakaian",
+      "Detergen",
+      "Perawatan Rumah Lainnya",
+      "Perawatan Pakaian Lainnya"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 293,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perlengkapan Pesta",
+    "jenisProduk": [
+      "Balon",
+      "Wooden Clip",
+      "Backdrop & Spanduk",
+      "Kartu Ucapan",
+      "Peralatan Makan Sekali Pakai",
+      "Topi & Topeng Pesta",
+      "Selempang/Sash",
+      "Perlengkapan Pesta Lainnya"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 294,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perlengkapan Dapur",
+    "jenisProduk": [
+      "Sealer"
+    ],
+    "adminFee": 6.5
+  },
+  {
+    "id": 295,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Perlengkapan Rumah",
+    "subKategori": "Perlengkapan Rumah Lainnya",
+    "jenisProduk": [
+      "Perlengkapan Rumah Lainnya"
+    ],
+    "adminFee": 10.0
+  },
+  {
+    "id": 296,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Sepeda Motor",
+    "subKategori": "Aksesoris Sepeda Motor",
+    "jenisProduk": [
+      "Karpet Motor",
+      "Speedometer",
+      "Odometer",
+      "& Gauge Motor",
+      "Sarung Motor",
+      "Stiker",
+      "Logo",
+      "& Emblem",
+      "Jok & Sarung Jok Motor",
+      "Spion Motor & Aksesoris",
+      "Kunci & Keamanan",
+      "Box Motor",
+      "Dudukan Handphone",
+      "Karpet Lumpur",
+      "Aksesoris Sepeda Motor Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 297,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Sepeda Motor",
+    "subKategori": "Helm & Aksesoris Pengendara Motor",
+    "jenisProduk": [
+      "Helm & Aksesoris Pengendara Motor"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 298,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Sepeda Motor",
+    "subKategori": "Suku Cadang Motor",
+    "jenisProduk": [
+      "Radiator",
+      "Piston",
+      "CDI & ECU",
+      "Busi",
+      "Kumparan Pengapian",
+      "V-Belt",
+      "Filter Udara",
+      "Sistem Bahan Bakar",
+      "Sistem Pengereman",
+      "Shock",
+      "Strut",
+      "& Suspensi Motor",
+      "Rantai & Gir",
+      "Kopling",
+      "Bearing",
+      "Aki & Aksesoris",
+      "Klakson & Aksesoris",
+      "Kabel & Selang",
+      "Bodi & Rangka Motor",
+      "Knalpot Motor",
+      "Roda",
+      "Velg",
+      "& Aksesoris",
+      "Ban Motor & Aksesoris",
+      "Lampu Motor",
+      "Suku Cadang Motor Lainnya",
+      "Pengapian & Suku Cadang Mesin Lainnya",
+      "Rantai",
+      "Transmisi",
+      "& Kopling Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 299,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Sepeda Motor",
+    "subKategori": "Sepeda Motor",
+    "jenisProduk": [
+      "Sepeda Motor"
+    ],
+    "adminFee": 2.5
+  },
+  {
+    "id": 300,
+    "kategoriUtama": "Lifestyle",
+    "kategori": "Sepeda Motor",
+    "subKategori": "Sepeda Motor Lainnya",
+    "jenisProduk": [
+      "Sepeda Motor Lainnya"
+    ],
+    "adminFee": 8.25
+  },
+  {
+    "id": 301,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Belanja",
+    "jenisProduk": [
+      "Ritel"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 302,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Layanan",
+    "jenisProduk": [
+      "Layanan"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 303,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Listrik, Gas, & Air",
+    "jenisProduk": [
+      "Listrik",
+      "Gas",
+      "& Air"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 304,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Makanan & Minuman",
+    "jenisProduk": [
+      "Dine-in & Takeaway"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 305,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Shopee",
+    "jenisProduk": [
+      "Shopee Official",
+      "Saldo Iklan Shopee"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 306,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Streaming",
+    "jenisProduk": [
+      "Streaming"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 307,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Telco",
+    "jenisProduk": [
+      "Data",
+      "Pulsa"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 308,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Tiket Event",
+    "jenisProduk": [
+      "Hiburan",
+      "Acara",
+      "Pameran",
+      "& Konferensi",
+      "Konser & Pertunjukan"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 309,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Travel & Tour",
+    "jenisProduk": [
+      "Voucher Hotel",
+      "Penerbangan",
+      "Paket Tour"
+    ],
+    "adminFee": 9.5
+  },
+  {
+    "id": 310,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "Gaming",
+    "jenisProduk": [
+      "Gaming"
+    ],
+    "adminFee": 9.0
+  },
+  {
+    "id": 311,
+    "kategoriUtama": "Lainnya",
+    "kategori": "Tiket, Voucher, & Layanan",
+    "subKategori": "E-Money",
+    "jenisProduk": [
+      "E-Money"
+    ],
+    "adminFee": 8.25
+  }
 ]

@@ -179,12 +179,13 @@
             <div class="separator"></div>
 
             <div class="form-group">
-                <label>Biaya Proses Pesanan</label>
+                <label>Rata-rata Produk per Pesanan (pcs)</label>
                 <div class="input-group">
                     <span>Rp</span>
-                    <input type="number" id="biayaProsesManual" value="" step="500" placeholder="0">
+                    <input type="number" id="basketSize" value="" step="1" min="1" placeholder="Contoh: 3" style="border-radius: 10px;">
+                    <span style="border-radius: 0 10px 10px 0; border-left: none; min-width: 50px;">pcs</span>
                 </div>
-                <div class="info-text">Rumus Excel: 1250 / basket size (isi langsung nominalnya)</div>
+                <div class="info-text">Biaya proses pesanan akan dihitung otomatis: Rp 1.250 ÷ jumlah pcs</div>
             </div>
 
             <div class="form-group">

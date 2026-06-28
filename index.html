@@ -181,31 +181,33 @@
             <div class="form-group">
                 <label>Rata-rata Produk per Pesanan (pcs)</label>
                 <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="basketSize" value="" step="1" min="1" placeholder="Contoh: 3" style="border-radius: 10px;">
-                    <span style="border-radius: 0 10px 10px 0; border-left: none; min-width: 50px;">pcs</span>
+                    <input type="number" id="basketSize" value="" step="1" min="1" 
+                        placeholder="Contoh: 3" 
+                        style="border-radius: 10px 0 0 10px; border-right: none;">
+                    <span style="border-radius: 0 10px 10px 0; border-left: none;
+                        min-width: 50px; background: #f7fafc; padding: 12px;
+                        font-weight: 600; color: #4a5568; text-align: center;">pcs</span>
                 </div>
                 <div class="info-text">Biaya proses pesanan akan dihitung otomatis: Rp 1.250 ÷ jumlah pcs</div>
             </div>
 
             <div class="form-group">
-                <label>Gratis Ongkir XTRA (ukuran biasa)</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="gratisOngkirBiasaManual" value="" step="1000" placeholder="Otomatis dari JSON">
+                <label>Ukuran Barang</label>
+                <select id="ukuranBarang">
+                    <option value="biasa">Ukuran Biasa (sisi terpanjang ≤ 40 cm)</option>
+                    <option value="khusus">Ukuran Khusus / Besar (sisi terpanjang > 40 cm)</option>
+                </select>
+                <div class="info-text">
+                        Ukuran biasa: panjang + lebar + tinggi ≤ 100 cm. 
+                        Ukuran khusus: salah satu sisi > 40 cm atau total > 100 cm.
                 </div>
-                <div class="info-text">Otomatis dari JSON berdasarkan kategori. Isi manual jika ingin override.</div>
             </div>
 
-            <div class="form-group">
-                <label>Gratis Ongkir XTRA (ukuran khusus)</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="gratisOngkirKhususManual" value="" step="1000" placeholder="Otomatis dari JSON">
-                </div>
-                <div class="info-text">Otomatis dari JSON berdasarkan kategori. Isi manual jika ingin override.</div>
+            <div class="result-box" style="background: #f0fdf4;">
+                <span class="result-label">📦 Gratis Ongkir XTRA</span>
+                <span class="result-value" id="gratisOngkirXtraText">Rp 0</span>
             </div>
-
+            
             <div class="separator"></div>
 
             <div class="toggle-group">

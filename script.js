@@ -20,6 +20,7 @@ let dataXtraFee = [];
 let dataBiayaPembayaran = [];
 let dataLiveXtra = [];
 let dataSPayLater = [];
+let dataFreePO = [];
 let productIndex = [];
 
 // ============================================================
@@ -82,7 +83,7 @@ function cacheDomElements() {
 // ============================================================
 async function loadAllData() {
     try {
-        const [xtraCategory, adminMall, adminNonMall, promoXtra, xtraFee, biayaPembayaran, liveXtra, spayLater] = await Promise.all([
+        const [xtraCategory, adminMall, adminNonMall, promoXtra, xtraFee, biayaPembayaran, liveXtra, spayLater, freePO] = await Promise.all([
             fetch(`${DATA_PATH}xtraCategory.json`).then(r => { if (!r.ok) throw new Error('xtraCategory.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}admin_mall.json`).then(r => { if (!r.ok) throw new Error('admin_mall.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}admin_non-mall.json`).then(r => { if (!r.ok) throw new Error('admin_non-mall.json not found'); return r.json(); }),
@@ -90,7 +91,8 @@ async function loadAllData() {
             fetch(`${DATA_PATH}xtraFee.json`).then(r => { if (!r.ok) throw new Error('xtraFee.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}biaya_pembayaran.json`).then(r => { if (!r.ok) throw new Error('biaya_pembayaran.json not found'); return r.json(); }),
             fetch(`${DATA_PATH}live_xtra.json`).then(r => { if (!r.ok) throw new Error('live_xtra.json not found'); return r.json(); }),
-            fetch(`${DATA_PATH}spaylater_xtra.json`).then(r => { if (!r.ok) throw new Error('spaylater_xtra.json not found'); return r.json(); })
+            fetch(`${DATA_PATH}spaylater_xtra.json`).then(r => { if (!r.ok) throw new Error('spaylater_xtra.json not found'); return r.json(); }),
+            fetch(`${DATA_PATH}free_po.json`).then(r => { if (!r.ok) throw new Error('free_po.json not found'); return r.json(); })
         ]);
 
         dataXTRACategory = xtraCategory;
@@ -101,6 +103,7 @@ async function loadAllData() {
         dataBiayaPembayaran = biayaPembayaran;
         dataLiveXtra = liveXtra;
         dataSPayLater = spayLater;
+        dataFreePO = freePO;
 
         console.log('✅ Semua data berhasil dimuat!');
         console.log('📊 xtraCategory:', dataXTRACategory.length, 'items');
@@ -111,6 +114,7 @@ async function loadAllData() {
         console.log('📊 biaya_pembayaran:', dataBiayaPembayaran.length, 'items');
         console.log('📊 live_xtra:', dataLiveXtra.length, 'items');
         console.log('📊 spaylater_xtra:', dataSPayLater.length, 'items');
+        console.log('📊 free_po:', dataFreePO.length, 'items');
 
         buildProductIndex();
         initApp();
@@ -511,6 +515,37 @@ function hitungSPayLater() {
 }
 
 // ============================================================
+// FUNGSI CEK FREE PO
+// ============================================================
+function isFreePO(productName) {
+    if (!productName) return false;
+    
+    return dataFreePO.some(item => 
+        item.jenisProduk.toLowerCase() === productName.toLowerCase() ||
+        item.jenisProduk.toLowerCase().includes(productName.toLowerCase())
+    );
+}
+
+// ============================================================
+// FUNGSI HITUNG PRODUK PO
+// ============================================================
+function hitungProdukPO() {
+    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
+    const pilihan = DOM.toggles.produkPO.value;
+    const productName = DOM.searchProduk.value.trim();
+    
+    // Jika pilihan No atau produk free PO → biaya 0
+    if (pilihan === 'No' || isFreePO(productName)) return 0;
+    
+    // Jika pilihan Yes3 → 3% dari harga nett
+    if (pilihan === 'Yes3') {
+        return 0.03 * hargaNett;
+    }
+    
+    return 0;
+}
+
+// ============================================================
 // FUNGSI HITUNG GRATIS ONGKIR XTRA DARI JSON
 // ============================================================
 function hitungGratisOngkirDariJSON() {
@@ -729,11 +764,10 @@ function hitungSemua() {
     }
 
     // 12. Produk PO
-    let biayaPO = 0;
+    let biayaPO = hitungProdukPO();
     const produkPOBox = document.getElementById('produkPOBox');
     const biayaPOText = document.getElementById('biayaPOText');
-    if (produkPO === 'Yes3') {
-        biayaPO = 0.03 * hargaNett;
+    if (produkPO === 'Yes3' && !isFreePO(DOM.searchProduk.value.trim())) {
         produkPOBox.style.display = 'flex';
         biayaPOText.innerText = formatRupiah(biayaPO);
     } else {

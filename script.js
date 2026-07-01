@@ -196,14 +196,10 @@ function displaySearchResults(results) {
 }
 
 function selectProduct(item) {
-    // Set nama produk yang dipilih
     DOM.searchProduk.value = item.displayName;
-
-    // Set sub kategori display
     DOM.subKategoriDisplay.value = `${item.subKategori} (${item.kategoriUtama})`;
     DOM.subKategoriHidden.value = item.subKategori;
 
-    // Set kategori
     let kategoriValue = '';
     if (item.kategoriUtama === 'Fashion') kategoriValue = 'fashion';
     else if (item.kategoriUtama === 'FMCG') kategoriValue = 'fmcg';
@@ -212,11 +208,8 @@ function selectProduct(item) {
     else kategoriValue = 'lainnya';
 
     DOM.kategoriSelect.value = kategoriValue;
-
-    // Update sub kategori dropdown
     updateSubKategoriFromJSON();
 
-    // Pilih sub kategori yang sesuai
     const options = DOM.subKategoriSelect.options;
     for (let i = 0; i < options.length; i++) {
         if (options[i].value === item.subKategori) {
@@ -225,12 +218,10 @@ function selectProduct(item) {
         }
     }
 
-    // Hitung ulang SEMUA
     hitungBiayaAdmin();
     hitungBiayaPembayaran();
     hitungSemua();
 
-    // Sembunyikan hasil search
     DOM.searchResults.classList.remove('show');
     DOM.searchResults.innerHTML = '';
 }
@@ -296,6 +287,10 @@ function resetForm() {
     DOM.toggles.asuransi.value = 'No';
     DOM.toggles.produkPO.value = 'No';
 
+    // Sembunyikan result box promo saat reset
+    document.getElementById('promoXTRABox').style.display = 'none';
+    document.getElementById('promoXTRAplusBox').style.display = 'none';
+
     updateSubKategoriFromJSON();
     console.log('🔄 Form telah direset!');
 }
@@ -327,9 +322,7 @@ function updateSubKategoriFromJSON() {
     const grouped = {};
     dataSource.forEach(item => {
         const key = item.subKategori;
-        if (!grouped[key]) {
-            grouped[key] = [];
-        }
+        if (!grouped[key]) grouped[key] = [];
         grouped[key].push(item);
     });
 
@@ -347,9 +340,7 @@ function updateSubKategoriFromJSON() {
             item.kategoriUtama === firstItem.kategoriUtama &&
             item.subKategori === subKategori
         );
-        if (mallItem) {
-            adminFeeMall = mallItem.adminFee;
-        }
+        if (mallItem) adminFeeMall = mallItem.adminFee;
 
         option.setAttribute('data-admin-nonmall', adminFeeNonMall);
         option.setAttribute('data-admin-mall', adminFeeMall);
@@ -421,9 +412,7 @@ function hitungBiayaPembayaran() {
     const maxPerQty = data.maxPerQty || 0;
 
     let biaya = hargaNett * rate;
-    if (maxPerQty > 0 && biaya > maxPerQty) {
-        biaya = maxPerQty;
-    }
+    if (maxPerQty > 0 && biaya > maxPerQty) biaya = maxPerQty;
 
     const persenDisplay = (rate * 100).toFixed(1) + '%';
     DOM.biayaPembayaranText.innerText = `${persenDisplay} → ${formatRupiah(biaya)}`;
@@ -469,9 +458,7 @@ function hitungGratisOngkirDariJSON() {
     if (!productName) {
         const displayText = DOM.subKategoriDisplay.value;
         const match = displayText.match(/^(.+?)\s*\(/);
-        if (match) {
-            productName = match[1].trim();
-        }
+        if (match) productName = match[1].trim();
     }
 
     if (!productName) {
@@ -489,13 +476,11 @@ function hitungGratisOngkirDariJSON() {
     const kategoriUtama = selectedOption ? selectedOption.getAttribute('data-kategori-utama') || '' : '';
     const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
 
-    if (hargaNett <= 0) {
-        return { biasa: 0, khusus: 0 };
-    }
+    if (hargaNett <= 0) return { biasa: 0, khusus: 0 };
 
     let found = null;
 
-    // STRATEGI 1: Cari berdasarkan nama produk
+    // STRATEGI 1: nama produk
     if (productName && productName.length > 0) {
         found = dataXTRACategory.find(item => {
             if (item.jenisProduk && Array.isArray(item.jenisProduk)) {
@@ -506,23 +491,19 @@ function hitungGratisOngkirDariJSON() {
             }
             return false;
         });
-        if (found) {
-            console.log('✅ XTRA ditemukan via nama produk:', productName, '→', found.subKategori);
-        }
+        if (found) console.log('✅ XTRA via nama produk:', productName, '→', found.subKategori);
     }
 
-    // STRATEGI 2: Cari via sub kategori (exact match)
+    // STRATEGI 2: sub kategori exact match
     if (!found && subKategori) {
         found = dataXTRACategory.find(item =>
             item.kategoriUtama === kategoriUtama &&
             item.subKategori === subKategori
         );
-        if (found) {
-            console.log('✅ XTRA ditemukan via subKategori exact match:', found.subKategori);
-        }
+        if (found) console.log('✅ XTRA via subKategori exact:', found.subKategori);
     }
 
-    // STRATEGI 3: Partial match di sub kategori
+    // STRATEGI 3: partial match sub kategori
     if (!found && subKategori) {
         const keywords = subKategori.toLowerCase().split(/[()\-,\s]+/).filter(w => w.length > 3);
         for (const keyword of keywords) {
@@ -532,23 +513,17 @@ function hitungGratisOngkirDariJSON() {
             );
             if (found) break;
         }
-        if (found) {
-            console.log('✅ XTRA ditemukan via partial match subKategori:', found.subKategori);
-        }
+        if (found) console.log('✅ XTRA via partial match:', found.subKategori);
     }
 
-    // STRATEGI 4: Fallback ke kategori utama
+    // STRATEGI 4: fallback kategori utama
     if (!found && kategoriUtama) {
-        found = dataXTRACategory.find(item =>
-            item.kategoriUtama === kategoriUtama
-        );
-        if (found) {
-            console.log('⚠️ XTRA fallback ke kategori utama:', found.subKategori);
-        }
+        found = dataXTRACategory.find(item => item.kategoriUtama === kategoriUtama);
+        if (found) console.log('⚠️ XTRA fallback kategori utama:', found.subKategori);
     }
 
     if (!found) {
-        console.log('❌ TIDAK ADA data XTRA untuk:', productName || subKategori);
+        console.log('❌ Tidak ada data XTRA untuk:', productName || subKategori);
         return { biasa: 0, khusus: 0 };
     }
 
@@ -556,18 +531,14 @@ function hitungGratisOngkirDariJSON() {
 
     if (found.regular && found.regular.rate) {
         let biaya = hargaNett * found.regular.rate;
-        if (found.regular.maxPerQty && biaya > found.regular.maxPerQty) {
-            biaya = found.regular.maxPerQty;
-        }
+        if (found.regular.maxPerQty && biaya > found.regular.maxPerQty) biaya = found.regular.maxPerQty;
         result.biasa = biaya;
         console.log('✅ XTRA Regular:', (found.regular.rate * 100) + '% → Rp' + biaya.toLocaleString());
     }
 
     if (found.special && found.special.rate) {
         let biaya = hargaNett * found.special.rate;
-        if (found.special.maxPerQty && biaya > found.special.maxPerQty) {
-            biaya = found.special.maxPerQty;
-        }
+        if (found.special.maxPerQty && biaya > found.special.maxPerQty) biaya = found.special.maxPerQty;
         result.khusus = biaya;
         console.log('✅ XTRA Special:', (found.special.rate * 100) + '% → Rp' + biaya.toLocaleString());
     }
@@ -601,9 +572,6 @@ function hitungSemua() {
     const biayaLain = getNumber('biayaLain');
     const pajakRate = getNumber('pajakRate') / 100;
 
-    const basketSize = getNumber('basketSize');
-    const biayaProses = basketSize > 0 ? Math.round(1250 / basketSize) : 0;
-
     // 1. Harga Jual Nett
     const hargaNett = hargaJual - diskon - voucher;
     DOM.hargaNett.innerText = formatRupiah(hargaNett);
@@ -617,6 +585,8 @@ function hitungSemua() {
     if (isNaN(biayaPembayaran)) biayaPembayaran = 0;
 
     // 4. Biaya Proses Pesanan (otomatis dari basket size)
+    const basketSize = getNumber('basketSize');
+    const biayaProses = basketSize > 0 ? Math.round(1250 / basketSize) : 0;
 
     // 5. Gratis Ongkir XTRA (hanya salah satu sesuai ukuran barang)
     const ongkirFromJSON = hitungGratisOngkirDariJSON();
@@ -631,9 +601,25 @@ function hitungSemua() {
 
     // 6. Promo XTRA
     let biayaPromoXTRA = hitungPromoXTRA();
+    const promoXTRABox = document.getElementById('promoXTRABox');
+    const biayaPromoXTRAText = document.getElementById('biayaPromoXTRAText');
+    if (promoXTRA === 'Yes') {
+        promoXTRABox.style.display = 'flex';
+        biayaPromoXTRAText.innerText = formatRupiah(biayaPromoXTRA);
+    } else {
+        promoXTRABox.style.display = 'none';
+    }
 
     // 7. Promo XTRA+
     let biayaPromoXTRAplus = hitungPromoXTRAplus();
+    const promoXTRAplusBox = document.getElementById('promoXTRAplusBox');
+    const biayaPromoXTRAplusText = document.getElementById('biayaPromoXTRAplusText');
+    if (promoXTRAplus === 'Yes') {
+        promoXTRAplusBox.style.display = 'flex';
+        biayaPromoXTRAplusText.innerText = formatRupiah(biayaPromoXTRAplus);
+    } else {
+        promoXTRAplusBox.style.display = 'none';
+    }
 
     // 8. Live XTRA
     let biayaLiveXTRA = 0;
@@ -683,9 +669,7 @@ function hitungSemua() {
 
     // 17. Biaya Iklan dari ROAS
     let biayaIklan = 0;
-    if (roas > 0) {
-        biayaIklan = (1 / roas) * hargaNett;
-    }
+    if (roas > 0) biayaIklan = (1 / roas) * hargaNett;
 
     // 18. Komisi Afiliasi
     const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
@@ -790,18 +774,14 @@ function attachEventListeners() {
         }
     });
 
-    // Listener untuk toggle ukuran barang
+    // Listener untuk ukuran barang
     const ukuranBarangEl = document.getElementById('ukuranBarang');
-    if (ukuranBarangEl) {
-        ukuranBarangEl.addEventListener('change', hitungSemua);
-    }
+    if (ukuranBarangEl) ukuranBarangEl.addEventListener('change', hitungSemua);
 
     const toggleIds = ['promoXTRA', 'promoXTRAplus', 'liveXTRA', 'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
     toggleIds.forEach(id => {
         const el = document.getElementById(id);
-        if (el) {
-            el.addEventListener('change', hitungSemua);
-        }
+        if (el) el.addEventListener('change', hitungSemua);
     });
 }
 

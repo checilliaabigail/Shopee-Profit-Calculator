@@ -64,7 +64,9 @@ function cacheDomElements() {
         biayaPacking: document.getElementById('biayaPacking'),
         biayaOperasional: document.getElementById('biayaOperasional'),
         biayaLain: document.getElementById('biayaLain'),
-        pajakRate: document.getElementById('pajakRate')
+        pajakRate: document.getElementById('pajakRate'),
+        biayaLainPersen: document.getElementById('biayaLainPersen'),
+        biayaLainRp: document.getElementById('biayaLainRp')
     };
 
     DOM.toggles = {
@@ -275,7 +277,8 @@ function resetForm() {
         'basketSize',
         'hpp', 'biayaPenanganan', 'roas', 'biayaIklanLain',
         'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 'biayaOperasional',
-        'biayaLain', 'pajakRate'
+        'biayaLain', 'pajakRate',
+        'biayaLainPersen', 'biayaLainRp'
     ];
 
     inputIds.forEach(id => {
@@ -307,7 +310,8 @@ function resetForm() {
     // Sembunyikan semua result box
     const boxes = [
         'promoXTRABox', 'promoXTRAplusBox', 'liveXTRABox',
-        'spayLaterBox', 'hematKirimBox', 'asuransiBox', 'produkPOBox'
+        'spayLaterBox', 'hematKirimBox', 'asuransiBox', 'produkPOBox',
+        'biayaLainPersenBox', 'biayaLainRpBox'
     ];
     boxes.forEach(id => {
         const el = document.getElementById(id);
@@ -668,6 +672,30 @@ function hitungSemua() {
     const biayaLain = getNumber('biayaLain');
     const pajakRate = getNumber('pajakRate') / 100;
 
+    // Biaya Shopee Lain-Lain (%)
+    const biayaLainPersen = getNumber('biayaLainPersen');
+    let biayaLainPersenRp = 0;
+    const biayaLainPersenBox = document.getElementById('biayaLainPersenBox');
+    const biayaLainPersenText = document.getElementById('biayaLainPersenText');
+    if (biayaLainPersen > 0) {
+        biayaLainPersenRp = (biayaLainPersen / 100) * hargaNett;
+        biayaLainPersenBox.style.display = 'flex';
+        biayaLainPersenText.innerText = formatRupiah(biayaLainPersenRp);
+    } else {
+        biayaLainPersenBox.style.display = 'none';
+    }
+
+    // Biaya Shopee Lain-Lain (Rp)
+    const biayaLainRp = getNumber('biayaLainRp');
+    const biayaLainRpBox = document.getElementById('biayaLainRpBox');
+    const biayaLainRpText = document.getElementById('biayaLainRpText');
+    if (biayaLainRp > 0) {
+        biayaLainRpBox.style.display = 'flex';
+        biayaLainRpText.innerText = formatRupiah(biayaLainRp);
+    } else {
+        biayaLainRpBox.style.display = 'none';
+    }
+
     // 1. Harga Jual Nett
     const hargaNett = hargaJual - diskon - voucher;
     DOM.hargaNett.innerText = formatRupiah(hargaNett);
@@ -778,7 +806,8 @@ function hitungSemua() {
     const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses +
         gratisOngkir +
         biayaPromoXTRA + biayaPromoXTRAplus + biayaLiveXTRA + biayaSPayLater +
-        biayaHematKirim + biayaAsuransi + biayaPO;
+        biayaHematKirim + biayaAsuransi + biayaPO +
+        biayaLainPersenRp + biayaLainRp;
     DOM.totalBiayaShopee.innerText = formatRupiah(totalBiayaShopee);
 
     // 14. Dana Dicairkan
@@ -889,7 +918,8 @@ function attachEventListeners() {
     const inputIds = ['hargaJual', 'diskon', 'voucher', 'basketSize',
         'hpp', 'biayaPenanganan',
         'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking',
-        'biayaOperasional', 'biayaLain', 'pajakRate'
+        'biayaOperasional', 'biayaLain', 'pajakRate',
+        'biayaLainPersen', 'biayaLainRp'
     ];
 
     inputIds.forEach(id => {

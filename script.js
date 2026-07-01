@@ -301,7 +301,10 @@ function resetForm() {
     DOM.toggles.produkPO.value = 'No';
 
     // Sembunyikan semua result box
-    const boxes = ['promoXTRABox', 'promoXTRAplusBox', 'liveXTRABox', 'spayLaterBox'];
+    const boxes = [
+        'promoXTRABox', 'promoXTRAplusBox', 'liveXTRABox',
+        'spayLaterBox', 'hematKirimBox', 'asuransiBox', 'produkPOBox'
+    ];
     boxes.forEach(id => {
         const el = document.getElementById(id);
         if (el) el.style.display = 'none';
@@ -702,13 +705,40 @@ function hitungSemua() {
     }
 
     // 10. Hemat Biaya Kirim
-    let biayaHematKirim = (hematKirim === 'Yes') ? 350 : 0;
+    let biayaHematKirim = 0;
+    const hematKirimBox = document.getElementById('hematKirimBox');
+    const biayaHematKirimText = document.getElementById('biayaHematKirimText');
+    if (hematKirim === 'Yes') {
+        biayaHematKirim = 350;
+        hematKirimBox.style.display = 'flex';
+        biayaHematKirimText.innerText = formatRupiah(biayaHematKirim);
+    } else {
+        hematKirimBox.style.display = 'none';
+    }
 
     // 11. Asuransi Pengiriman
-    let biayaAsuransi = (asuransi === 'Yes') ? 0.005 * hargaNett : 0;
+    let biayaAsuransi = 0;
+    const asuransiBox = document.getElementById('asuransiBox');
+    const biayaAsuransiText = document.getElementById('biayaAsuransiText');
+    if (asuransi === 'Yes') {
+        biayaAsuransi = 0.005 * hargaNett;
+        asuransiBox.style.display = 'flex';
+        biayaAsuransiText.innerText = formatRupiah(biayaAsuransi);
+    } else {
+        asuransiBox.style.display = 'none';
+    }
 
     // 12. Produk PO
-    let biayaPO = (produkPO === 'Yes3') ? 0.03 * hargaNett : 0;
+    let biayaPO = 0;
+    const produkPOBox = document.getElementById('produkPOBox');
+    const biayaPOText = document.getElementById('biayaPOText');
+    if (produkPO === 'Yes3') {
+        biayaPO = 0.03 * hargaNett;
+        produkPOBox.style.display = 'flex';
+        biayaPOText.innerText = formatRupiah(biayaPO);
+    } else {
+        produkPOBox.style.display = 'none';
+    }
 
     // 13. Total Biaya Shopee
     const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses +

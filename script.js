@@ -1,3 +1,8 @@
+// ============================================================
+// KALKULATOR CUAN SHOPEE - SCRIPT.JS
+// Cuan Berkah Digital
+// ============================================================
+
 const DATA_PATH = 'data/';
 const MAX_LIVE_XTRA = 20000;
 

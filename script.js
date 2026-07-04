@@ -1,3 +1,8 @@
+// ============================================================
+// KALKULATOR CUAN SHOPEE - SCRIPT.JS
+// Cuan Berkah Digital
+// ============================================================
+
 const DATA_PATH = 'data/';
 const MAX_LIVE_XTRA = 20000;
 
@@ -61,7 +66,8 @@ function cacheDomElements() {
         spayLater: document.getElementById('spayLater'),
         hematKirim: document.getElementById('hematKirim'),
         asuransi: document.getElementById('asuransi'),
-        produkPO: document.getElementById('produkPO')
+        produkPO: document.getElementById('produkPO'),
+        ppn: document.getElementById('ppn')
     };
 }
 
@@ -271,7 +277,7 @@ function resetForm() {
     const boxes = [
         'promoXTRABox', 'promoXTRAplusBox', 'liveXTRABox',
         'spayLaterBox', 'hematKirimBox', 'asuransiBox', 'produkPOBox',
-        'biayaLainPersenBox', 'biayaLainRpBox'
+        'biayaLainPersenBox', 'biayaLainRpBox', 'ppnBox'
     ];
     boxes.forEach(hideBox);
 
@@ -651,12 +657,21 @@ function hitungSemua() {
     const profitSebelumPajak = profitKotor - totalPengeluaran;
     DOM.profitSebelumPajak.innerText = formatRupiah(profitSebelumPajak);
 
-    // 21. Pajak
+    // 21. Pajak UMKM
     const pajak = pajakRate * hargaNett;
     DOM.pajak.innerText = formatRupiah(pajak);
 
+    // 21b. PPN
+    const ppn = DOM.toggles.ppn.value;
+    const biayaPPN = ppn === 'Yes' ? 0.11 * hargaNett : 0;
+    if (ppn === 'Yes') {
+        showBox('ppnBox', biayaPPN, 'ppnText');
+    } else {
+        hideBox('ppnBox');
+    }
+
     // 22. Profit Bersih
-    const profitBersih = profitSebelumPajak - pajak;
+    const profitBersih = profitSebelumPajak - pajak - biayaPPN;
     DOM.profitBersih.innerText = formatRupiah(profitBersih);
 
     if (profitBersih >= 0) {
@@ -746,7 +761,7 @@ function attachEventListeners() {
     const ukuranBarangEl = document.getElementById('ukuranBarang');
     if (ukuranBarangEl) ukuranBarangEl.addEventListener('change', hitungSemua);
 
-    const toggleIds = ['promoXTRA', 'promoXTRAplus', 'liveXTRA', 'spayLater', 'hematKirim', 'asuransi', 'produkPO'];
+    const toggleIds = ['promoXTRA', 'promoXTRAplus', 'liveXTRA', 'spayLater', 'hematKirim', 'asuransi', 'produkPO', 'ppn'];
     toggleIds.forEach(id => {
         const el = document.getElementById(id);
         if (el) el.addEventListener('change', hitungSemua);

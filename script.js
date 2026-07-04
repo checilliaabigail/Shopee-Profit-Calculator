@@ -58,7 +58,6 @@ function cacheDomElements() {
         hpp: document.getElementById('hpp'),
         biayaPenanganan: document.getElementById('biayaPenanganan'),
         roas: document.getElementById('roas'),
-        biayaIklanLain: document.getElementById('biayaIklanLain'),
         komisiAfiliasi: document.getElementById('komisiAfiliasi'),
         promosiLuar: document.getElementById('promosiLuar'),
         biayaPacking: document.getElementById('biayaPacking'),
@@ -275,7 +274,7 @@ function resetForm() {
     const inputIds = [
         'productName', 'hargaJual', 'diskon', 'voucher',
         'basketSize',
-        'hpp', 'biayaPenanganan', 'roas', 'biayaIklanLain',
+        'hpp', 'biayaPenanganan', 'roas',
         'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 'biayaOperasional',
         'biayaLain', 'pajakRate',
         'biayaLainPersen', 'biayaLainRp'
@@ -664,7 +663,6 @@ function hitungSemua() {
     const hpp = getNumber('hpp');
     const biayaPenanganan = getNumber('biayaPenanganan');
     const roas = getNumber('roas');
-    const biayaIklanLain = getNumber('biayaIklanLain');
     const komisiAfiliasiPersen = getNumber('komisiAfiliasi');
     const promosiLuar = getNumber('promosiLuar');
     const biayaPacking = getNumber('biayaPacking');
@@ -830,7 +828,7 @@ function hitungSemua() {
     const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
 
     // 19. Total Pengeluaran
-    const totalPengeluaran = biayaIklan + biayaIklanLain + biayaKomisiAfiliasi + promosiLuar +
+    const totalPengeluaran = biayaIklan + biayaKomisiAfiliasi + promosiLuar +
         biayaPacking + biayaOperasional + biayaLain;
     DOM.totalBiaya.innerText = formatRupiah(totalPengeluaran);
 
@@ -917,7 +915,7 @@ function attachEventListeners() {
 
     const inputIds = ['hargaJual', 'diskon', 'voucher', 'basketSize',
         'hpp', 'biayaPenanganan',
-        'roas', 'biayaIklanLain', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking',
+        'roas', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking',
         'biayaOperasional', 'biayaLain', 'pajakRate',
         'biayaLainPersen', 'biayaLainRp'
     ];

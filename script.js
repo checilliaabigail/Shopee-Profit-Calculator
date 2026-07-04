@@ -3,15 +3,9 @@
 // Cuan Berkah Digital
 // ============================================================
 
-// ============================================================
-// KONFIGURASI
-// ============================================================
 const DATA_PATH = 'data/';
 const MAX_LIVE_XTRA = 20000;
 
-// ============================================================
-// STATE / DATA GLOBAL
-// ============================================================
 let dataXTRACategory = [];
 let dataAdminMall = [];
 let dataAdminNonMall = [];
@@ -23,9 +17,6 @@ let dataSPayLater = [];
 let dataFreePO = [];
 let productIndex = [];
 
-// ============================================================
-// DOM REFERENSI
-// ============================================================
 const DOM = {};
 
 function cacheDomElements() {
@@ -80,7 +71,7 @@ function cacheDomElements() {
 }
 
 // ============================================================
-// FUNGSI LOAD DATA DARI JSON
+// LOAD DATA
 // ============================================================
 async function loadAllData() {
     try {
@@ -107,16 +98,6 @@ async function loadAllData() {
         dataFreePO = freePO;
 
         console.log('✅ Semua data berhasil dimuat!');
-        console.log('📊 xtraCategory:', dataXTRACategory.length, 'items');
-        console.log('📊 admin_mall:', dataAdminMall.length, 'items');
-        console.log('📊 admin_non-mall:', dataAdminNonMall.length, 'items');
-        console.log('📊 promo_xtra:', dataPromoXtra.length, 'items');
-        console.log('📊 xtraFee:', Object.keys(dataXtraFee).length, 'kategori');
-        console.log('📊 biaya_pembayaran:', dataBiayaPembayaran.length, 'items');
-        console.log('📊 live_xtra:', dataLiveXtra.length, 'items');
-        console.log('📊 spaylater_xtra:', dataSPayLater.length, 'items');
-        console.log('📊 free_po:', dataFreePO.length, 'items');
-
         buildProductIndex();
         initApp();
 
@@ -127,7 +108,7 @@ async function loadAllData() {
 }
 
 // ============================================================
-// BUILD PRODUCT INDEX UNTUK SEARCH
+// PRODUCT INDEX & SEARCH
 // ============================================================
 function buildProductIndex() {
     productIndex = [];
@@ -161,24 +142,16 @@ function buildProductIndex() {
     console.log('📊 Product Index:', productIndex.length, 'items');
 }
 
-// ============================================================
-// FUNGSI SEARCH PRODUK
-// ============================================================
 function searchProducts(query) {
     if (!query || query.length < 2) return [];
-
     const q = query.toLowerCase();
-    const results = productIndex.filter(item =>
-        item.keyword.includes(q) ||
-        item.subKategori.toLowerCase().includes(q)
-    );
-
-    return results.slice(0, 15);
+    return productIndex.filter(item =>
+        item.keyword.includes(q) || item.subKategori.toLowerCase().includes(q)
+    ).slice(0, 15);
 }
 
 function displaySearchResults(results) {
     const container = DOM.searchResults;
-
     if (results.length === 0) {
         container.classList.remove('show');
         container.innerHTML = '';
@@ -204,11 +177,7 @@ function displaySearchResults(results) {
 
         div.appendChild(leftDiv);
         div.appendChild(feeDiv);
-
-        div.addEventListener('click', () => {
-            selectProduct(item);
-        });
-
+        div.addEventListener('click', () => selectProduct(item));
         container.appendChild(div);
     });
 }
@@ -218,12 +187,11 @@ function selectProduct(item) {
     DOM.subKategoriDisplay.value = `${item.subKategori} (${item.kategoriUtama})`;
     DOM.subKategoriHidden.value = item.subKategori;
 
-    let kategoriValue = '';
+    let kategoriValue = 'lainnya';
     if (item.kategoriUtama === 'Fashion') kategoriValue = 'fashion';
     else if (item.kategoriUtama === 'FMCG') kategoriValue = 'fmcg';
     else if (item.kategoriUtama === 'Elektronik') kategoriValue = 'elektronik';
     else if (item.kategoriUtama === 'Lifestyle') kategoriValue = 'lifestyle';
-    else kategoriValue = 'lainnya';
 
     DOM.kategoriSelect.value = kategoriValue;
     updateSubKategoriFromJSON();
@@ -245,7 +213,7 @@ function selectProduct(item) {
 }
 
 // ============================================================
-// FUNGSI UTILITY
+// UTILITY
 // ============================================================
 function getNumber(id) {
     const el = document.getElementById(id);
@@ -255,38 +223,43 @@ function getNumber(id) {
     return parseFloat(val) || 0;
 }
 
-function getSelect(id) {
-    const el = document.getElementById(id);
-    if (!el) return '';
-    return el.value;
-}
-
 function formatRupiah(angka) {
     if (isNaN(angka) || angka === null || angka === undefined) return 'Rp 0';
     const bilangan = Math.round(angka);
     return 'Rp ' + bilangan.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
+function showBox(id, nilai, textId) {
+    const box = document.getElementById(id);
+    const text = document.getElementById(textId);
+    if (!box || !text) return;
+    if (nilai > 0) {
+        box.style.display = 'flex';
+        text.innerText = formatRupiah(nilai);
+    } else {
+        box.style.display = 'none';
+    }
+}
+
+function hideBox(id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+}
+
 // ============================================================
-// FUNGSI RESET FORM
+// RESET FORM
 // ============================================================
 function resetForm() {
     const inputIds = [
-        'productName', 'hargaJual', 'diskon', 'voucher',
-        'basketSize',
-        'hpp', 'biayaPenanganan', 'roas',
-        'komisiAfiliasi', 'promosiLuar', 'biayaPacking', 'biayaOperasional',
-        'biayaLain', 'pajakRate',
+        'productName', 'hargaJual', 'diskon', 'voucher', 'basketSize',
+        'hpp', 'biayaPenanganan', 'roas', 'komisiAfiliasi', 'promosiLuar',
+        'biayaPacking', 'biayaOperasional', 'biayaLain', 'pajakRate',
         'biayaLainPersen', 'biayaLainRp'
     ];
 
     inputIds.forEach(id => {
         const el = document.getElementById(id);
-        if (el) {
-            if (el.type === 'text' || el.type === 'number') {
-                el.value = '';
-            }
-        }
+        if (el && (el.type === 'text' || el.type === 'number')) el.value = '';
     });
 
     DOM.kategoriSelect.value = 'fashion';
@@ -298,47 +271,38 @@ function resetForm() {
     DOM.searchResults.classList.remove('show');
     DOM.searchResults.innerHTML = '';
 
-    DOM.toggles.promoXTRA.value = 'No';
-    DOM.toggles.promoXTRAplus.value = 'No';
-    DOM.toggles.liveXTRA.value = 'No';
-    DOM.toggles.spayLater.value = 'No';
-    DOM.toggles.hematKirim.value = 'No';
-    DOM.toggles.asuransi.value = 'No';
-    DOM.toggles.produkPO.value = 'No';
+    Object.values(DOM.toggles).forEach(el => { if (el) el.value = 'No'; });
 
-    // Sembunyikan semua result box
     const boxes = [
         'promoXTRABox', 'promoXTRAplusBox', 'liveXTRABox',
         'spayLaterBox', 'hematKirimBox', 'asuransiBox', 'produkPOBox',
         'biayaLainPersenBox', 'biayaLainRpBox'
     ];
-    boxes.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.style.display = 'none';
-    });
+    boxes.forEach(hideBox);
 
     updateSubKategoriFromJSON();
     console.log('🔄 Form telah direset!');
 }
 
 // ============================================================
-// FUNGSI UPDATE SUB KATEGORI DARI JSON
+// UPDATE SUB KATEGORI
 // ============================================================
 function updateSubKategoriFromJSON() {
     const kategori = DOM.kategoriSelect.value;
     const select = DOM.subKategoriSelect;
     select.innerHTML = '<option value="">-- Pilih Sub Kategori --</option>';
 
+    const filterMap = {
+        fashion: 'Fashion',
+        fmcg: 'FMCG',
+        elektronik: 'Elektronik',
+        lifestyle: 'Lifestyle'
+    };
+
     let dataSource = [];
-    if (kategori === 'fashion') {
-        dataSource = dataAdminNonMall.filter(item => item.kategoriUtama === 'Fashion');
-    } else if (kategori === 'fmcg') {
-        dataSource = dataAdminNonMall.filter(item => item.kategoriUtama === 'FMCG');
-    } else if (kategori === 'elektronik') {
-        dataSource = dataAdminNonMall.filter(item => item.kategoriUtama === 'Elektronik');
-    } else if (kategori === 'lifestyle') {
-        dataSource = dataAdminNonMall.filter(item => item.kategoriUtama === 'Lifestyle');
-    } else if (kategori === 'lainnya') {
+    if (filterMap[kategori]) {
+        dataSource = dataAdminNonMall.filter(item => item.kategoriUtama === filterMap[kategori]);
+    } else {
         dataSource = dataAdminNonMall.filter(item =>
             item.kategoriUtama === 'Kategori Lainnya' ||
             item.kategoriUtama === 'Tiket, Voucher, & Layanan'
@@ -347,45 +311,36 @@ function updateSubKategoriFromJSON() {
 
     const grouped = {};
     dataSource.forEach(item => {
-        const key = item.subKategori;
-        if (!grouped[key]) grouped[key] = [];
-        grouped[key].push(item);
+        if (!grouped[item.subKategori]) grouped[item.subKategori] = [];
+        grouped[item.subKategori].push(item);
     });
 
-    const subKategoriKeys = Object.keys(grouped).sort();
-    subKategoriKeys.forEach(subKategori => {
+    Object.keys(grouped).sort().forEach(subKategori => {
         const option = document.createElement('option');
         option.value = subKategori;
         option.textContent = subKategori;
 
         const firstItem = grouped[subKategori][0];
         const adminFeeNonMall = firstItem.adminFee || 0;
-
-        let adminFeeMall = adminFeeNonMall;
         const mallItem = dataAdminMall.find(item =>
             item.kategoriUtama === firstItem.kategoriUtama &&
             item.subKategori === subKategori
         );
-        if (mallItem) adminFeeMall = mallItem.adminFee;
 
         option.setAttribute('data-admin-nonmall', adminFeeNonMall);
-        option.setAttribute('data-admin-mall', adminFeeMall);
+        option.setAttribute('data-admin-mall', mallItem ? mallItem.adminFee : adminFeeNonMall);
         option.setAttribute('data-kategori-utama', firstItem.kategoriUtama || '');
         option.setAttribute('data-kategori', firstItem.kategori || '');
-
         select.appendChild(option);
     });
 }
 
 // ============================================================
-// FUNGSI HITUNG BIAYA ADMIN
+// HITUNG BIAYA ADMIN & PEMBAYARAN
 // ============================================================
 function hitungBiayaAdmin() {
     const hargaJual = getNumber('hargaJual');
-    const diskon = getNumber('diskon');
-    const voucher = getNumber('voucher');
-    const hargaNett = hargaJual - diskon - voucher;
-
+    const hargaNett = hargaJual - getNumber('diskon') - getNumber('voucher');
     const tipeToko = DOM.tipeTokoSelect.value;
     const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
 
@@ -394,169 +349,101 @@ function hitungBiayaAdmin() {
         return 0;
     }
 
-    let persen = 0;
-    if (tipeToko === 'mall') {
-        persen = parseFloat(selectedOption.getAttribute('data-admin-mall')) || 0;
-    } else {
-        persen = parseFloat(selectedOption.getAttribute('data-admin-nonmall')) || 0;
-    }
+    const persen = parseFloat(selectedOption.getAttribute(
+        tipeToko === 'mall' ? 'data-admin-mall' : 'data-admin-nonmall'
+    )) || 0;
 
     const biayaAdminRp = (persen / 100) * hargaNett;
     DOM.biayaAdminText.innerText = `${persen}% → ${formatRupiah(biayaAdminRp)}`;
-
     return biayaAdminRp;
 }
 
-// ============================================================
-// FUNGSI HITUNG BIAYA PEMBAYARAN
-// ============================================================
 function hitungBiayaPembayaran() {
-    const tipeToko = DOM.tipeTokoSelect.value;
-    const hargaJual = getNumber('hargaJual');
-    const diskon = getNumber('diskon');
-    const voucher = getNumber('voucher');
-    const hargaNett = hargaJual - diskon - voucher;
-
+    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
     if (hargaNett <= 0) {
         DOM.biayaPembayaranText.innerText = '0% → Rp 0';
         return 0;
     }
 
-    let data = null;
-    if (tipeToko === 'mall') {
-        data = dataBiayaPembayaran.find(item => item.tipeToko === 'mall');
-    } else {
-        data = dataBiayaPembayaran.find(item => item.tipeToko === 'nonStar');
-    }
+    const tipeToko = DOM.tipeTokoSelect.value;
+    const data = dataBiayaPembayaran.find(item =>
+        item.tipeToko === (tipeToko === 'mall' ? 'mall' : 'nonStar')
+    );
 
     if (!data) {
         DOM.biayaPembayaranText.innerText = '0% → Rp 0';
         return 0;
     }
 
-    const rate = data.rate || 0;
-    const maxPerQty = data.maxPerQty || 0;
+    let biaya = hargaNett * data.rate;
+    if (data.maxPerQty > 0 && biaya > data.maxPerQty) biaya = data.maxPerQty;
 
-    let biaya = hargaNett * rate;
-    if (maxPerQty > 0 && biaya > maxPerQty) biaya = maxPerQty;
-
-    const persenDisplay = (rate * 100).toFixed(1) + '%';
-    DOM.biayaPembayaranText.innerText = `${persenDisplay} → ${formatRupiah(biaya)}`;
-
+    DOM.biayaPembayaranText.innerText = `${(data.rate * 100).toFixed(1)}% → ${formatRupiah(biaya)}`;
     return biaya;
 }
 
 // ============================================================
-// FUNGSI HITUNG PROMO XTRA
+// HITUNG KOMPONEN XTRA
 // ============================================================
 function hitungPromoXTRA() {
+    if (DOM.toggles.promoXTRA.value === 'No') return 0;
     const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
-    const pilihan = DOM.toggles.promoXTRA.value;
-    if (pilihan === 'No') return 0;
-
     const data = dataPromoXtra.find(item => item.fieldName === 'promoXTRA');
     if (!data) return 0;
-
-    let biaya = hargaNett * data.rate;
-    if (biaya > data.maxBiaya) biaya = data.maxBiaya;
-    return biaya;
+    return Math.min(hargaNett * data.rate, data.maxBiaya);
 }
 
 function hitungPromoXTRAplus() {
+    if (DOM.toggles.promoXTRAplus.value === 'No') return 0;
     const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
-    const pilihan = DOM.toggles.promoXTRAplus.value;
-    if (pilihan === 'No') return 0;
-
     const data = dataPromoXtra.find(item => item.fieldName === 'promoXTRAplus');
     if (!data) return 0;
-
-    let biaya = hargaNett * data.rate;
-    if (biaya > data.maxBiaya) biaya = data.maxBiaya;
-    return biaya;
+    return Math.min(hargaNett * data.rate, data.maxBiaya);
 }
 
-// ============================================================
-// FUNGSI HITUNG LIVE XTRA
-// ============================================================
 function hitungLiveXTRA() {
-    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
     const pilihan = DOM.toggles.liveXTRA.value;
-    
     if (pilihan === 'No') return 0;
-    
+    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
     const data = dataLiveXtra.find(item => item.fieldName === 'liveXTRA');
     if (!data) return 0;
-    
     const option = data.options.find(opt => opt.value === pilihan);
     if (!option) return 0;
-    
-    let biaya = hargaNett * option.rate;
-    if (biaya > option.maxBiaya) biaya = option.maxBiaya;
-    
-    return biaya;
+    return Math.min(hargaNett * option.rate, option.maxBiaya);
 }
 
-// ============================================================
-// FUNGSI HITUNG SPAYLATER XTRA
-// ============================================================
 function hitungSPayLater() {
-    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
     const pilihan = DOM.toggles.spayLater.value;
-    
     if (pilihan === 'No') return 0;
-    
+    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
     const data = dataSPayLater.find(item => item.fieldName === 'spayLater');
     if (!data) return 0;
-    
     const option = data.options.find(opt => opt.value === pilihan);
     if (!option) return 0;
-    
-    let biaya = hargaNett * option.rate;
-    // SPayLater tidak memiliki batas maksimal
-    
-    return biaya;
+    return hargaNett * option.rate;
 }
 
-// ============================================================
-// FUNGSI CEK FREE PO
-// ============================================================
 function isFreePO(productName) {
     if (!productName) return false;
-    
-    return dataFreePO.some(item => 
+    return dataFreePO.some(item =>
         item.jenisProduk.toLowerCase() === productName.toLowerCase() ||
         item.jenisProduk.toLowerCase().includes(productName.toLowerCase())
     );
 }
 
-// ============================================================
-// FUNGSI HITUNG PRODUK PO
-// ============================================================
-function hitungProdukPO() {
-    const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
+function hitungProdukPO(hargaNett) {
     const pilihan = DOM.toggles.produkPO.value;
     const productName = DOM.searchProduk.value.trim();
-    
-    // Jika pilihan No atau produk free PO → biaya 0
     if (pilihan === 'No' || isFreePO(productName)) return 0;
-    
-    // Jika pilihan Yes3 → 3% dari harga nett
-    if (pilihan === 'Yes3') {
-        return 0.03 * hargaNett;
-    }
-    
+    if (pilihan === 'Yes3') return 0.03 * hargaNett;
     return 0;
 }
 
-// ============================================================
-// FUNGSI HITUNG GRATIS ONGKIR XTRA DARI JSON
-// ============================================================
 function hitungGratisOngkirDariJSON() {
     let productName = DOM.searchProduk.value.trim();
 
     if (!productName) {
-        const displayText = DOM.subKategoriDisplay.value;
-        const match = displayText.match(/^(.+?)\s*\(/);
+        const match = DOM.subKategoriDisplay.value.match(/^(.+?)\s*\(/);
         if (match) productName = match[1].trim();
     }
 
@@ -564,45 +451,34 @@ function hitungGratisOngkirDariJSON() {
         const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
         if (selectedOption && selectedOption.value) {
             const productData = dataAdminNonMall.find(item => item.subKategori === selectedOption.value);
-            if (productData && productData.jenisProduk && productData.jenisProduk.length > 0) {
-                productName = productData.jenisProduk[0];
-            }
+            if (productData?.jenisProduk?.length > 0) productName = productData.jenisProduk[0];
         }
     }
 
     const selectedOption = DOM.subKategoriSelect.options[DOM.subKategoriSelect.selectedIndex];
-    const subKategori = selectedOption ? selectedOption.value : '';
-    const kategoriUtama = selectedOption ? selectedOption.getAttribute('data-kategori-utama') || '' : '';
+    const subKategori = selectedOption?.value || '';
+    const kategoriUtama = selectedOption?.getAttribute('data-kategori-utama') || '';
     const hargaNett = getNumber('hargaJual') - getNumber('diskon') - getNumber('voucher');
 
     if (hargaNett <= 0) return { biasa: 0, khusus: 0 };
 
     let found = null;
 
-    // STRATEGI 1: nama produk
-    if (productName && productName.length > 0) {
-        found = dataXTRACategory.find(item => {
-            if (item.jenisProduk && Array.isArray(item.jenisProduk)) {
-                return item.jenisProduk.some(p =>
-                    p.toLowerCase() === productName.toLowerCase() ||
-                    p.toLowerCase().includes(productName.toLowerCase())
-                );
-            }
-            return false;
-        });
-        if (found) console.log('✅ XTRA via nama produk:', productName, '→', found.subKategori);
+    if (productName) {
+        found = dataXTRACategory.find(item =>
+            item.jenisProduk?.some(p =>
+                p.toLowerCase() === productName.toLowerCase() ||
+                p.toLowerCase().includes(productName.toLowerCase())
+            )
+        );
     }
 
-    // STRATEGI 2: sub kategori exact match
     if (!found && subKategori) {
         found = dataXTRACategory.find(item =>
-            item.kategoriUtama === kategoriUtama &&
-            item.subKategori === subKategori
+            item.kategoriUtama === kategoriUtama && item.subKategori === subKategori
         );
-        if (found) console.log('✅ XTRA via subKategori exact:', found.subKategori);
     }
 
-    // STRATEGI 3: partial match sub kategori
     if (!found && subKategori) {
         const keywords = subKategori.toLowerCase().split(/[()\-,\s]+/).filter(w => w.length > 3);
         for (const keyword of keywords) {
@@ -612,37 +488,21 @@ function hitungGratisOngkirDariJSON() {
             );
             if (found) break;
         }
-        if (found) console.log('✅ XTRA via partial match:', found.subKategori);
     }
 
-    // STRATEGI 4: fallback kategori utama
     if (!found && kategoriUtama) {
         found = dataXTRACategory.find(item => item.kategoriUtama === kategoriUtama);
-        if (found) console.log('⚠️ XTRA fallback kategori utama:', found.subKategori);
     }
 
-    if (!found) {
-        console.log('❌ Tidak ada data XTRA untuk:', productName || subKategori);
-        return { biasa: 0, khusus: 0 };
-    }
+    if (!found) return { biasa: 0, khusus: 0 };
 
-    let result = { biasa: 0, khusus: 0 };
+    const calc = (cfg) => {
+        if (!cfg?.rate) return 0;
+        const biaya = hargaNett * cfg.rate;
+        return cfg.maxPerQty ? Math.min(biaya, cfg.maxPerQty) : biaya;
+    };
 
-    if (found.regular && found.regular.rate) {
-        let biaya = hargaNett * found.regular.rate;
-        if (found.regular.maxPerQty && biaya > found.regular.maxPerQty) biaya = found.regular.maxPerQty;
-        result.biasa = biaya;
-        console.log('✅ XTRA Regular:', (found.regular.rate * 100) + '% → Rp' + biaya.toLocaleString());
-    }
-
-    if (found.special && found.special.rate) {
-        let biaya = hargaNett * found.special.rate;
-        if (found.special.maxPerQty && biaya > found.special.maxPerQty) biaya = found.special.maxPerQty;
-        result.khusus = biaya;
-        console.log('✅ XTRA Special:', (found.special.rate * 100) + '% → Rp' + biaya.toLocaleString());
-    }
-
-    return result;
+    return { biasa: calc(found.regular), khusus: calc(found.special) };
 }
 
 // ============================================================
@@ -652,7 +512,11 @@ function hitungSemua() {
     const hargaJual = getNumber('hargaJual');
     const diskon = getNumber('diskon');
     const voucher = getNumber('voucher');
-    const tipeToko = DOM.tipeTokoSelect.value;
+
+    // ✅ FIX BUG 1: hargaNett dideklarasi PERTAMA sebelum dipakai di mana pun
+    const hargaNett = hargaJual - diskon - voucher;
+    DOM.hargaNett.innerText = formatRupiah(hargaNett);
+
     const promoXTRA = DOM.toggles.promoXTRA.value;
     const promoXTRAplus = DOM.toggles.promoXTRAplus.value;
     const liveXTRA = DOM.toggles.liveXTRA.value;
@@ -660,6 +524,7 @@ function hitungSemua() {
     const hematKirim = DOM.toggles.hematKirim.value;
     const asuransi = DOM.toggles.asuransi.value;
     const produkPO = DOM.toggles.produkPO.value;
+
     const hpp = getNumber('hpp');
     const biayaPenanganan = getNumber('biayaPenanganan');
     const roas = getNumber('roas');
@@ -670,35 +535,7 @@ function hitungSemua() {
     const biayaLain = getNumber('biayaLain');
     const pajakRate = getNumber('pajakRate') / 100;
 
-    // Biaya Shopee Lain-Lain (%)
-    const biayaLainPersen = getNumber('biayaLainPersen');
-    let biayaLainPersenRp = 0;
-    const biayaLainPersenBox = document.getElementById('biayaLainPersenBox');
-    const biayaLainPersenText = document.getElementById('biayaLainPersenText');
-    if (biayaLainPersen > 0) {
-        biayaLainPersenRp = (biayaLainPersen / 100) * hargaNett;
-        biayaLainPersenBox.style.display = 'flex';
-        biayaLainPersenText.innerText = formatRupiah(biayaLainPersenRp);
-    } else {
-        biayaLainPersenBox.style.display = 'none';
-    }
-
-    // Biaya Shopee Lain-Lain (Rp)
-    const biayaLainRp = getNumber('biayaLainRp');
-    const biayaLainRpBox = document.getElementById('biayaLainRpBox');
-    const biayaLainRpText = document.getElementById('biayaLainRpText');
-    if (biayaLainRp > 0) {
-        biayaLainRpBox.style.display = 'flex';
-        biayaLainRpText.innerText = formatRupiah(biayaLainRp);
-    } else {
-        biayaLainRpBox.style.display = 'none';
-    }
-
-    // 1. Harga Jual Nett
-    const hargaNett = hargaJual - diskon - voucher;
-    DOM.hargaNett.innerText = formatRupiah(hargaNett);
-
-    // 2. Biaya Administrasi
+    // 2. Biaya Admin
     let biayaAdmin = hitungBiayaAdmin();
     if (isNaN(biayaAdmin)) biayaAdmin = 0;
 
@@ -706,128 +543,111 @@ function hitungSemua() {
     let biayaPembayaran = hitungBiayaPembayaran();
     if (isNaN(biayaPembayaran)) biayaPembayaran = 0;
 
-    // 4. Biaya Proses Pesanan (otomatis dari basket size)
+    // 4. Biaya Proses Pesanan
     const basketSize = getNumber('basketSize');
     const biayaProses = basketSize > 0 ? Math.round(1250 / basketSize) : 0;
 
     // 5. Gratis Ongkir XTRA
     const ongkirFromJSON = hitungGratisOngkirDariJSON();
     const ukuranBarang = document.getElementById('ukuranBarang').value;
-    let gratisOngkir = 0;
-    if (ukuranBarang === 'biasa') {
-        gratisOngkir = ongkirFromJSON.biasa;
-    } else {
-        gratisOngkir = ongkirFromJSON.khusus;
-    }
+    const gratisOngkir = ukuranBarang === 'biasa' ? ongkirFromJSON.biasa : ongkirFromJSON.khusus;
     document.getElementById('gratisOngkirXtraText').innerText = formatRupiah(gratisOngkir);
 
     // 6. Promo XTRA
-    let biayaPromoXTRA = hitungPromoXTRA();
-    const promoXTRABox = document.getElementById('promoXTRABox');
-    const biayaPromoXTRAText = document.getElementById('biayaPromoXTRAText');
+    const biayaPromoXTRA = hitungPromoXTRA();
     if (promoXTRA === 'Yes') {
-        promoXTRABox.style.display = 'flex';
-        biayaPromoXTRAText.innerText = formatRupiah(biayaPromoXTRA);
+        showBox('promoXTRABox', biayaPromoXTRA, 'biayaPromoXTRAText');
     } else {
-        promoXTRABox.style.display = 'none';
+        hideBox('promoXTRABox');
     }
 
     // 7. Promo XTRA+
-    let biayaPromoXTRAplus = hitungPromoXTRAplus();
-    const promoXTRAplusBox = document.getElementById('promoXTRAplusBox');
-    const biayaPromoXTRAplusText = document.getElementById('biayaPromoXTRAplusText');
+    const biayaPromoXTRAplus = hitungPromoXTRAplus();
     if (promoXTRAplus === 'Yes') {
-        promoXTRAplusBox.style.display = 'flex';
-        biayaPromoXTRAplusText.innerText = formatRupiah(biayaPromoXTRAplus);
+        showBox('promoXTRAplusBox', biayaPromoXTRAplus, 'biayaPromoXTRAplusText');
     } else {
-        promoXTRAplusBox.style.display = 'none';
+        hideBox('promoXTRAplusBox');
     }
 
     // 8. Live XTRA
-    let biayaLiveXTRA = hitungLiveXTRA();
-    const liveXTRABox = document.getElementById('liveXTRABox');
-    const biayaLiveXTRAText = document.getElementById('biayaLiveXTRAText');
+    const biayaLiveXTRA = hitungLiveXTRA();
     if (liveXTRA !== 'No') {
-        liveXTRABox.style.display = 'flex';
-        biayaLiveXTRAText.innerText = formatRupiah(biayaLiveXTRA);
+        showBox('liveXTRABox', biayaLiveXTRA, 'biayaLiveXTRAText');
     } else {
-        liveXTRABox.style.display = 'none';
+        hideBox('liveXTRABox');
     }
 
-    // 9. SPayLater XTRA
-    let biayaSPayLater = hitungSPayLater();
-    const spayLaterBox = document.getElementById('spayLaterBox');
-    const biayaSPayLaterText = document.getElementById('biayaSPayLaterText');
+    // 9. SPayLater
+    const biayaSPayLater = hitungSPayLater();
     if (spayLater !== 'No') {
-        spayLaterBox.style.display = 'flex';
-        biayaSPayLaterText.innerText = formatRupiah(biayaSPayLater);
+        showBox('spayLaterBox', biayaSPayLater, 'biayaSPayLaterText');
     } else {
-        spayLaterBox.style.display = 'none';
+        hideBox('spayLaterBox');
     }
 
     // 10. Hemat Biaya Kirim
-    let biayaHematKirim = 0;
-    const hematKirimBox = document.getElementById('hematKirimBox');
-    const biayaHematKirimText = document.getElementById('biayaHematKirimText');
+    const biayaHematKirim = hematKirim === 'Yes' ? 350 : 0;
     if (hematKirim === 'Yes') {
-        biayaHematKirim = 350;
-        hematKirimBox.style.display = 'flex';
-        biayaHematKirimText.innerText = formatRupiah(biayaHematKirim);
+        showBox('hematKirimBox', biayaHematKirim, 'biayaHematKirimText');
     } else {
-        hematKirimBox.style.display = 'none';
+        hideBox('hematKirimBox');
     }
 
-    // 11. Asuransi Pengiriman
-    let biayaAsuransi = 0;
-    const asuransiBox = document.getElementById('asuransiBox');
-    const biayaAsuransiText = document.getElementById('biayaAsuransiText');
+    // 11. Asuransi
+    const biayaAsuransi = asuransi === 'Yes' ? 0.005 * hargaNett : 0;
     if (asuransi === 'Yes') {
-        biayaAsuransi = 0.005 * hargaNett;
-        asuransiBox.style.display = 'flex';
-        biayaAsuransiText.innerText = formatRupiah(biayaAsuransi);
+        showBox('asuransiBox', biayaAsuransi, 'biayaAsuransiText');
     } else {
-        asuransiBox.style.display = 'none';
+        hideBox('asuransiBox');
     }
 
     // 12. Produk PO
-    let biayaPO = hitungProdukPO();
-    const produkPOBox = document.getElementById('produkPOBox');
-    const biayaPOText = document.getElementById('biayaPOText');
+    const biayaPO = hitungProdukPO(hargaNett);
     if (produkPO === 'Yes3' && !isFreePO(DOM.searchProduk.value.trim())) {
-        produkPOBox.style.display = 'flex';
-        biayaPOText.innerText = formatRupiah(biayaPO);
+        showBox('produkPOBox', biayaPO, 'biayaPOText');
     } else {
-        produkPOBox.style.display = 'none';
+        hideBox('produkPOBox');
     }
 
-    // 13. Total Biaya Shopee
+    // 13. Biaya Lain-Lain (%)
+    const biayaLainPersen = getNumber('biayaLainPersen');
+    const biayaLainPersenRp = biayaLainPersen > 0 ? (biayaLainPersen / 100) * hargaNett : 0;
+    if (biayaLainPersen > 0) {
+        showBox('biayaLainPersenBox', biayaLainPersenRp, 'biayaLainPersenText');
+    } else {
+        hideBox('biayaLainPersenBox');
+    }
+
+    // 14. Biaya Lain-Lain (Rp)
+    const biayaLainRp = getNumber('biayaLainRp');
+    if (biayaLainRp > 0) {
+        showBox('biayaLainRpBox', biayaLainRp, 'biayaLainRpText');
+    } else {
+        hideBox('biayaLainRpBox');
+    }
+
+    // 15. Total Biaya Shopee
     const totalBiayaShopee = biayaAdmin + biayaPembayaran + biayaProses +
-        gratisOngkir +
-        biayaPromoXTRA + biayaPromoXTRAplus + biayaLiveXTRA + biayaSPayLater +
-        biayaHematKirim + biayaAsuransi + biayaPO +
+        gratisOngkir + biayaPromoXTRA + biayaPromoXTRAplus + biayaLiveXTRA +
+        biayaSPayLater + biayaHematKirim + biayaAsuransi + biayaPO +
         biayaLainPersenRp + biayaLainRp;
     DOM.totalBiayaShopee.innerText = formatRupiah(totalBiayaShopee);
 
-    // 14. Dana Dicairkan
+    // 16. Dana Dicairkan
     const danaDicairkan = hargaNett - totalBiayaShopee;
     DOM.danaDicairkan.innerText = formatRupiah(danaDicairkan);
 
-    // 15. COGS
+    // 17. COGS
     const totalCOGS = hpp + biayaPenanganan;
     DOM.totalCOGS.innerText = formatRupiah(totalCOGS);
 
-    // 16. Profit Kotor
+    // 18. Profit Kotor
     const profitKotor = danaDicairkan - totalCOGS;
     DOM.profitKotor.innerText = formatRupiah(profitKotor);
 
-    // 17. Biaya Iklan dari ROAS
-    let biayaIklan = 0;
-    if (roas > 0) biayaIklan = (1 / roas) * hargaNett;
-
-    // 18. Komisi Afiliasi
+    // 19. Pengeluaran
+    const biayaIklan = roas > 0 ? (1 / roas) * hargaNett : 0;
     const biayaKomisiAfiliasi = (komisiAfiliasiPersen / 100) * hargaNett;
-
-    // 19. Total Pengeluaran
     const totalPengeluaran = biayaIklan + biayaKomisiAfiliasi + promosiLuar +
         biayaPacking + biayaOperasional + biayaLain;
     DOM.totalBiaya.innerText = formatRupiah(totalPengeluaran);
@@ -880,9 +700,7 @@ function attachEventListeners() {
             DOM.subKategoriHidden.value = selectedOption.value;
 
             const productData = dataAdminNonMall.find(item => item.subKategori === selectedOption.value);
-            if (productData && productData.jenisProduk && productData.jenisProduk.length > 0) {
-                DOM.searchProduk.value = productData.jenisProduk[0];
-            }
+            if (productData?.jenisProduk?.length > 0) DOM.searchProduk.value = productData.jenisProduk[0];
         } else {
             DOM.subKategoriDisplay.value = '';
             DOM.subKategoriHidden.value = '';
@@ -893,17 +711,12 @@ function attachEventListeners() {
     });
 
     DOM.searchProduk.addEventListener('input', function() {
-        const query = this.value.trim();
-        const results = searchProducts(query);
+        const results = searchProducts(this.value.trim());
         displaySearchResults(results);
     });
 
     DOM.searchProduk.addEventListener('focus', function() {
-        const query = this.value.trim();
-        if (query.length >= 2) {
-            const results = searchProducts(query);
-            displaySearchResults(results);
-        }
+        if (this.value.trim().length >= 2) displaySearchResults(searchProducts(this.value.trim()));
     });
 
     document.addEventListener('click', function(e) {
@@ -913,14 +726,21 @@ function attachEventListeners() {
         }
     });
 
-    const inputIds = ['hargaJual', 'diskon', 'voucher', 'basketSize',
-        'hpp', 'biayaPenanganan',
-        'roas', 'komisiAfiliasi', 'promosiLuar', 'biayaPacking',
-        'biayaOperasional', 'biayaLain', 'pajakRate',
-        'biayaLainPersen', 'biayaLainRp'
-    ];
+    // ✅ FIX BUG 2: field desimal (%) hanya pakai 'change', bukan 'input'
+    // supaya user bisa ketik "2.5" tanpa terpotong di "2."
+    const inputOnChange = ['biayaLainPersen', 'pajakRate', 'komisiAfiliasi'];
+    inputOnChange.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('change', hitungSemua);
+    });
 
-    inputIds.forEach(id => {
+    // Field angka bulat tetap pakai 'input' supaya real-time
+    const inputRealtime = [
+        'hargaJual', 'diskon', 'voucher', 'basketSize',
+        'hpp', 'biayaPenanganan', 'roas', 'promosiLuar',
+        'biayaPacking', 'biayaOperasional', 'biayaLain', 'biayaLainRp'
+    ];
+    inputRealtime.forEach(id => {
         const el = document.getElementById(id);
         if (el) {
             el.addEventListener('input', hitungSemua);
@@ -939,7 +759,7 @@ function attachEventListeners() {
 }
 
 // ============================================================
-// INISIALISASI APLIKASI
+// INIT
 // ============================================================
 function initApp() {
     cacheDomElements();
@@ -949,7 +769,4 @@ function initApp() {
     console.log('🚀 Aplikasi siap digunakan!');
 }
 
-// ============================================================
-// START - Load data saat halaman dimuat
-// ============================================================
 document.addEventListener('DOMContentLoaded', loadAllData);

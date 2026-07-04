@@ -155,7 +155,8 @@
 
             <div class="form-group">
                 <label>Sub Kategori (otomatis)</label>
-                <input type="text" id="subKategoriDisplay" class="sub-kategori-display" placeholder="Pilih produk di atas atau pilih manual di bawah" readonly>
+                <input type="text" id="subKategoriDisplay" class="sub-kategori-display"
+                    placeholder="Pilih produk di atas atau pilih manual di bawah" readonly>
                 <input type="hidden" id="subKategori" value="">
                 <div class="info-text">Sub kategori akan terisi otomatis setelah Anda memilih produk</div>
             </div>
@@ -237,28 +238,17 @@
                 </div>
             </div>
 
-            <!-- Result box Promo XTRA (muncul hanya saat Ya) -->
             <div id="promoXTRABox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">🎯 Biaya Promo XTRA (4,5%)</span>
                 <span class="result-value" id="biayaPromoXTRAText">Rp 0</span>
             </div>
-
-            <!-- Result box Promo XTRA+ (muncul hanya saat Ya) -->
             <div id="promoXTRAplusBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">🎯 Biaya Promo XTRA+ (6,5%)</span>
                 <span class="result-value" id="biayaPromoXTRAplusText">Rp 0</span>
             </div>
-
-            <!-- Result box Live XTRA (muncul hanya saat Ya) -->
             <div id="liveXTRABox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">🎥 Biaya Live XTRA</span>
                 <span class="result-value" id="biayaLiveXTRAText">Rp 0</span>
-            </div>
-
-            <!-- Result box SPayLater XTRA (muncul hanya saat dipilih tenor) -->
-            <div id="spayLaterBox" class="result-box" style="background: #fef3c7; display: none;">
-                <span class="result-label">💳 Biaya SPayLater XTRA 0%</span>
-                <span class="result-value" id="biayaSPayLaterText">Rp 0</span>
             </div>
 
             <div class="toggle-group">
@@ -293,19 +283,18 @@
                 </div>
             </div>
 
-            <!-- Result box Hemat Biaya Kirim (muncul hanya saat Ya) -->
+            <div id="spayLaterBox" class="result-box" style="background: #fef3c7; display: none;">
+                <span class="result-label">💳 Biaya SPayLater XTRA 0%</span>
+                <span class="result-value" id="biayaSPayLaterText">Rp 0</span>
+            </div>
             <div id="hematKirimBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">🚚 Hemat Biaya Kirim</span>
                 <span class="result-value" id="biayaHematKirimText">Rp 0</span>
             </div>
-
-            <!-- Result box Asuransi Pengiriman (muncul hanya saat Ya) -->
             <div id="asuransiBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">🛡️ Asuransi Pengiriman (0,5%)</span>
                 <span class="result-value" id="biayaAsuransiText">Rp 0</span>
             </div>
-
-            <!-- Result box Produk PO (muncul hanya saat Ya dan bukan free PO) -->
             <div id="produkPOBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">📦 Biaya Produk PO (3%)</span>
                 <span class="result-value" id="biayaPOText">Rp 0</span>
@@ -313,20 +302,19 @@
 
             <div class="separator"></div>
 
-            <!-- Biaya Shopee Lain-Lain Manual Input -->
             <div class="form-group">
                 <label>Biaya Shopee Lain-Lain (%)</label>
                 <div class="input-group">
-                    <input type="number" id="biayaLainPersen" value="" step="0.1" min="0" 
-                        placeholder="Contoh: 2.5" style="border-radius: 10px 0 0 10px; border-right: none;">
+                    <input type="number" id="biayaLainPersen" value="" step="0.1" min="0"
+                        placeholder="Contoh: 2.5"
+                        style="border-radius: 10px 0 0 10px; border-right: none;">
                     <span style="border-radius: 0 10px 10px 0; border-left: none;
                         min-width: 30px; background: #f7fafc; padding: 12px;
                         font-weight: 600; color: #4a5568; text-align: center;">%</span>
                 </div>
-                <div class="info-text">Contoh: isi 2.5 untuk biaya 2.5% dari harga nett</div>
+                <div class="info-text">Isi angka lalu tekan Tab atau klik di luar untuk menghitung</div>
             </div>
-
-            <div class="result-box" id="biayaLainPersenBox" style="background: #fef3c7; display: none;">
+            <div id="biayaLainPersenBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">📋 Biaya Lain-Lain (%)</span>
                 <span class="result-value" id="biayaLainPersenText">Rp 0</span>
             </div>
@@ -339,8 +327,7 @@
                 </div>
                 <div class="info-text">Biaya tetap dalam Rupiah, misal biaya administrasi tambahan</div>
             </div>
-
-            <div class="result-box" id="biayaLainRpBox" style="background: #fef3c7; display: none;">
+            <div id="biayaLainRpBox" class="result-box" style="background: #fef3c7; display: none;">
                 <span class="result-label">📋 Biaya Lain-Lain (Rp)</span>
                 <span class="result-value" id="biayaLainRpText">Rp 0</span>
             </div>
@@ -402,15 +389,17 @@
                     <label>ROAS Iklan</label>
                     <input type="number" id="roas" value="" step="1" placeholder="10">
                     <small>Contoh: 10 berarti 10x</small>
-            </div>
-            <div class="row-2">
+                </div>
                 <div class="form-group">
                     <label>Komisi Afiliasi</label>
                     <div class="input-group">
-                        <input type="number" id="komisiAfiliasi" value="" step="1" placeholder="0" style="border-radius: 10px 0 0 10px;">
+                        <input type="number" id="komisiAfiliasi" value="" step="1" placeholder="0"
+                            style="border-radius: 10px 0 0 10px;">
                         <span style="border-radius: 0 10px 10px 0;">%</span>
                     </div>
                 </div>
+            </div>
+            <div class="row-2">
                 <div class="form-group">
                     <label>Promosi di Luar Shopee</label>
                     <div class="input-group">
@@ -418,8 +407,6 @@
                         <input type="number" id="promosiLuar" value="" step="5000" placeholder="0">
                     </div>
                 </div>
-            </div>
-            <div class="row-2">
                 <div class="form-group">
                     <label>Biaya Packing</label>
                     <div class="input-group">
@@ -427,6 +414,8 @@
                         <input type="number" id="biayaPacking" value="" step="500" placeholder="0">
                     </div>
                 </div>
+            </div>
+            <div class="row-2">
                 <div class="form-group">
                     <label>Biaya Operasional</label>
                     <div class="input-group">
@@ -434,12 +423,12 @@
                         <input type="number" id="biayaOperasional" value="" step="500" placeholder="0">
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label>Biaya Lain-lain</label>
-                <div class="input-group">
-                    <span>Rp</span>
-                    <input type="number" id="biayaLain" value="" step="1000" placeholder="0">
+                <div class="form-group">
+                    <label>Biaya Lain-lain</label>
+                    <div class="input-group">
+                        <span>Rp</span>
+                        <input type="number" id="biayaLain" value="" step="1000" placeholder="0">
+                    </div>
                 </div>
             </div>
             <div class="separator"></div>
@@ -460,7 +449,8 @@
                 <div class="form-group">
                     <label>Rate Pajak UMKM</label>
                     <div class="input-group">
-                        <input type="number" id="pajakRate" value="" step="0.1" placeholder="0.5" style="border-radius: 10px 0 0 10px;">
+                        <input type="number" id="pajakRate" value="" step="0.1" placeholder="0.5"
+                            style="border-radius: 10px 0 0 10px;">
                         <span style="border-radius: 0 10px 10px 0;">%</span>
                     </div>
                     <small>0.5% dari omset (harga jual nett)</small>
